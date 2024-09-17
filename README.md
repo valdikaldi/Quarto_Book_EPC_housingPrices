@@ -9,8 +9,14 @@ The website was made using Quarto.
 
 link : https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/
 
-<a href=" https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/" target="_blank">
-  <button style="background-color:#4CAF50; border:none; color:white; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; border-radius:5px;">
-    Click Me
-  </button>
-</a>
+<br>
+<br>
+
+[<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
+
+[![Button Shield]][Shield]
+
+</div>
+
+<br>
+<br>
