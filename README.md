@@ -9,8 +9,12 @@ The website was made using Quarto.
 
 link : https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/
 
-[![Button Click]][https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/] 
+<br>
 
+[![Button Click]][Link] 
+[![Button Hover]][Link] 
+
+<br>
 
 <!---------------------------------------------------------------------------->
 
