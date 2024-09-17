@@ -1,0 +1,17 @@
+{
+  "hash": "02d5dc4da844eab52e8848701e79a2cf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n# title: \"About\"\n---\n\n\n\n\n# 5.1 Empirical Strategy\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "empirical_strategy_EstimationStrategy_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

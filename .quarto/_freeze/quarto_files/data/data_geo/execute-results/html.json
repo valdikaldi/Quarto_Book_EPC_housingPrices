@@ -1,0 +1,17 @@
+{
+  "hash": "13ef59d07123112eae9ede88800088ed",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n# title: \"About\"\n---\n\n\n\n\n## 4.3 Geographical data\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "data_geo_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

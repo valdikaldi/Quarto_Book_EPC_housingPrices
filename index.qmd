@@ -1,0 +1,226 @@
+---
+css: additional_styles/styles_welcome_page.css
+---
+
+# Welcome {.unnumbered}
+
+::: paratext
+On this site, I present my empirical project, conducted as part of my Master's thesis in Applied Economics and Data Science. In this project, I attempt to determine whether homebuyers in Denmark value energy efficiency and specific energy-related features in properties.
+
+In particular, I explore whether homebuyers are willing to pay a premium for energy-efficient properties or, conversely, accept a discount for properties that are less energy-efficient. To quantify energy efficiency both the energy label or EPC label (i.e. the label stated in the Energy Performance Certificate of each property) and estimated energy consumption in kWh was utilized.
+
+Furthermore, the impact of different energy heat sources and three energy systems—specifically, properties with heat pumps, solar panels, and solar heating—on property prices was examined.
+:::
+
+# Key languages/tools used
+
+::: {.callout-note icon="false"}
+## Programming Languages and their functions
+
+```{=html}
+
+<div class="table-container">
+  <table>
+  <tr class="headers">
+  
+      <th colspan="2">
+      <img src="assets/python_icon.png" alt="Python Icon" class="icon">
+      Python
+      </th>
+      
+      <th colspan="2">
+      <img src="assets/r_icon.png" alt="R Icon" class="icon">
+      R
+      </th>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main"> 
+      <a href="data.html">
+        <img src="assets/data-processing_icon_2.png" alt="data-processing" class="mini_icon"> 
+        - Data cleaning and pre-processing
+      </a>
+      </td>
+      <td class="narrow item"></td>
+      <td class="wide item">
+        <img src="assets/data_visualization_icon.png" alt="data_visualization_icon" class="mini_icon">
+        - Data visualization
+      </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main">
+        <img src="assets/web_scraping_icon_2.png" alt="web-scraping" class="mini_icon">
+        - Web scraping 
+      </td>
+      <td class="narrow item"></td>
+      <td class="wide item">
+        <img src="assets/linear-regression_icon.png" alt="linear-regression_icon" class="mini_icon">
+        - Regression modelling
+      </td>
+  </tr>
+  <!-- ROW 3 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main">
+        <img src="assets/pdf_text_icon.png" alt="pdf text" class="mini_icon">
+        - PDF parsing (The EPC reports)
+      </td>
+  </tr>
+  <!-- ROW 4 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main">
+        <img src="assets/nlp_icon.png" alt="NLP icon" class="mini_icon">
+        - Text classification models (NLP)
+      </td>
+  </tr>
+  <!-- ROW 5 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main">
+        <img src="assets/ocr_icon.png" alt="OCR icon" class="mini_icon">
+        - Optical character recognition (OCR)
+      </td>
+  </tr>
+  <!-- ROW 6 -->
+  <tr>
+      <td class="narrow item"></td>
+      <td class="wide item main">
+        <img src="assets/geographical-data_icon.png" alt="Geographical data icon" class="mini_icon">
+        - Geographical data extraction
+      </td>
+  </tr>
+</table>
+</div>
+```
+:::
+
+::: {.callout-tip icon="false"}
+## Data and tool related to each function
+
+```{=html}
+<div class="card-container">
+
+        <div class="card">
+            <div class="card-title">
+                <img src="assets/web_scraping_icon_2.png" alt="web scraping icon" class="icon">
+                <span>Web scraping</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data obtained</p>
+                <p class="card_string">- Housing data: <a href="https://www.boliga.dk/" target="_blank">boliga.dk</a></p>
+                <p class="card_string">- Enery Performance PDF files: <a href="https://boligejer.dk/" target="_blank">boligejer.dk</a></p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a></p>
+                 <p >+ <a href="https://docs.python.org/3/library/concurrent.futures.html" target="_blank">Concurrent.futures</a></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card"">
+            <div class="card-title">
+                <img src="assets/pdf_text_icon.png" alt="pdf parsing icon" class="icon">
+                <span>PDF parsing</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data used</p>
+                <p class="card_string">- Enery Performance PDF files</p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://github.com/jsvine/pdfplumber" target="_blank">pdfplumber</a></p>
+                 <p >+ <a href="https://pymupdf.readthedocs.io/en/latest/" target="_blank">PyMuPDF</a></p>
+                 <p >+ <a href="https://docs.python.org/3/library/re.html" target="_blank">Regular expression operations</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <img src="assets/nlp_icon.png" alt="NLP icon" class="icon">
+                <span>Text classification</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data used</p>
+                <p class="card_string">- Specific text from the Enery Performance Certificates (PDF files)</p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://spacy.io/" target="_blank">Spacy</a></p>
+                 <p >+ <a href="https://www.nltk.org/" target="_blank">NLTK</a></p>
+                 <p >+ <a href="https://docs.python.org/3/library/re.html" target="_blank">Regular expression operations</a></p>
+                 <p >+ <a href="https://imbalanced-learn.org/stable/" target="_blank">Imblearn</a></p>
+                 <p >+ <a href="https://scikit-learn.org/stable/" target="_blank">sklearn</a></p>
+                 <p >+ <a href="https://github.com/piskvorky/gensim" target="_blank">Gensim</a></p>
+                 <p >+ <a href="https://fasttext.cc/" target="_blank">Fasttext</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <img src="assets/ocr_icon.png" alt="OCR icon" class="icon">
+                <span>Optical character recognition</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data used</p>
+                <p class="card_string">- Specific Image from the Enery Performance Certificates (PDF files)</p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://pymupdf.readthedocs.io/en/latest/" target="_blank">PyMuPDF</a></p>
+                 <p >+ <a href="https://pillow.readthedocs.io/en/stable/" target="_blank">Pillow (PIL)</a></p>
+                 <p >+ <a href="https://pypi.org/project/pytesseract/" target="_blank">Pyhton wrapper for Google's Tesseract-OCR Engine</a></p>
+                 <p >+ <a href="https://imbalanced-learn.org/stable/" target="_blank">Imblearn</a></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <img src="assets/geographical-data_icon.png" alt="Geographical icon" class="icon">
+                <span>Geographical data extraction</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data used</p>
+                <p class="card_string">- The property coordinates were obtained from web scraping boliga.dk</p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://github.com/valhalla/valhalla" target="_blank">Valhalla - routing engine <br> (Docker version)</a></p>
+                 <p >+ <a href="https://download.geofabrik.de/europe/denmark.html" target="_blank">Geofabrik</a></p>
+                </div>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">
+                <img src="assets/linear-regression_icon.png" alt="Regression icon" class="icon">
+                <span>Regression modelling</span>
+            </div>
+            <div class="card-content">
+                <p class="category">Data used</p>
+                <p class="card_string">- The final dataset (harmonized, cleaned and ready to be used)</p>
+                <p class="category">Tools/Libraries</p>
+                <div class="stack">
+                 <p >+ <a href="https://cran.r-project.org/web/packages/fixest/index.html" target="_blank">Fixest</a></p>
+                 <p >+ <a href="https://cran.r-project.org/web/packages/sandwich/index.html" target="_blank">Sandwich</a></p>
+                 <p >+ <a href="https://modelsummary.com/" target="_blank">Modelsummary</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+```
+:::

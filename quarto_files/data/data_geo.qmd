@@ -1,0 +1,9 @@
+---
+# title: "About"
+---
+
+## 4.3 Geographical data
+
+```{r}
+1 + 1
+```

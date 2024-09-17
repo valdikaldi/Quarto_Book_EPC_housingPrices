@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2. EPBD and the Danish EPC scheme – Are home buyers inattentive towards energy efficiency?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../quarto_files/literature_review.html" rel="next">
+<link href="../quarto_files/introduction.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="icon" type="image/png" href="assets/cover.jpg">
+<link rel="icon" type="image/png" href="../assets/cover.jpg">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../main_styles.css">
+<link rel="stylesheet" href="../additional_styles/styles_chapter2_EPC.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> <i class="bi bi-arrow-left-circle" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quarto_files/epbd_and_danish_EPC_scheme.html"><span class="chapter-title">2. EPBD and the Danish EPC scheme</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/cover.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="../index.html" title="Home" class="quarto-navigation-tool px-1" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+    <a href="https://github.com/valdikaldi/Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency" title="My github" class="quarto-navigation-tool px-1" aria-label="My github"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/epbd_and_danish_EPC_scheme.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">2. EPBD and the Danish EPC scheme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/literature_review.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3. Literature review</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">4. Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/data/data_housing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4.1 Housing data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/data/data_EPC.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4.2 EPC data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/data/data_geo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">4.3 Geographical data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">5. Empirical Strategy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.2 Empirical Strategy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.1 Empirical Strategy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/results.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">6. Results</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/discussion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">7. Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../quarto_files/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">2. EPBD and the Danish EPC scheme</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="paratext">
+<p>With the establishment of the Energy Performance of Buildings Directive (EPBD) in 2001, the EU constructed its main legislative tool to improve the energy performance of buildings. With this Directive, EU members were given a framework to develop regulations for the energy efficiency of buildings. The framework provided a rounded structure on matters such as defining energy performance and methodology to quantify and measure the energy efficiency of buildings <span class="citation" data-cites="ec_eu_2002">(<a href="references.html#ref-ec_eu_2002" role="doc-biblioref">EC 2002</a>)</span>. Thus, the EU Commission highlighted the importance of energy conservation in buildings and formulated the EPC system. From 2006 onwards, the EPC system was gradually implemented across member states, with all states mandated to have an operational system in place by the final deadline of 4 January 2009 <span class="citation" data-cites="arcipowska_energy_2014">(<a href="references.html#ref-arcipowska_energy_2014" role="doc-biblioref">Arcipowska et al. 2014</a>)</span>. Since 2002, the EU Commission has updated the Directive through the years. In 2010, the EU recast the EPBD (European Directive 2010/31/EU) by updating the previous Directive as well as improving the quality of the Energy Performance Certification scheme by implementing additional requirements regarding independent qualified and/or accredited experts authorised to perform assessments of a building’s energy performance <span class="citation" data-cites="eu_eu_2010">(<a href="references.html#ref-eu_eu_2010" role="doc-biblioref">EU 2010</a>)</span>. Moreover, The EU Commission later expanded the scope of the recast in January 2012 by introducing a comparative methodology framework to determine the most cost-effective levels of minimum energy performance standards for both buildings and building elements. The recast of the EPBD played a vital role in enhancing transparency in the methodology of the energy performance of buildings and minimising potential information asymmetries between the property buyer and seller. Before the recast, sellers were not obligated to publicly display the energy performance of the property. Sellers could simply showcase the certificate at the time of signing the purchase agreement or rental contract. However, this changed with the recast, which required that when buildings</p>
+<div class="paratext_quote">
+<p>“are offered for sale or for rent, the energy performance indicator of the energy performance certificate of the building or the building unit, as applicable, is stated in the advertisements in commercial media” <span class="citation" data-cites="eu_eu_2010">(<a href="references.html#ref-eu_eu_2010" role="doc-biblioref">EU 2010, 24</a>)</span></p>
+</div>
+<p>The fundamental motivations of the recast was to push for more sustainable development and make critical information more accessible to potential buyers and renters such that it fosters greater demand for energy-efficient buildings. By doing so, the goal is to reduce energy consumption and greenhouse gas emissions in the housing sector. As a result, EPCs simplify the procedure of comparing similar buildings and can help boost awareness in the market towards energy efficiency, which intends to assist the EU in achieving its sustainability goals. <span class="citation" data-cites="arcipowska_energy_2014">(<a href="references.html#ref-arcipowska_energy_2014" role="doc-biblioref">Arcipowska et al. 2014</a>)</span></p>
+<p>Members of the European Union have a degree of freedom to develop their measurement systems, accreditation requirements, and EPC layouts under the subsidiarity principle. Nevertheless, they are required to be in line with the EU framework policy given in the EPBD and meet the minimum methodology requirement specified in Annex 1 in the Directive. Certain key information must be displayed in the EPCs to fulfil EPBD requirements. This includes the energy performance index, which reflects the energy efficiency rating of the building, as well as reference values, such as minimum energy performance requirements, enabling comparison between different buildings. Expert recommendations are also required, where possible, and feasible home renovations that can improve the energy performance of the building are listed. Finally, the methodology estimate needs to be standardised at the national level. <span class="citation" data-cites="eu_eu_2010">(<a href="references.html#ref-eu_eu_2010" role="doc-biblioref">EU 2010</a>)</span></p>
+<p>A report made by <span class="citation" data-cites="arcipowska_energy_2014">Arcipowska et al. (<a href="references.html#ref-arcipowska_energy_2014" role="doc-biblioref">2014</a>)</span> gives a clear overview of the implementation of EPC across the EU and the different countries that implement an EPC scheme. From the report, it can be seen that over the course of the implementation, the majority of countries have developed a letter-based rating scheme, for instance, on a scale from A to G, where A is most efficient and G is least efficient. These ratings are determined either based on specific energy consumption values or by comparing the building’s performance to reference buildings. Furthermore, the majority of countries have made it a requirement that qualified experts must make an on-site visit to the property to issue an energy performance certificate for existing buildings, that includes Denmark. The on-site requirement is one of the ways to ensure that the quality of the input data is upheld for the calculation process.</p>
+<p>Since the year 1997, it has been mandatory in Denmark to have an energy certification. Denmark was the first EU member to construct a complete building certification scheme, which consisted of an energy performance label system ranging from labels A to G. The Danish Energy Agency projected a positive impact on market activity by promoting the sale of highly energy-efficient buildings from an early implementation. Additionally, Danish policymakers argued that the implementation of the energy performance rating for buildings would not only raise the energy efficiency standards of the building stock, but would also serve as an important motivator in driving the society’s overall efforts towards reducing carbon emissions <span class="citation" data-cites="jensen_market_2016">(<a href="references.html#ref-jensen_market_2016" role="doc-biblioref">Jensen, Hansen, and Kragh 2016</a>)</span>. As a result, starting from 1 January 1997, every building that was listed for sale was required to have a valid energy performance rating <span class="citation" data-cites="jensen_market_2016">(<a href="references.html#ref-jensen_market_2016" role="doc-biblioref">Jensen, Hansen, and Kragh 2016</a>)</span>. Interestingly, <span class="citation" data-cites="jensen_market_2016">Jensen, Hansen, and Kragh (<a href="references.html#ref-jensen_market_2016" role="doc-biblioref">2016</a>)</span> point out in their paper that even though Denmark became one of the first EU members to implement a scheme, there was no observable effect for 15 years. The Danish authorities implemented the 2010 EBPD recast almost two weeks after it got passed, i.e.&nbsp;on 1 July 2010. One year later, an effect was observed on the market. Danish real estate agents claimed that the easiest properties to sell were properties with higher energy performance. <span class="citation" data-cites="jensen_market_2016">(<a href="references.html#ref-jensen_market_2016" role="doc-biblioref">Jensen, Hansen, and Kragh 2016</a>)</span></p>
+<p>The Danish EPC scheme is maintained by the Danish Energy Agency (DEA). They are responsible for monitoring, maintaining quality assurance, and conducting further developments on the program. In order to receive an EPC report for a given building, a property must be inspected by a licensed energy consultant, which then will determine the building’s energy performance <span class="citation" data-cites="concerted_action_epbd_implementation_2020">(<a href="references.html#ref-concerted_action_epbd_implementation_2020" role="doc-biblioref">Concerted Action EPBD 2020</a>)</span>. The licensed energy consultant calculates the building’s energy consumption and signs a label on a scale from A to G, where A indicates the highest energy standard and G the lowest. He inspects the building’s quality concerning insulation, windows and doors, heating installation system, heating sources, etc. On this basis, the building’s energy consumption is calculated under certain assumptions such as weather, family size, operating hours, consumption habits, etc <span class="citation" data-cites="noauthor_energimaerkning_nodate">(<a href="references.html#ref-noauthor_energimaerkning_nodate" role="doc-biblioref"><span>“Energimærkning”</span> n.d.</a>)</span>. In other words, the energy consumption is theoretical. However, it is set up to reflect normal household consumption, given the building’s attributes. With that being said, it may not necessarily reflect the actual energy consumption, which is, of course, highly dependent on both the weather and the habits of the residence. Moreover, the EPC reports give an overview of the energy improvements that the energy consultants deem cost-effective to implement at the time of reporting.</p>
+<p>Over the years, the energy labels in Denmark have changed multiple times. Table <a href="#tbl-EPC_table" class="quarto-xref">Table&nbsp;<span>1.1</span></a> depicts the conversion from all the different energy labels that the Danish EPC scheme has had to the current labelling system, as well as the current official energy thresholds for each label. To this day, the A label in Denmark is split into three subcategories: A2020, A2015 and A2010. Where A2020 represents the most energy-efficient category, and G is labelled the least efficient. The 2013 scale is the official EPC labels in Denmark today. To this day, newly constructed buildings must have an energy label A2015 or A2020&nbsp;<span class="citation" data-cites="noauthor_hvornar_2016">(<a href="references.html#ref-noauthor_hvornar_2016" role="doc-biblioref"><span>“Hvornår Skal Bygninger Energimærkes?”</span> 2016</a>)</span>. As Table <a href="#tbl-EPC_table" class="quarto-xref">Table&nbsp;<span>1.1</span></a> shows, a house of the size 100 square meters labelled D has an energy consumption between 167 (135+3200/100) and 217 (175+4200/100) kWh per square meter per year, i.e.&nbsp;between 16.700 to 21.700 kWh per year. On the other hand, a property of the same size with the label A2020 has an energy consumption equal to or less than 25 kWh per square meter per year i.e., 2,500 kWh per year or less.</p>
+</div>
+<div id="tbl-EPC_table" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-EPC_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Conversion table - EPC classification for residential buildings
+</figcaption>
+<div aria-describedby="tbl-EPC_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">2006<br>
+scale</th>
+<th style="text-align: center;">2008V1<br>
+scale</th>
+<th style="text-align: center;">2008V2<br>
+scale</th>
+<th style="text-align: center;">2011<br>
+scale</th>
+<th style="text-align: center;">2013<br>
+scale<br>
+(Current scale)</th>
+<th style="text-align: center;">Threshold limit<br>
+2013-<br>
+<span class="math inline">\((kWh/m^2/year)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A2020</td>
+<td style="text-align: center;"><span class="math display">\[\le 25\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">A1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">A1</td>
+<td style="text-align: center;">A2015</td>
+<td style="text-align: center;"><span class="math display">\[\le 41.0 + 1000/A\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">A2</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">A1,A2</td>
+<td style="text-align: center;">A2</td>
+<td style="text-align: center;">A2010</td>
+<td style="text-align: center;"><span class="math display">\[\le 71.3 + 1650/A\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B1</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;"><span class="math display">\[\le 95.0 + 2200/A\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">B2,C1</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"><span class="math display">\[\le 135+ 3200/A\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">C2,D1</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;"><span class="math display">\[\le 175 + 4200/A\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">D2,E1</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;"><span class="math display">\[\le 215 + 5200/A\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">E2,F1</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;"><span class="math display">\[\le 265 + 6500/A\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F2,G1,G2</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;"><span class="math display">\[&gt; 265 + 6500/A\]</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="text_footnote_fig_tables">
+<p>Note: the letter A in column “Threshold limit 2013 <span class="math inline">\(kWh/m^2/year\)</span>” represents that heated living area. Data taken from <span class="citation" data-cites="klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2015">Klima-, Energi- og Forsyningsministeriet (<a href="references.html#ref-klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2015" role="doc-biblioref">2015</a>)</span>.</p>
+</div>
+<div class="paratext">
+<p>As mentioned earlier, this thesis will analyse the period 1. July 2010 to 2023. To quantify the label effects across the whole sampling period, all labels from older labeling systems are converted into the newest system based on the conversion table. Furthermore, within the period of this study, the layout and design of the Danish EPC reports have had three major changes. This is important because not all designs convey the exact same information. For clarity, the designs of the certificates will be referred to as Design 1, Design 2, and Design 3, where Design 1 is the oldest and Design 3 is the newest. The biggest difference is between the first design and the other designs. Essentially the renovation recommendation includes the following information: the type of renovation, estimated investment cost, and energy cost saved. In all designs, the renovations are categorised into two groups: profitable renovations and other renovations. The first group represents so-called “profitable renovations,” i.e., renovations that the licensed energy expert deems profitable based on estimated costs and savings. A renovation is deemed profitable if the energy savings can pay back the investment before the proposed renovation needs to be replaced again. As an example, if the proposal is to replace a circulation pump for hot water, the pump is expected to last for 15 years, and the savings proposal is considered profitable if the estimated energy savings can pay back the investment over 15 years. The second group will be referred to as the “non-profitable renovations”, which represent renovation proposals that cannot repay the investment before the proposed renovation needs to be replaced again. However, these renovations are often beneficial to consider if the building is being renovated or if there are building components that need to be replaced anyway. The profitable renovations include both investment cost, energy savings in Danish krone (DKK), and energy consumption saved. For non-profitable renovations, only the energy savings in DKK and the energy consumption saved are included. In addition to this, both EPC designs 2 and 3 include the energy label that a building would get from implementing profitable renovations and the energy label it would get from implementing all renovations, i.e.&nbsp;both profitable and non-profitable renovations. However, design one only includes the potential energy label the property would get from all renovations. Overall, in <a href="../quarto_files/data/data_housing.html">chapter 4: Data</a> we will go in more detail how we harmonise our data over all the designs.</p>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-arcipowska_energy_2014" class="csl-entry" role="listitem">
+Arcipowska, Aleksandra, Filippos Anagnostopoulos, Francesco Mariottini, and Sara Kunkel. 2014. <span>“Energy Performance Certificates Across the <span>EU</span>.”</span> Buildings Performance Institute Europe (BPIE). <a href="https://bpie.eu/wp-content/uploads/2015/10/Energy-Performance-Certificates-EPC-across-the-EU.-A-mapping-of-national-approaches-2014.pdf">https://bpie.eu/wp-content/uploads/2015/10/Energy-Performance-Certificates-EPC-across-the-EU.-A-mapping-of-national-approaches-2014.pdf</a>.
+</div>
+<div id="ref-concerted_action_epbd_implementation_2020" class="csl-entry" role="listitem">
+Concerted Action EPBD. 2020. <span>“Implementation of the <span>EPBD</span> in <span>Denmark</span> (2020).”</span> <a href="https://www.ca-epbd.eu/Media/638373601209185553/Implementation-of-the-EPBD-in-Denmark--2020.pdf">https://www.ca-epbd.eu/Media/638373601209185553/Implementation-of-the-EPBD-in-Denmark--2020.pdf</a>.
+</div>
+<div id="ref-ec_eu_2002" class="csl-entry" role="listitem">
+EC. 2002. <span>“<span>EU</span> <span>Directive</span> 91/<span>EC</span> of the <span>European</span> <span>Parliament</span> and of the <span>Council</span> of 16 <span>December</span> 2002 on the <span>Energy</span> <span>Performance</span> of <span>Buildings</span>.”</span> <a href="https://eur-lex.europa.eu/eli/dir/2002/91/oj">https://eur-lex.europa.eu/eli/dir/2002/91/oj</a>.
+</div>
+<div id="ref-noauthor_energimaerkning_nodate" class="csl-entry" role="listitem">
+<span>“Energimærkning.”</span> n.d. <em>Energifocus</em>. Accessed April 29, 2024. <a href="https://energifocus.dk/p/ydelser/energimaerkning">https://energifocus.dk/p/ydelser/energimaerkning</a>.
+</div>
+<div id="ref-eu_eu_2010" class="csl-entry" role="listitem">
+EU. 2010. <span>“<span>EU</span> <span>Directive</span>, 31/<span>EU</span> of the <span>European</span> <span>Parliament</span> and of the <span>Council</span> of 19 <span>May</span> 2010 on the <span>Energy</span> <span>Performance</span> of <span>Buildings</span>.”</span> <a href="https://eur-lex.europa.eu/eli/dir/2010/31/oj">https://eur-lex.europa.eu/eli/dir/2010/31/oj</a>.
+</div>
+<div id="ref-noauthor_hvornar_2016" class="csl-entry" role="listitem">
+<span>“Hvornår Skal Bygninger Energimærkes?”</span> 2016. <em>Energistyrelsen</em>. <a href="https://ens.dk/ansvarsomraader/energimaerkning-af-bygninger/hvornaar-skal-bygninger-energimaerkes">https://ens.dk/ansvarsomraader/energimaerkning-af-bygninger/hvornaar-skal-bygninger-energimaerkes</a>.
+</div>
+<div id="ref-jensen_market_2016" class="csl-entry" role="listitem">
+Jensen, Ole Michael, Anders Rhiger Hansen, and Jesper Kragh. 2016. <span>“Market Response to the Public Display of Energy Performance Rating at Property Sales.”</span> <em>Energy Policy</em> 93 (June): 229–35. <a href="https://doi.org/10.1016/j.enpol.2016.02.029">https://doi.org/10.1016/j.enpol.2016.02.029</a>.
+</div>
+<div id="ref-klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2015" class="csl-entry" role="listitem">
+Klima-, Energi- og Forsyningsministeriet. 2015. <span>“Bekendtgørelse Om <span>Håndbog</span> for <span>Energikonsulenter</span> (<span>HB2016</span>).”</span> <a href="https://www.retsinformation.dk/eli/lta/2015/1759">https://www.retsinformation.dk/eli/lta/2015/1759</a>.
+</div>
+</div>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../quarto_files/introduction.html" class="pagination-link" aria-label="1. Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1. Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../quarto_files/literature_review.html" class="pagination-link" aria-label="3. Literature review">
+        <span class="nav-page-text"><span class="chapter-title">3. Literature review</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-Valdimar, 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built using <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,86 @@
+{
+  "index.qmd": {
+    "index.html": "62dcd4cf"
+  },
+  "intro.qmd": {
+    "intro.html": "27354cbf"
+  },
+  "summary.qmd": {
+    "summary.html": "52667c1b"
+  },
+  "references.qmd": {
+    "references.html": "03fd5e85"
+  },
+  "introduction.qmd": {
+    "introduction.html": "c047d860"
+  },
+  "epbd_and_danish_EPC_scheme.qmd": {
+    "epbd_and_danish_EPC_scheme.html": "421007fc"
+  },
+  "literature_review.qmd": {
+    "literature_review.html": "1983f03e"
+  },
+  "data_housing.qmd": {
+    "data_housing.html": "b50c5cdb"
+  },
+  "data_EPC.qmd": {
+    "data_EPC.html": "860a3faa"
+  },
+  "data_geo.qmd": {
+    "data_geo.html": "e2ade79c"
+  },
+  "empirical_strategy.qmd": {
+    "empirical_strategy.html": "f429ba1c"
+  },
+  "results.qmd": {
+    "results.html": "957f6c67"
+  },
+  "discussion.qmd": {
+    "discussion.html": "c1f3c8c5"
+  },
+  "appendix.qmd": {
+    "appendix.html": "3b87a6e1"
+  },
+  "empirical_strategy_HedonicModel.qmd": {
+    "empirical_strategy_HedonicModel.html": "a36227c6"
+  },
+  "empirical_strategy_EstimationStrategy.qmd": {
+    "empirical_strategy_EstimationStrategy.html": "1aca2e08"
+  },
+  "quarto_files/introduction.qmd": {
+    "introduction.html": "36ba2c4c"
+  },
+  "quarto_files/epbd_and_danish_EPC_scheme.qmd": {
+    "epbd_and_danish_EPC_scheme.html": "8ca7afc8"
+  },
+  "quarto_files/literature_review.qmd": {
+    "literature_review.html": "09049feb"
+  },
+  "quarto_files/data/data_housing.qmd": {
+    "data_housing.html": "248570bb"
+  },
+  "quarto_files/data/data_EPC.qmd": {
+    "data_EPC.html": "3ec414cd"
+  },
+  "quarto_files/data/data_geo.qmd": {
+    "data_geo.html": "eabd7c5f"
+  },
+  "quarto_files/empirical_strategy/empirical_strategy_HedonicModel.qmd": {
+    "empirical_strategy_HedonicModel.html": "eacf5a65"
+  },
+  "quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.qmd": {
+    "empirical_strategy_EstimationStrategy.html": "59411183"
+  },
+  "quarto_files/results.qmd": {
+    "results.html": "d82e0124"
+  },
+  "quarto_files/discussion.qmd": {
+    "discussion.html": "42c13a77"
+  },
+  "quarto_files/references.qmd": {
+    "references.html": "9cd1a8eb"
+  },
+  "quarto_files/appendix.qmd": {
+    "appendix.html": "2f8c4cd3"
+  }
+}

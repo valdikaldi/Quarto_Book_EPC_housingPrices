@@ -1,0 +1,17 @@
+{
+  "hash": "b61c855465c93864fe7d47d479509a8b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n# title: \"About\"\n---\n\n\n\n\n# 7. Discussion\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "discussion_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

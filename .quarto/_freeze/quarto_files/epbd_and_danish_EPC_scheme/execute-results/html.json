@@ -1,0 +1,17 @@
+{
+  "hash": "6d9a0039d71800f39de48393ba24d4fc",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat:\n  html:\n    include-in-header:\n      - text: |\n         <link rel=\"icon\" type=\"image/png\" href=\"../assets/cover.jpg\">\n---\n\n\n\n\n\n\n\n\n\n\n\n\n# EPBD and the Danish EPC scheme\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n| fruit  | price  |\n|--------|--------|\n| apple  | 2.05   |\n| pear   | 1.37   |\n| orange | 3.09   |\n\n: Fruit prices {tbl-colwidths=\"[75,25]\"}",
+    "supporting": [
+      "epbd_and_danish_EPC_scheme_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "hash": "9d22107fc60039584feab1c54f389f47",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n# title: \"About\"\n---\n\n\n\n\n\n\n# Appendix\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [
+      "appendix_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

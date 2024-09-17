@@ -1,0 +1,9 @@
+---
+# title: "About"
+---
+
+# 5.2 Empirical Strategy
+
+```{r}
+1 + 1
+```

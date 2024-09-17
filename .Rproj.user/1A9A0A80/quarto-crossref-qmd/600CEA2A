@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "file": "quarto_files/epbd_and_danish_EPC_scheme.qmd",
+            "type": "tbl",
+            "id": "EPC_table",
+            "suffix": "",
+            "title": "Conversion table - EPC classification for residential buildings"
+        }
+    ]
+}
