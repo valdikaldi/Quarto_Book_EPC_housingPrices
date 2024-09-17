@@ -8,7 +8,7 @@ For this purpose, a new dataset is created by web scraping 2,295,344 property tr
 The website was made using Quarto. 
 
 <br>
-[![Button Click]][https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/] 
+[![Button Click]]['https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/'] 
 <br>
 
 <!---------------------------------------------------------------------------->
