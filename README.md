@@ -8,7 +8,7 @@ For this purpose, a new dataset is created by web scraping 2,295,344 property tr
 The website was made using Quarto. 
 
 <br>
-[![Button Click]]['https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/'] 
+[![Button Click]][Link] 
 <br>
 
 <!---------------------------------------------------------------------------->
@@ -17,4 +17,4 @@ The website was made using Quarto.
 [Button Click]: https://img.shields.io/badge/View_Site-37a779?style=for-the-badge
 [Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign
 
-[Link]: # 'Link with example title.'
+[Link]: https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/
