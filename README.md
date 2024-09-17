@@ -10,7 +10,6 @@ The website was made using Quarto.
 <br>
 
 [![Button Click]][Link] 
-[![Button Hover]][Link] 
 
 <br>
 <!---------------------------------------------------------------------------->
