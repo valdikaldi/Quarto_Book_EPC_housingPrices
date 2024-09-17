@@ -1,9 +1,0 @@
----
-# title: "About"
----
-
-# 7. Discussion
-
-```{r}
-1 + 1
-```
