@@ -17,4 +17,4 @@ The website was made using Quarto.
 [Button Click]: https://img.shields.io/badge/View_Site-37a779?style=for-the-badge
 [Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign
 
-[Link]: https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/
+[Link]: # 'ds'
