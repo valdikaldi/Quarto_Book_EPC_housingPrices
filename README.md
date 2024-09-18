@@ -12,6 +12,13 @@ The website was made using Quarto.
 [![Button Click]][Link] 
 
 <br>
+
+
+## Note: The site is not fully ready yet 
+
+
+
+
 <!---------------------------------------------------------------------------->
 
 [Button Click]: https://img.shields.io/badge/Click_Me!-37a779?style=for-the-badge
