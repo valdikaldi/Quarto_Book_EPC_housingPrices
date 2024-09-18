@@ -21,5 +21,5 @@ The website was made using Quarto.
 
 <!---------------------------------------------------------------------------->
 
-[Button Click]: https://img.shields.io/badge/Click_Me!-37a779?style=for-the-badge
+[Button Click]: https://img.shields.io/badge/View_Site-37a779?style=for-the-badge
 [Link]: https://valdikaldi.github.io/Quarto_Book_EPC_housingPrices/
