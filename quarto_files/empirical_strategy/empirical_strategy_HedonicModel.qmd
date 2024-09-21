@@ -2,7 +2,7 @@
 # title: "About"
 ---
 
-# 5.2 Empirical Strategy
+# 5.2 Hedonic model
 
 ```{r}
 1 + 1

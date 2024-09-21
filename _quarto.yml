@@ -67,6 +67,8 @@ bibliography: references.bib
 
 format:
   html:
+    toc-title: On this page
+    toc-expand: 3
     code-fold: true
     number-sections: false
     theme:
@@ -77,7 +79,7 @@ format:
     grid:
       body-width: 1500px
       sidebar-width: 250px
-      margin-width: 250px
+      margin-width: 350px
       gutter-width: 3.5rem
     # add icon to the browser tab
     include-in-header:

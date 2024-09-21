@@ -1,1 +1,1 @@
-{"headings":[],"entries":[{"key":"tbl-housing_summarystatistic","order":{"section":[3,0,0,0,0,0,0],"number":1},"caption":"Housing data - summary statistics"},{"key":"fig-price_municipality","order":{"section":[3,0,0,0,0,0,0],"number":1},"caption":""}],"options":{"chapters":true}}
+{"entries":[{"caption":"Housing data - summary statistics","order":{"section":[3,0,0,0,0,0,0],"number":1},"key":"tbl-housing_summarystatistic"},{"caption":"","order":{"section":[3,0,0,0,0,0,0],"number":1},"key":"fig-price_municipality"}],"options":{"chapters":true},"headings":[]}

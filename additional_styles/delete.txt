@@ -1,0 +1,590 @@
+<table class="tg">
+  <colgroup>
+    <col style="width: 250px" />
+    <col style="width: 200px" />
+    <col style="width: 100px" />
+    <col style="width: 250px" />
+    <col style="width: 50px" />
+    <col style="width: 50px" />
+    <col style="width: 250px" />
+    <col style="width: 350px" />
+    <col style="width: 170px" />
+    <col style="width: 130px" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="tg-jejc" colspan="10">Continous Variables:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-fymr">Variable</td>
+      <td class="tg-7btt">N</td>
+      <td class="tg-7btt">Mean</td>
+      <td class="tg-7btt" colspan="2">Std. Dev.</td>
+      <td class="tg-7btt">Min</td>
+      <td class="tg-6ic8">Pctl. 25</td>
+      <td class="tg-6ic8">Pctl. 75</td>
+      <td class="tg-7btt">Max</td>
+      <td class="tg-7btt">Unit</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Total heating demand</td>
+      <td class="tg-dvpl">582,690</td>
+      <td class="tg-dvpl">19,049</td>
+      <td class="tg-dvpl" colspan="2">9,867</td>
+      <td class="tg-c3ow">818</td>
+      <td class="tg-dvpl">11,194</td>
+      <td class="tg-dvpl">24,990</td>
+      <td class="tg-dvpl">63,680</td>
+      <td class="tg-c3ow">kWh</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">
+        Total investment cost <br />from profitable renovations (TIC)
+      </td>
+      <td class="tg-dvpl">728,795</td>
+      <td class="tg-dvpl">205,322</td>
+      <td class="tg-dvpl" colspan="2">425,372</td>
+      <td class="tg-c3ow">0</td>
+      <td class="tg-dvpl">2,100</td>
+      <td class="tg-dvpl">186,600</td>
+      <td class="tg-dvpl">3,499,800</td>
+      <td class="tg-c3ow">DKK</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">
+        Total energy cost saved <br />from all renovations (TECS)
+      </td>
+      <td class="tg-dvpl">728,795</td>
+      <td class="tg-dvpl">35,684</td>
+      <td class="tg-dvpl" colspan="2">317,907</td>
+      <td class="tg-c3ow">0</td>
+      <td class="tg-dvpl">3,300</td>
+      <td class="tg-dvpl">21,996</td>
+      <td class="tg-dvpl">58,833,400</td>
+      <td class="tg-c3ow">DKK</td>
+    </tr>
+    <tr>
+      <td class="tg-jejc" colspan="10">
+        Categorical Variables (Total = 728,795):
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Variable</td>
+      <td class="tg-fymr">Category</td>
+      <td class="tg-7btt">Frequency</td>
+      <td class="tg-7btt">% of Total</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">Variable</td>
+      <td class="tg-fymr">Category</td>
+      <td class="tg-7btt">Frequency</td>
+      <td class="tg-7btt">% of Total</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Current Energy label</td>
+      <td class="tg-dvpl">A2010</td>
+      <td class="tg-dvpl">18,669</td>
+      <td class="tg-dvpl">2.56%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Roof and attic</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">283,067</td>
+      <td class="tg-dvpl">38.84%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">A2015</td>
+      <td class="tg-dvpl">17,405</td>
+      <td class="tg-dvpl">2.39%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">445,728</td>
+      <td class="tg-dvpl">61.16%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">A2020</td>
+      <td class="tg-dvpl">4,203</td>
+      <td class="tg-dvpl">0.58%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Walls</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">376,982</td>
+      <td class="tg-dvpl">51.73%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">B</td>
+      <td class="tg-dvpl">49,610</td>
+      <td class="tg-dvpl">6.81%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">351,813</td>
+      <td class="tg-dvpl">48.27%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">C</td>
+      <td class="tg-dvpl">196,686</td>
+      <td class="tg-dvpl">26.99%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Solarcells</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">404,859</td>
+      <td class="tg-dvpl">55.55%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">D</td>
+      <td class="tg-dvpl">234,511</td>
+      <td class="tg-dvpl">32.18%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">323,936</td>
+      <td class="tg-dvpl">44.45%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">E</td>
+      <td class="tg-dvpl">116,880</td>
+      <td class="tg-dvpl">16.04%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Heating system</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">390,441</td>
+      <td class="tg-dvpl">53.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">F</td>
+      <td class="tg-dvpl">56,392</td>
+      <td class="tg-dvpl">7.74%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">338,354</td>
+      <td class="tg-dvpl">46.43%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">G</td>
+      <td class="tg-dvpl">34,439</td>
+      <td class="tg-dvpl">4.73%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Water system</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">500,628</td>
+      <td class="tg-dvpl">68.69%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Label jump</td>
+      <td class="tg-dvpl">0</td>
+      <td class="tg-dvpl">277,548</td>
+      <td class="tg-dvpl">38.08%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">228,167</td>
+      <td class="tg-dvpl">31.31%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky">(distance from current label</td>
+      <td class="tg-dvpl">1</td>
+      <td class="tg-dvpl">190,708</td>
+      <td class="tg-dvpl">26.17%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Floor</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">428,249</td>
+      <td class="tg-dvpl">58.76%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky">to potential label from all renovations</td>
+      <td class="tg-dvpl">2</td>
+      <td class="tg-dvpl">130,226</td>
+      <td class="tg-dvpl">17.87%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">300,546</td>
+      <td class="tg-dvpl">41.24%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky">suggestions)</td>
+      <td class="tg-dvpl">3</td>
+      <td class="tg-dvpl">68,821</td>
+      <td class="tg-dvpl">9.44%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - windows and doors</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">236,154</td>
+      <td class="tg-dvpl">32.4%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">4</td>
+      <td class="tg-dvpl">35,322</td>
+      <td class="tg-dvpl">4.85%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">492,641</td>
+      <td class="tg-dvpl">67.6%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">5</td>
+      <td class="tg-dvpl">15,867</td>
+      <td class="tg-dvpl">2.18%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - District heating</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">725,454</td>
+      <td class="tg-dvpl">99.54%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">6</td>
+      <td class="tg-dvpl">6,913</td>
+      <td class="tg-dvpl">0.95%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">3,341</td>
+      <td class="tg-dvpl">0.46%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">7</td>
+      <td class="tg-dvpl">2,278</td>
+      <td class="tg-dvpl">0.31%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">Energy label potential</td>
+      <td class="tg-6ic8">A2020</td>
+      <td class="tg-6ic8">21,892</td>
+      <td class="tg-6ic8">3%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">8</td>
+      <td class="tg-dvpl">1,112</td>
+      <td class="tg-dvpl">0.15%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky">(All renovations suggestions)</td>
+      <td class="tg-dvpl">A2015</td>
+      <td class="tg-dvpl">16,197</td>
+      <td class="tg-dvpl">2.22%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Boiler</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">568,984</td>
+      <td class="tg-dvpl">78.07%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">A2010</td>
+      <td class="tg-dvpl">91,938</td>
+      <td class="tg-dvpl">12.62%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">159,811</td>
+      <td class="tg-dvpl">21.93%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">B</td>
+      <td class="tg-dvpl">137,632</td>
+      <td class="tg-dvpl">18.88%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Wood Stove</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">620,750</td>
+      <td class="tg-dvpl">85.17%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">C</td>
+      <td class="tg-dvpl">222,217</td>
+      <td class="tg-dvpl">30.49%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">108,045</td>
+      <td class="tg-dvpl">14.83%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">D</td>
+      <td class="tg-dvpl">78,937</td>
+      <td class="tg-dvpl">10.83%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Oil stove</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">728,692</td>
+      <td class="tg-dvpl">99.99%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">E</td>
+      <td class="tg-dvpl">20,896</td>
+      <td class="tg-dvpl">2.87%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">103</td>
+      <td class="tg-dvpl">0.01%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">F</td>
+      <td class="tg-dvpl">7,097</td>
+      <td class="tg-dvpl">0.97%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Masonary heater</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">728,133</td>
+      <td class="tg-dvpl">99.91%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">G</td>
+      <td class="tg-dvpl">4,147</td>
+      <td class="tg-dvpl">0.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">662</td>
+      <td class="tg-dvpl">0.09%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">No label</td>
+      <td class="tg-dvpl">127,842</td>
+      <td class="tg-dvpl">17.54%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Fireplace</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">708,575</td>
+      <td class="tg-dvpl">97.23%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">Energy source</td>
+      <td class="tg-dvpl">District heating</td>
+      <td class="tg-dvpl">428,738</td>
+      <td class="tg-dvpl">58.83%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">20,220</td>
+      <td class="tg-dvpl">2.77%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity</td>
+      <td class="tg-dvpl">40,563</td>
+      <td class="tg-dvpl">5.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Heat pump (85% threshold)</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">591,919</td>
+      <td class="tg-dvpl">81.22%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and&nbsp;&nbsp;district heating</td>
+      <td class="tg-dvpl">21,647</td>
+      <td class="tg-dvpl">2.97%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">136,876</td>
+      <td class="tg-dvpl">18.78%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and natural gas</td>
+      <td class="tg-dvpl">15,354</td>
+      <td class="tg-dvpl">2.11%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Solar-cells (85% threshold)</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">660,667</td>
+      <td class="tg-dvpl">90.65%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and Oil</td>
+      <td class="tg-dvpl">10,561</td>
+      <td class="tg-dvpl">1.45%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">68,128</td>
+      <td class="tg-dvpl">9.35%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and wood pallets</td>
+      <td class="tg-dvpl">10,088</td>
+      <td class="tg-dvpl">1.38%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Solar heating (85% threshold)</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">666,293</td>
+      <td class="tg-dvpl">91.42%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Natural Gas</td>
+      <td class="tg-dvpl">125,750</td>
+      <td class="tg-dvpl">17.25%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">62,502</td>
+      <td class="tg-dvpl">8.58%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Oil</td>
+      <td class="tg-dvpl">34,807</td>
+      <td class="tg-dvpl">4.78%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Heat pump</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">652,728</td>
+      <td class="tg-dvpl">89.56%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Other source combinations</td>
+      <td class="tg-dvpl">5,322</td>
+      <td class="tg-dvpl">0.73%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">76,067</td>
+      <td class="tg-dvpl">10.44%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Unknown</td>
+      <td class="tg-dvpl">6,767</td>
+      <td class="tg-dvpl">0.93%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Other</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">439,279</td>
+      <td class="tg-dvpl">60.27%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood</td>
+      <td class="tg-dvpl">2,176</td>
+      <td class="tg-dvpl">0.3%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">289,516</td>
+      <td class="tg-dvpl">39.73%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and District heating</td>
+      <td class="tg-dvpl">1,376</td>
+      <td class="tg-dvpl">0.19%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Solar heating</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">623,313</td>
+      <td class="tg-dvpl">85.53%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and Electricity</td>
+      <td class="tg-dvpl">17,160</td>
+      <td class="tg-dvpl">2.35%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">105,482</td>
+      <td class="tg-dvpl">14.47%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and Pallets</td>
+      <td class="tg-dvpl">8,486</td>
+      <td class="tg-dvpl">1.16%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Ventilation</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">708,529</td>
+      <td class="tg-dvpl">97.22%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">20,266</td>
+      <td class="tg-dvpl">2.78%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+    </tr>
+  </tbody>
+</table>

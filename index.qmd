@@ -37,10 +37,8 @@ Furthermore, the impact of different energy heat sources and three energy system
   <tr>
       <td class="narrow item"></td>
       <td class="wide item main"> 
-      <a href="data.html">
         <img src="assets/data-processing_icon_2.png" alt="data-processing" class="mini_icon"> 
         - Data cleaning and pre-processing
-      </a>
       </td>
       <td class="narrow item"></td>
       <td class="wide item">

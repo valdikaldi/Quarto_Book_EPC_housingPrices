@@ -2,7 +2,7 @@
 # title: "About"
 ---
 
-# 5.1 Empirical Strategy
+# 5.1 Estimation Strategy
 
 ```{r}
 1 + 1

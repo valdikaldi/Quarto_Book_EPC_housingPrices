@@ -1,1 +1,1 @@
-{"options":{"chapters":true},"entries":[{"order":{"section":[1,0,0,0,0,0,0],"number":1},"key":"tbl-EPC_table","caption":"Conversion table - EPC classification for residential buildings"}],"headings":[]}
+{"options":{"chapters":true},"entries":[{"key":"tbl-EPC_table","caption":"Conversion table - EPC classification for residential buildings","order":{"number":1,"section":[1,0,0,0,0,0,0]}}],"headings":[]}
