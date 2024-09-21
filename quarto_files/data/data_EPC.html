@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4.2 EPC data – Are home buyers inattentive towards energy efficiency?</title>
+<title>4.2 EPC Reports data – Are home buyers inattentive towards energy efficiency?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -103,9 +89,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <link rel="icon" type="image/png" href="assets/cover.jpg">
+<link rel="icon" type="image/png" href="../../assets/cover.jpg">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../main_styles.css">
+<link rel="stylesheet" href="../../additional_styles/styles_chapter4_2_data.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -136,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/data/data_housing.html">4. Data</a></li><li class="breadcrumb-item"><a href="../../quarto_files/data/data_EPC.html"><span class="chapter-title">4.2 EPC data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/data/data_housing.html">4. Data</a></li><li class="breadcrumb-item"><a href="../../quarto_files/data/data_EPC.html"><span class="chapter-title">4.2 EPC Reports data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -203,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../quarto_files/data/data_EPC.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">4.2 EPC data</span></a>
+  <a href="../../quarto_files/data/data_EPC.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">4.2 EPC Reports data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -224,12 +241,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.2 Empirical Strategy</span></a>
+  <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.2 Hedonic model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.1 Empirical Strategy</span></a>
+  <a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.1 Estimation Strategy</span></a>
   </div>
 </li>
       </ul>
@@ -260,15 +277,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#information-extraction-from-epc-reports" id="toc-information-extraction-from-epc-reports" class="nav-link active" data-scroll-target="#information-extraction-from-epc-reports">Information extraction from EPC reports</a></li>
+  <li><a href="#extracting-epc-labels" id="toc-extracting-epc-labels" class="nav-link" data-scroll-target="#extracting-epc-labels">Extracting EPC labels</a></li>
+  <li><a href="#standardizing-energy-variables" id="toc-standardizing-energy-variables" class="nav-link" data-scroll-target="#standardizing-energy-variables">Standardizing energy variables</a></li>
+  <li><a href="#text-classification" id="toc-text-classification" class="nav-link" data-scroll-target="#text-classification">Text classification</a>
+  <ul class="collapse">
+  <li><a href="#feature-extraction-process" id="toc-feature-extraction-process" class="nav-link" data-scroll-target="#feature-extraction-process">Feature Extraction process</a></li>
+  <li><a href="#binary-models" id="toc-binary-models" class="nav-link" data-scroll-target="#binary-models">Binary models</a></li>
+  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link" data-scroll-target="#model-evaluation">Model Evaluation</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/data/data_housing.html">4. Data</a></li><li class="breadcrumb-item"><a href="../../quarto_files/data/data_EPC.html"><span class="chapter-title">4.2 EPC data</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/data/data_housing.html">4. Data</a></li><li class="breadcrumb-item"><a href="../../quarto_files/data/data_EPC.html"><span class="chapter-title">4.2 EPC Reports data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">4.2 EPC data</span></h1>
+<h1 class="title"><span class="chapter-title">4.2 EPC Reports data</span></h1>
 </div>
 
 
@@ -285,17 +316,940 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="paratext">
+<p>There are two sources which offer open access to the EPC reports in Denmark, which are <span class="citation" data-cites="sparenergi_sparenergi_2015">Sparenergi (<a href="../references.html#ref-sparenergi_sparenergi_2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="boligejer_boligejer_nodate">Boligejer (<a href="../references.html#ref-boligejer_boligejer_nodate" role="doc-biblioref">n.d.</a>)</span>. The primary difference between the two sites is that the former delivers only the latest EPC report of a building to the user, whereas the latter stores and provides access to all historical reports for buildings. In addition, the Danish Energy Agency offers access to their EMO EPC database upon request. To obtain the EPC data, the website “boligejer.dk” (https://www.boligejer.dk/) was chosen <span class="citation" data-cites="boligejer_boligejer_nodate">(<a href="../references.html#ref-boligejer_boligejer_nodate" role="doc-biblioref">Boligejer n.d.</a>)</span>. The reasons are threefold: first, there are fewer drawbacks when scraping the data; second, it gives access to both historical and latest EPC reports of properties. Lastly, it simplifies the process of merging with our housing data.</p>
 </div>
+<section id="information-extraction-from-epc-reports" class="level2">
+<h2 class="anchored" data-anchor-id="information-extraction-from-epc-reports">Information extraction from EPC reports</h2>
+<div class="paratext">
+<p><a href="#fig-EPC_data_workflow" class="quarto-xref">Figure&nbsp;<span>4.1</span></a> shows the workflow of the data extraction process made to collect the EPC PDF files and extract information from them. Once the housing data is collected, we utilize the ESR and municipality identification codes to search and download the pdf files from the website “boligejer.dk”. During the data-gathering process, it was observed that certain properties, particularly apartment buildings, had their EPC reports linked to the SFE (Samlet Fast Ejendom) code rather than the ESR code. The SFE code is an identification code for the entire building, whereas the ESR code is specific to individual units. Similar to the ESR code, the SFE code is only unique in combination with the municipality code. Consequently, to address this issue, we obtain the SFE codes for properties lacking EPC reports under their ESR codes by intercepting a specific HTTP GET request on the <span class="citation" data-cites="boligejer_boligejer_nodate">Boligejer (<a href="../references.html#ref-boligejer_boligejer_nodate" role="doc-biblioref">n.d.</a>)</span> website, where the SFE code of the dwelling unit is stored in a JSON file. Once obtained, we proceed in the same manner that we do with ESR codes. Once we have collected all possible PDF files, we end up with 776.108 reports.</p>
+<p>During the information extraction process, we identify three major design differences in the reports over the period. According to the data, the initial design in our sample, referred to as Design 1, was used until around 2012, after which Design 2 was introduced. The most recent design, design 3, was adopted around the winter of 2021. These designs not only differ in the design and layout but also in the type of information provided to the reader.</p>
+<p>% design differences There are several key distinctions between the three designs regarding the information provided. Design 1 does not include a potential energy label from implementing all profitable renovations. Neither Design 1 nor 2 provide standardised energy consumption in kWh, whereas Design 3 includes this information. Furthermore, Design 3 does not include energy consumption saved from profitable renovations. Additionally, none of the designs provides an estimated investment cost for implementing non-profitable renovation suggestions.</p>
+<p>% extracting text The majority of the information of interest is in text format for all EPC designs. We extract the text using Python and various libraries such as pyMuPDF and pdfplumber. Once the text data is extracted, we use regular expressions and pattern-matching techniques to retrieve the relevant information from the text. In design 2 we only use regular expressions as all necessary data in that design is represented in text format. However, In design 3, all energy labels, i.e.&nbsp;the registered EPC label and the potential EPC label after implementing profitable and non-profitable renovations, are in image format. Moreover, in Design 1 the registered EPC label is in image format but the potential energy label of the building for implementing all renovation suggestions is in text format.</p>
+</div>
+<div id="fig-EPC_data_workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_data_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1
+</figcaption>
+<div aria-describedby="fig-EPC_data_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Workflow diagram for extracting and processing EPC data</figcaption>
+<p><img src="../../assets/EPC_workflow_1000dpi.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</figure>
+</div>
+</section>
+<section id="extracting-epc-labels" class="level2">
+<h2 class="anchored" data-anchor-id="extracting-epc-labels">Extracting EPC labels</h2>
+<div class="paratext">
+<p>To extract the EPC labels in Design 1 we train and run an optical character recognition (OCR) model to identify the registered EPC labels of buildings. To train and run an OCR algorithm, we used the library Pytesseract (see: <span class="citation" data-cites="hoffstaetter_pytesseract_2024">Hoffstaetter (<a href="../references.html#ref-hoffstaetter_pytesseract_2024" role="doc-biblioref">2024</a>)</span>), which is a wrapper for Google’s Tesseract-OCR Engine (see: <span class="citation" data-cites="noauthor_tesseract_2024"><span>“Tesseract”</span> (<a href="../references.html#ref-noauthor_tesseract_2024" role="doc-biblioref">2024</a>)</span>). This is an open-source tool developed by Google that converts images containing text to machine-readable text data. The engine is pre-trained and employs advanced machine-learning algorithms that can work out of the box for up to 100 languages. We train the engine on 950 images to fine-tune it towards our data, and then we employ the Legacy Tesseract model on design 1 reports. In design 3, we used colour matching to identify the labels by finding the unique RGB (Red, Green, Blue) code of the pixels of each EPC label image; we could determine both the current EPC label and the potential EPC label of the building after implementing either profitable or all renovations. This approach was not used for Design 1 because the images in those reports were designed in a way that made it too difficult to accurately identify the labels. Additionally, design 1 includes three minor layout changes over the time period that affected the positioning and the colours of the images, further complicating accurate label identification using colour matching.</p>
+</div>
+</section>
+<section id="standardizing-energy-variables" class="level2">
+<h2 class="anchored" data-anchor-id="standardizing-energy-variables">Standardizing energy variables</h2>
+<div class="paratext">
+<p>The variation in the information given in each design creates challenges in making the data from each design comparable. We address these differences in the following ways: First, we convert the source-specific energy consumption from Design 1 and Design 2 into standardised energy consumption in kWh, as done in Design 3. We achieve this by applying the calorific values for each energy source that a building uses as outlined in the so-called EPC handbook for Denmark (Bekendtgørelse om Håndbog for Energikonsulenter), which is issued by the Danish Ministry of Climate, Energy, and Utilities <span class="citation" data-cites="klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2021">(<a href="../references.html#ref-klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2021" role="doc-biblioref">Klima-, Energi- og Forsyningsministeriet 2021</a>)</span>. Appendix \ref{sec:Appendix Calorific values shows the calorific values used in this study. The calorific value or heating value of a substance is a measure of how much energy is released for a specific amount of fuel burned. In the EPC handbook for Denmark, the calorific value is expressed in kilowatt-hours per given unit of specified heat source, e.g.&nbsp;kWh/ton for wood fuels. This metric allows us to compare different heating sources in the same unit, i.e.&nbsp;kilowatt-hours. It is worth noting that the calorific value is not a constant, and it varies from time to time. The value depends on several factors such as moisture and the overall quality of the fuel. Take natural gas as an example of the variation of the calorific value. Natural gas primarily consists of methane, but it also contains other hydrocarbons such as ethane, propane, and butane. The calorific value is highly dependent on the proportion of these components which may vary over time. However, for simplicity, we will assume they are relatively constant during our sample period. % Next, we calculate the energy saved in source-specific units for design 3 by dividing the energy cost saving for each energy source that a building uses by the receptive prices stated in the reports. Subsequently, we convert the source-specific energy saved to kilowatt-hours for all designs using the same calorific values previously mentioned. Finally, we use the conversion table i.e.&nbsp;Table \ref{table: conversion table EPC, to convert all the EPC labels for all different EPC schemes to the latest EPC scheme.</p>
+<p>Table \ref{table: EPC data summary shows the summary statistics of our main variables from the EPC reports. The most dominant label in our dataset is label D, which constitutes more than 32% of our sample. Similar to many of the previous studies, throughout our analysis, label D will serve as the reference category.</p>
+<div id="tbl-housing_summarystatistic" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-housing_summarystatistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: EPC Reports Data - summary statistics
+</figcaption>
+<div aria-describedby="tbl-housing_summarystatistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="border_table">
+<table class="tg">
+  <colgroup>
+    <col style="width: 500px">
+    <col style="width: 100px">
+    <col style="width: 100px">
+    <col style="width: 250px">
+    <col style="width: 50px">
+    <col style="width: 50px">
+    <col style="width: 450px">
+    <col style="width: 250px">
+    <col style="width: 100px">
+    <col style="width: 130px">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="tg-c3ow table_header" colspan="10">
+        <span class="bordered-text">Continuous Variables</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-fymr col_name">Variable</td>
+      <td class="tg-7btt col_name">N</td>
+      <td class="tg-7btt col_name">Mean</td>
+      <td class="tg-7btt col_name" colspan="2">Std. Dev.</td>
+      <td class="tg-7btt col_name">Min</td>
+      <td class="tg-6ic8 col_name">Pctl. 25</td>
+      <td class="tg-6ic8 col_name">Pctl. 75</td>
+      <td class="tg-7btt col_name">Max</td>
+      <td class="tg-7btt col_name">Unit</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Total heating demand</td>
+      <td class="tg-dvpl">582,690</td>
+      <td class="tg-dvpl">19,049</td>
+      <td class="tg-dvpl" colspan="2">9,867</td>
+      <td class="tg-c3ow">818</td>
+      <td class="tg-dvpl">11,194</td>
+      <td class="tg-dvpl">24,990</td>
+      <td class="tg-dvpl">63,680</td>
+      <td class="tg-c3ow">kWh</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">
+        Total investment cost <br>from profitable renovations (TIC)
+      </td>
+      <td class="tg-dvpl">728,794</td>
+      <td class="tg-dvpl">205,322</td>
+      <td class="tg-dvpl" colspan="2">425,372</td>
+      <td class="tg-c3ow">0</td>
+      <td class="tg-dvpl">2,100</td>
+      <td class="tg-dvpl">186,600</td>
+      <td class="tg-dvpl">3,499,800</td>
+      <td class="tg-c3ow">DKK</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">
+        Total energy cost saved <br>from all renovations (TECS)
+      </td>
+      <td class="tg-dvpl">728,794</td>
+      <td class="tg-dvpl">35,684</td>
+      <td class="tg-dvpl" colspan="2">317,907</td>
+      <td class="tg-c3ow">0</td>
+      <td class="tg-dvpl">3,300</td>
+      <td class="tg-dvpl">21,996</td>
+      <td class="tg-dvpl">58,833,400</td>
+      <td class="tg-c3ow">DKK</td>
+    </tr>
+    
+    
+</tbody><thead>
+  <tr>
+    <th class="tg-c3ow table_header" colspan="10">
+      <span class="bordered-text">Categorical Variables  (Total = 728,794):</span>
+    </th>
+  </tr>
+</thead>
+
+    <tbody><tr>
+      <td class="tg-fymr col_name">Variable</td>
+      <td class="tg-fymr col_name">Category</td>
+      <td class="tg-7btt col_name">Frequency</td>
+      <td class="tg-7btt col_name">% of Total</td>
+      <td class="tg-0pky col_name"></td>
+      <td class="tg-0pky col_name"></td>
+      <td class="tg-fymr col_name">Variable</td>
+      <td class="tg-fymr col_name">Category</td>
+      <td class="tg-7btt col_name">Frequency</td>
+      <td class="tg-7btt col_name">% of Total</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Current Energy label</td>
+      <td class="tg-dvpl">A2020</td>
+      <td class="tg-dvpl">4,203</td>
+      <td class="tg-dvpl">0.58%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Roof and attic</td>
+      <td class="tg-dvpl">No</td>
+      <td class="tg-dvpl">283,067</td>
+      <td class="tg-dvpl">38.84%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">A2015</td>
+      <td class="tg-dvpl">17,405</td>
+      <td class="tg-dvpl">2.39%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">445,728</td>
+      <td class="tg-dvpl">61.16%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">A2010</td>
+      <td class="tg-dvpl">18,669</td>
+      <td class="tg-dvpl">2.56%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Walls</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">376,982</td>
+      <td class="tg-dvpl dash_line">51.73%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">B</td>
+      <td class="tg-dvpl">49,610</td>
+      <td class="tg-dvpl">6.81%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">351,813</td>
+      <td class="tg-dvpl">48.27%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">C</td>
+      <td class="tg-dvpl">196,686</td>
+      <td class="tg-dvpl">26.99%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Solarcells</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">404,859</td>
+      <td class="tg-dvpl dash_line">55.55%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">D</td>
+      <td class="tg-dvpl">234,511</td>
+      <td class="tg-dvpl">32.18%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">323,936</td>
+      <td class="tg-dvpl">44.45%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">E</td>
+      <td class="tg-dvpl">116,880</td>
+      <td class="tg-dvpl">16.04%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Heating system</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">390,441</td>
+      <td class="tg-dvpl dash_line">53.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">F</td>
+      <td class="tg-dvpl">56,392</td>
+      <td class="tg-dvpl">7.74%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">338,354</td>
+      <td class="tg-dvpl">46.43%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">G</td>
+      <td class="tg-dvpl">34,439</td>
+      <td class="tg-dvpl">4.73%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Water system</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">500,628</td>
+      <td class="tg-dvpl dash_line">68.69%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Label jump</td>
+      <td class="tg-dvpl dash_line">0</td>
+      <td class="tg-dvpl dash_line">277,548</td>
+      <td class="tg-dvpl dash_line">38.08%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">228,167</td>
+      <td class="tg-dvpl">31.31%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky" rowspan="2">(distance from current label to potential label from all renovations suggestions)</td>
+      <td class="tg-dvpl">1</td>
+      <td class="tg-dvpl">190,708</td>
+      <td class="tg-dvpl">26.17%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - Floor</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">428,249</td>
+      <td class="tg-dvpl dash_line">58.76%</td>
+    </tr>
+    <tr>
+      <td class="tg-dvpl">2</td>
+      <td class="tg-dvpl">130,226</td>
+      <td class="tg-dvpl">17.87%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">300,546</td>
+      <td class="tg-dvpl">41.24%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">3</td>
+      <td class="tg-dvpl">68,821</td>
+      <td class="tg-dvpl">9.44%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - windows and doors</td>
+      <td class="tg-dvpl  dash_line">No</td>
+      <td class="tg-dvpl dash_line">236,154</td>
+      <td class="tg-dvpl dash_line">32.4%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">4</td>
+      <td class="tg-dvpl">35,322</td>
+      <td class="tg-dvpl">4.85%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">492,641</td>
+      <td class="tg-dvpl">67.6%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">5</td>
+      <td class="tg-dvpl">15,867</td>
+      <td class="tg-dvpl">2.18%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">All suggestions - District heating</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">725,454</td>
+      <td class="tg-dvpl dash_line">99.54%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">6</td>
+      <td class="tg-dvpl">6,913</td>
+      <td class="tg-dvpl">0.95%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">3,341</td>
+      <td class="tg-dvpl">0.46%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">7</td>
+      <td class="tg-dvpl">2,278</td>
+      <td class="tg-dvpl">0.31%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">Energy label potential</td>
+      <td class="tg-dvpl dash_line">A2020</td>
+      <td class="tg-dvpl dash_line">21,892</td>
+      <td class="tg-dvpl dash_line">3%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">8</td>
+      <td class="tg-dvpl">1,112</td>
+      <td class="tg-dvpl">0.15%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky">(All renovations suggestions)</td>
+      <td class="tg-dvpl">A2015</td>
+      <td class="tg-dvpl">16,197</td>
+      <td class="tg-dvpl">2.22%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Boiler</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">568,984</td>
+      <td class="tg-dvpl dash_line">78.07%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">A2010</td>
+      <td class="tg-dvpl">91,938</td>
+      <td class="tg-dvpl">12.62%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">159,811</td>
+      <td class="tg-dvpl">21.93%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">B</td>
+      <td class="tg-dvpl">137,632</td>
+      <td class="tg-dvpl">18.88%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Wood Stove</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">620,750</td>
+      <td class="tg-dvpl dash_line">85.17%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">C</td>
+      <td class="tg-dvpl">222,217</td>
+      <td class="tg-dvpl">30.49%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">108,045</td>
+      <td class="tg-dvpl">14.83%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">D</td>
+      <td class="tg-dvpl">78,937</td>
+      <td class="tg-dvpl">10.83%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Oil stove</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">728,692</td>
+      <td class="tg-dvpl dash_line">99.99%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">E</td>
+      <td class="tg-dvpl">20,896</td>
+      <td class="tg-dvpl">2.87%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">103</td>
+      <td class="tg-dvpl">0.01%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">F</td>
+      <td class="tg-dvpl">7,097</td>
+      <td class="tg-dvpl">0.97%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Masonary heater</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">728,133</td>
+      <td class="tg-dvpl dash_line">99.91%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">G</td>
+      <td class="tg-dvpl">4,147</td>
+      <td class="tg-dvpl">0.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">662</td>
+      <td class="tg-dvpl">0.09%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">No label</td>
+      <td class="tg-dvpl">127,842</td>
+      <td class="tg-dvpl">17.54%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Fireplace</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">708,575</td>
+      <td class="tg-dvpl dash_line">97.23%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr">Energy source</td>
+      <td class="tg-dvpl dash_line">District heating</td>
+      <td class="tg-dvpl dash_line">428,738</td>
+      <td class="tg-dvpl dash_line">58.83%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">20,220</td>
+      <td class="tg-dvpl">2.77%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity</td>
+      <td class="tg-dvpl">40,563</td>
+      <td class="tg-dvpl">5.57%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Heat pump (85% threshold)</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">591,919</td>
+      <td class="tg-dvpl dash_line">81.22%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and&nbsp;&nbsp;district heating</td>
+      <td class="tg-dvpl">21,647</td>
+      <td class="tg-dvpl">2.97%</td>
+    </tr>
+    <tr>
+      <td class="tg-0pky"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">136,876</td>
+      <td class="tg-dvpl">18.78%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and natural gas</td>
+      <td class="tg-dvpl">15,354</td>
+      <td class="tg-dvpl">2.11%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Solar-cells (85% threshold)</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">660,667</td>
+      <td class="tg-dvpl dash_line">90.65%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and Oil</td>
+      <td class="tg-dvpl">10,561</td>
+      <td class="tg-dvpl">1.45%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">68,128</td>
+      <td class="tg-dvpl">9.35%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Electricity and wood pallets</td>
+      <td class="tg-dvpl">10,088</td>
+      <td class="tg-dvpl">1.38%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">Solar heating (85% threshold)</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">666,293</td>
+      <td class="tg-dvpl dash_line">91.42%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Natural Gas</td>
+      <td class="tg-dvpl">125,750</td>
+      <td class="tg-dvpl">17.25%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">62,502</td>
+      <td class="tg-dvpl">8.58%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Oil</td>
+      <td class="tg-dvpl">34,807</td>
+      <td class="tg-dvpl">4.78%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Heat pump</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">652,728</td>
+      <td class="tg-dvpl dash_line">89.56%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Other source combinations</td>
+      <td class="tg-dvpl">5,322</td>
+      <td class="tg-dvpl">0.73%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">76,067</td>
+      <td class="tg-dvpl">10.44%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Unknown</td>
+      <td class="tg-dvpl">6,767</td>
+      <td class="tg-dvpl">0.93%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Other</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">439,279</td>
+      <td class="tg-dvpl dash_line">60.27%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood</td>
+      <td class="tg-dvpl">2,176</td>
+      <td class="tg-dvpl">0.3%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">289,516</td>
+      <td class="tg-dvpl">39.73%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and District heating</td>
+      <td class="tg-dvpl">1,376</td>
+      <td class="tg-dvpl">0.19%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Solar heating</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">623,313</td>
+      <td class="tg-dvpl dash_line">85.53%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and Electricity</td>
+      <td class="tg-dvpl">17,160</td>
+      <td class="tg-dvpl">2.35%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">105,482</td>
+      <td class="tg-dvpl">14.47%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Wood and Pallets</td>
+      <td class="tg-dvpl">8,486</td>
+      <td class="tg-dvpl">1.16%</td>
+    </tr>
+    <tr>
+      <td class="tg-fymr">All suggestions - Ventilation</td>
+      <td class="tg-dvpl dash_line">No</td>
+      <td class="tg-dvpl dash_line">708,529</td>
+      <td class="tg-dvpl dash_line">97.22%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+    </tr>
+    <tr>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl">Yes</td>
+      <td class="tg-dvpl">20,266</td>
+      <td class="tg-dvpl">2.78%</td>
+      <td class="tg-0pky"></td>
+      <td class="tg-0pky"></td>
+      <td class="tg-fymr"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+      <td class="tg-dvpl"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- enter the title of the table - caption -->
+</div>
+</figure>
+</div>
+<p>Moreover, <a href="#fig-EPC_frequency_4x4km_gridcell" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> shows the distribution of the most frequent label across the whole country at a 4x4 km grid level. The figure shows that labels D and C are most dominant across the entire country. We see some cluster formations of lower energy efficiency labels on the main land, towards the North sea. Particularly around the towns Brande and Billund. Moreover, there are very little signs of dominant areas with low energy efficiency labels in the bigger cities such as Aarhus and Copenhagen. However, the clearest cluster formation is on the Islands called Langeland, Lolland, Falster and Møn where the most dominant labels are either G or F.</p>
+<p>In addition, the most frequent label given by the EPC experts as the energy label potential of a property, after implementing all renovation recommendation, is the label C, which represents more than 30% of our sample. Interestingly, about 20,5% of our sample, or 149,706 observations, receive the same label as they currently have. Meaning, that although some are given renovation recommendations that can improve their efficiency, that doesn’t mean that the improvements will lead to higher EPC label.</p>
+<p>Furthermore, close to 62% of our sample use either only district heating or district heating in combination with other sources. The second most common energy sources in our sample is Natural gas where close to 20% of our sample uses only natural gas or natural gas in combination with other sources.</p>
+</div>
+<div id="fig-EPC_frequency_4x4km_gridcell" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_frequency_4x4km_gridcell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2
+</figcaption>
+<div aria-describedby="fig-EPC_frequency_4x4km_gridcell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Most frequent EPC label across Denmark at 4x4 km grid level.</figcaption>
+<p><img src="../../assets/EPC_labels_4x4km_grid.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div class="text_footnote_fig_tables">
+<p>Note: “No obs.” category refers to places where we don not have any observations on.</p>
+</div>
+</div>
+</figure>
+</div>
+<div class="paratext">
+<p>Finally, the EPC data in combination with our housing data shows some interesting patterns. There is a clear relationship between EPC labels and the year properties are built, as shown in <a href="#fig-EPC_and_buildingConstruction" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>. From the period 1979-1998 there is a significant increase in higher energy efficient properties until the period 2014-2023 where the lowest energy efficiency obtained from newly constructed buildings is the label B. It’s worth pointing out that the construction periods used in this paper resembles the one used by \citet{jensen_market_2016 paper, with the minor difference that we add the new period 2014-2023 and the period older than 1890. According to \citet{jensen_market_2016, their construction periods reflect both building tradition and energy performance.</p>
+</div>
+<div id="fig-EPC_and_buildingConstruction" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_and_buildingConstruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3
+</figcaption>
+<div aria-describedby="fig-EPC_and_buildingConstruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>EPC labels across construction periods.</figcaption>
+<p><img src="../../assets/EPC_and_age_plot_withNumbers.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div class="text_footnote_fig_tables">
+<p>Note: Bars without the percentage written on them are below 10%.</p>
+</div>
+</div>
+</figure>
+</div>
+</section>
+<section id="text-classification" class="level2">
+<h2 class="anchored" data-anchor-id="text-classification">Text classification</h2>
+<div class="paratext">
+<p>In relation to <span class="citation" data-cites="wahlstrom_doing_2016">Wahlström (<a href="../references.html#ref-wahlstrom_doing_2016" role="doc-biblioref">2016</a>)</span> findings, home buyers might focus more on energy-efficient systems than energy-efficiency indicators such as energy consumption or EPC labels. Our data does account for the heating sources and certain energy systems but not for green energy systems such as solar cells, solar heating, or heat pumps. To account for this we utilise the technical description data from the EPC reports. The technical description is structured into predefined sub-chapters, each filled in with related descriptions made by the accredited experts conducting the reports. These sub-chapters include sections on whether the building has or should have solar cells, solar heating, and heat pumps. The issue, however, arises from the fact that the technical descriptions are written by different experts. This applies also to the descriptions of the renovation suggestions. What this means is that the text may vary significantly even though it conveys similar message, either directly or indirectly, of the property’s status regarding the systems. Take, for example, the following three possible comments given by experts regarding heat pumps from the technical descriptions:</p>
+<ul>
+<li>“Heat pumps are recommended to be installed.”</li>
+<li>“Installing heat pumps is not considered to add any additional benefits given the current system of property.”</li>
+<li>“Owners should think about installing heat pumps.”</li>
+</ul>
+<p>These three sentences all indicate in different ways that the properties do not have heat pumps installed. This makes it difficult to accurately assess the entire sample to identify properties with installed heat pumps, solar cells, or solar heating using only pattern matching with regular expressions. Instead, we address this challenge by performing a Natural Language Processing (NLP) task called text classification. <a href="#fig-TextClassification_workflow" class="quarto-xref">Figure&nbsp;<span>4.4</span></a> illustrates the workflow of training and building the text classification models. We define three independent binary classification problems, each for different green energy systems, i.e.&nbsp;one for predicting if the building has solar cells, another for solar heating, and the third for heat pumps. In this sup-chapter, the term “model” will refer to a combination of the classifier, feature engineering method, and sampling technique used. Over the course of the whole process, for each classification problem, we will compare three different classifiers in combination with 4 different sampling methods, three of which account for sample imbalance and 5 different feature engineering methods. However, there are a few exceptions to these combinations. Naive Bayes doesn’t run on negative values, and both embeddings have negative and positive input features. Therefore, we will not use embeddings when using Naive Bayes as a classifier. Additionally, we only run the SMOTE sampling method on a selected combination of classifiers and feature engineering methods because some combinations are too heavy to compute. All in all, we ended up making 150 different models, 50 models for each classification problem.</p>
+</div>
+<div id="fig-TextClassification_workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-TextClassification_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4
+</figcaption>
+<div aria-describedby="fig-TextClassification_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Workflow diagram for the process of building text classification models.</figcaption>
+<p><img src="../../assets/TextClassification_workflow_Main_Image.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</figure>
+</div>
+<div class="paratext">
+<p>All classification models for each of the three problems go through the same procedure as shown in Figure \ref{figure: workflow text classification models. We begin by splitting the technical description text for relevant chapters about the three heating systems. Then, we create unique training data for each classification problem, either manually or by analysing sentence patterns using NLP libraries such as Spacy and NLTK in Python (for Spacy library see: <span class="citation" data-cites="explosion_ai_spacys_developing_organization_spacy_2024">Explosion AI (spaCy’s developing organization) (<a href="../references.html#ref-explosion_ai_spacys_developing_organization_spacy_2024" role="doc-biblioref">2024</a>)</span> and for NLTK library see <span class="citation" data-cites="bird_nltk_2023">Bird and Loper (<a href="../references.html#ref-bird_nltk_2023" role="doc-biblioref">2023</a>)</span>). Next, we move on to pre-process the text by initially eliminating all duplicate entries. Removing duplicates is crucial to maintain accuracy in the modelling process, ensuring the models remains unbiased. Following this, we convert the text to lowercase and remove certain stop words using pre-defined stop-word list for the Danish language, provided by the NLTK library <span class="citation" data-cites="bird_nltk_2023">(<a href="../references.html#ref-bird_nltk_2023" role="doc-biblioref">Bird and Loper 2023</a>)</span>. Our final step in the pre-processing phase is to tokenize and lemmatize the text using the Spacy library. Tokenization involves splitting a sentence or a paragraph into words or tokens. According to <span class="citation" data-cites="jurafsky_speech_2024">Jurafsky and Martin (<a href="../references.html#ref-jurafsky_speech_2024" role="doc-biblioref">2024</a>)</span>, lemmatization is defined as:</p>
+<div class="paratext_quote">
+<p>“the task of determining that two words have the same root, despite their surface differences. For example, the words sang, sung, and sings are forms of the verb sing. The word sing is the common lemma of these words, and a lemmatizer maps from all of these to sing.” <span class="citation" data-cites="jurafsky_speech_2024">(<a href="../references.html#ref-jurafsky_speech_2024" role="doc-biblioref">Jurafsky and Martin 2024, 5</a>)</span></p>
+</div>
+<p>Ultimately, the purpose of lemmatising the text is to standardise word forms to make it more straightforward to analyse and compare text.</p>
+</div>
+<section id="feature-extraction-process" class="level3">
+<h3 class="anchored" data-anchor-id="feature-extraction-process">Feature Extraction process</h3>
+<div class="paratext">
+<p>Following the pre-processing step, we move to the feature engineering step, where we transform the text into numerical values so that the classifiers can quantify the data. There are many ways to convert text to numerical values. However, there is no one-size-fits-all consensus on which method to use. The same applies to choosing the classifier to predict the labels. It is a good practice to use different combinations of methods and determine the best approach by optimising for performance metrics like accuracy, recall, and precision, or a combination of these metrics, as we will elaborate on later in this chapter. For the feature engineering stage, we will use five different techniques, which are bag of words, term frequency-inverse document frequency (TF-IDF) with unigram (1-grams) at the word level, TF-IDF with bi-grams (2-grams) at the word level, pre-trained word2vec embeddings for danish language and pre-trained fasttext embedding for danish language. The bag of words method converts the text to a numerical vector where each value represents the frequency of each word in the document. TF-IDF is a method that measures the importance of a term in a document relative to the collection of terms in the document. To compute the TF-IDF, we begin by calculating the term frequency (TF) i.e.&nbsp;the frequency of a term in a document (e.g.&nbsp;the number of times a word appears in a paragraph) and divide it by the total number of terms in that document. Next, the inverse document frequency (IDF) is calculated, which measures how important the term is across the entire corpus. The IDF is calculated by taking the logarithm of the total number of documents divided by the number of documents containing the term. Finally, we multiply TF and IDF to get the TF-IDF score. A document can be defined as e.g.&nbsp;a single paragraph, unit of text or an article. In our case a document represents a unit of text. The term in a document can be defined as a word or character. In this study, we will only be using word-level TF-IDF due to computation performance. Moreover, we use TF-IDF on both uni-gram and bi-gram. With uni-gram, the term is defined as a single word, but with bi-gram, we use a combination of 2 words.</p>
+<p>We will also use pre-trained word2vec and fasttext embedding models for the Danish language. The main distinction between these two pre-trained embeddings and the other methods mentioned earlier is that these embeddings contain vectors with semantic attributes. Word embeddings map words to points in multidimensional semantic space and are derived from the distribution patterns of surrounding words. The word2vec model that we use was compiled by <span class="citation" data-cites="sorensen_word2vec-model_nodate">Sørensen (<a href="../references.html#ref-sorensen_word2vec-model_nodate" role="doc-biblioref">n.d.</a>)</span> and uses the skip-gram algorithm with a window spanning 5 words around the central word. The model was trained on data consisting of more than 1 billion words, resulting in 500-dimensional word embedding vectors <span class="citation" data-cites="sorensen_word2vec-model_nodate">(<a href="../references.html#ref-sorensen_word2vec-model_nodate" role="doc-biblioref">Sørensen n.d.</a>)</span>. The pre-trained fasttext embedding was created by <span class="citation" data-cites="grave2018learning">Grave et al. (<a href="../references.html#ref-grave2018learning" role="doc-biblioref">2018</a>)</span>. The fasttext model was trained on data from Common Crawl and Wikipedia, leveraging the Continuous Bag of Words (CBOW) algorithm and integrating character level n-grams of length 5 to generate 300-dimensional vectors.</p>
+</div>
+</section>
+<section id="binary-models" class="level3">
+<h3 class="anchored" data-anchor-id="binary-models">Binary models</h3>
+<div class="paratext">
+<p>The next step is choosing the classifier to predict the labels. There are many different machine learning algorithms that can be used as a classifier. However, many differ in accuracy or precision. In this study, we will use Naïve Bayes, logistic regression, and linear support vector machines (SVM). We chose Naive Bayes and logistic regression because they are simplistic and efficient. They offer clear interpretability because both can be interpreted in terms of probabilities, and they are not computationally complex. With that being said, these models have also been shown to either outperform or maintain a similar level of accuracy compared to more complex models (see e.g.&nbsp;studies by <span class="citation" data-cites="shah_comparative_2020">Shah et al. (<a href="../references.html#ref-shah_comparative_2020" role="doc-biblioref">2020</a>)</span>). Additionally, we will also use a relatively more complex model called support vector machines (SVM). SVM is a popular choice and has shown great results (see e.g.&nbsp;studies by <span class="citation" data-cites="sun_strategies_2009">Sun, Lim, and Liu (<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">2009</a>)</span>, wahba_comparison_2022). All classifiers in this study were implemented using the Scikit-learn library in Python.</p>
+</div>
+<div id="tbl-TextClassification_trainingData" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-TextClassification_trainingData-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.2: Training data for each classification problem
+</figcaption>
+<div aria-describedby="tbl-TextClassification_trainingData-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Classification problem</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="even">
+<td>Solar-cells</td>
+<td>7,915</td>
+<td>26,943</td>
+</tr>
+<tr class="odd">
+<td>Solar-heating</td>
+<td>4,203</td>
+<td>37,672</td>
+</tr>
+<tr class="even">
+<td>Heat pump</td>
+<td>9,389</td>
+<td>65,491</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="paratext">
+<p><a href="#tbl-TextClassification_trainingData" class="quarto-xref">Table&nbsp;<span>4.2</span></a> illustrates the number of observations for each category (i.e.&nbsp;True or False) in the training data. From the table we can see that our training data is relatively imbalanced. In a binary classification setting, a dataset is considered imbalanced if there are significantly fewer observations in one category compared to the other category <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun, Lim, and Liu 2009</a>)</span>. Many industries, including financial management, frequently deal with imbalanced data sets, e.g.&nbsp;for fraud detection. Therefore, imbalanced data is not unusual. However, many of the machine learning algorithms used for classification problems are based on the assumption that both labels have similar misclassification costs <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun, Lim, and Liu 2009</a>)</span>. Therefore, predicted labels are assumed to be based on a balanced distribution of labels. This can lead to the classifier used becoming biased towards the majority class and giving poor predictions for the minority class. <span class="citation" data-cites="jurafsky_speech_2024">Jurafsky and Martin (<a href="../references.html#ref-jurafsky_speech_2024" role="doc-biblioref">2024</a>)</span> To account for this, we will utilise three common ways, which are an over-sampling method, an under-sampling method, and Synthetic Minority Over-sampling Technique (SMOTE). The over-sampling method involves randomly picking observations from the minority class and duplicating them until the observations between the two classes are balanced. Similar to over-sampling, under-sampling randomly removes observations in the majority class until both classes have the same amount of observations.</p>
+<p>Finally, The SMOTE method is a version of the over-sampling technique where we create synthetic observations using the features from observations in the minority class. This is done by selecting random observations in the minority class and identifying k-nearest neighbouring observations. The neighbours are other observations from the minority class that is closest to the observation selected in terms of feature values. We select a random number between 0 and 1 as well as a random neighbour. Then, we calculate the difference between the neighbour and the observations selected and multiply that by a random number. Finally, we add the result to the selected observation, making the synthetic observation a blend of the neighbouring observation and the selected observation. In this study, when using SMOTE, we will be using five neighbours for each selected observation. All sampling methods are applied within the cross-validation process on the folds that are treated as the training data <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun, Lim, and Liu 2009</a>)</span>.</p>
+<p>% Model training and valuation : cross-validation and grid search During the training process, we use the 5-fold cross-validation and GridSearchCV function from the scikit-learn library in Python (see: <span class="citation" data-cites="scikit-learn">Pedregosa et al. (<a href="../references.html#ref-scikit-learn" role="doc-biblioref">2011</a>)</span> for more details on scikit-learn library) to optimise and fine-tune the models. Hyperparameters are configurations that are used to adjust the optimization of a classification algorithm. In the Naive Bayes classifier, we tune different levels of the hyperparameter called alpha, which is a laplace smoothing parameter to handle zero probabilities. In logistic regression, we tune different levels of the hyperparameter C which is the inverse of the regularisation strength. Hyperparameter C is a regularization method that prevents the model from overfitting by adding a penalty to the model’s complexity. Similarly, we tune the hyperparameter C in the SVM classifier. During the training process, GridSearchCV conducts a search over specified hyperparameter values. Each hyperparameter configuration is validated via 5-fold cross-validation, where the labelled data is randomly split into five groups. Then, one group is held as a hold-out group, and the model is trained on the remaining groups, which we then use to predict the labels on the hold-out group. This process is repeated five times, ensuring each group serves as a validation set once. Finally, the best hyperparameter combination is identified based on the highest average precision value across the five folds. After training all 150 models and determining their best hyperparameters, we evaluate their performance based on accuracy, recall, precision, and F1 score. Subsequently, we select the models for each classification problem by considering both the highest accuracy and achieving the best balance between recall and precision.</p>
+</div>
+</section>
+<section id="model-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="model-evaluation">Model Evaluation</h3>
+<div class="paratext">
+<p>Accuracy represents the ratio between correctly predicted observations and the total number of observations. The mathematical expression for accuracy is:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}
+\end{equation}\]</span></p>
+<p>where TP denotes True positive observations, TN denotes true negative observations, while FP and FN represent False positive and false negative observations, respectively. Recall measures the ratio between correctly predicted positive observations to the total number of positive observations. It measures how well the model can correctly identify positive observations. By maximizing recall we want to capture as many positive observations as possible. The mathematical expression for recall is:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+\end{equation}\]</span></p>
+<p>Precision represents the ratio between the correctly predicted observations and all observations identified as positive. In other words, it tells us how many of the observations predicted as positive labels are truly positive. By maximizing Precision we focus on minimizing false positives. The mathematical expression for precision is:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Precision} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{FP}}
+\end{equation}\]</span></p>
+<p>Finally, the F1 score is the harmonic mean of recall and precision. It gives a balanced evaluation of a classifier’s performance by accounting for both false positives and false negatives.</p>
+<p>After running all the steps using different model specifications for all three classification problems, we found that logistic regression and SVM have the best performance in terms of both accuracy and balance between recall and precision. The differences in F1 score and accuracy between the two classifiers are marginal, regardless of the feature engineering methods or sampling approach used for these classifiers. The performance differences between the two classifiers using different sampling techniques are also marginal. Interestingly, models that use bi-gram TF-IDF at the word level outperform all other feature extraction methods in terms of recall, precision, and accuracy, including pre-trained embeddings. The text in all three classification problems tends to be relatively small and straightforward, favouring the simplicity and interpretability of TF-IDF. While pre-trained embeddings are effective at capturing semantic connections, they may not provide significant benefits for the simple text used in this study.</p>
+<p>By applying Occam’s razor principle, we select logistic regression as the classifier for all three classification problems, employing bi-gram TF-IDF at the word level as the feature engineering method and opting not to use any sampling method.</p>
+<p>Occam’s razor principle, which states that</p>
+<div class="paratext_quote">
+<div class="tiny_quote">
+<p>“plurality should not be posited without necessity.” <span class="citation" data-cites="brian_duignan_occams_2024">(<a href="../references.html#ref-brian_duignan_occams_2024" role="doc-biblioref">Brian Duignan 2024, para. 1</a>)</span></p>
+</div>
+</div>
+<p>suggests that when dealing with competing hypotheses, the one with fewer assumptions should be preferred. In simpler terms, it implies that the simplest explanation is usually the correct one. We chose logistic regression for its efficiency, interpretability, and computational efficiency. Furthermore, logistic regression provides probabilities of the outcome, allowing us to conduct robustness tests by varying threshold levels from the main model. The main model systematically uses the threshold of 0.5 to classify observations into one of the two classes. However, we will use 85% as our main threshold. If the predicted probability is greater than or equal to 85%, the observation is assigned to the positive class; otherwise, it is classified to the negative class. Moreover, we use the bi-gram TF-IDF word-level method as it outperforms all other methods.</p>
+<p>Finally, we chose not to use any sampling methods. As stated earlier, sampling methods account for class imbalances and help detect minority classes. However, our results indicate no significant improvement from using sampling methods. Moreover, neither the over-sampling nor the SMOTE methods used in this study add any valuable information. Furthermore, when using SMOTE there is a risk that the synthetic observations do not resemble the minority class. Additionally, the under-sampling method comes at the great cost of losing valuable information. In relation to that, <span class="citation" data-cites="sun_strategies_2009">Sun, Lim, and Liu (<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">2009</a>)</span> compared various sampling methods to address imbalanced data. They found that sampling methods did not improve the performance of their classifier, and they argued that one should focus on setting an appropriate threshold rather than using sampling methods.</p>
+<p>Details on the final text classification models used, as well as the number of observations per category for each classification problem, are shown in <a href="#tbl-TextClassification_mainModels" class="quarto-xref">Table&nbsp;<span>4.3</span></a>. All three trained models achieved over 90% accuracy and a strong balance between recall and precision. <a href="../../quarto_files/appendix.html#c.-text-classification-models-all-training-results">Appendix C</a> shows the training results of all 150 text classification models.</p>
+</div>
+<div id="tbl-TextClassification_mainModels" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-TextClassification_mainModels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.3: Main text classification models
+</figcaption>
+<div aria-describedby="tbl-TextClassification_mainModels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="border_table">
+
+<table class="tg-textclassification caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th class="tg-amwm" data-quarto-table-cell-role="th">Variable</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Threshold</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">True</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">False</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Classifier</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Feature Engineering<br>
+Method</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Sampling<br>
+method</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Recall</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Precision</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">F1 score</th>
+<th class="tg-amwm" data-quarto-table-cell-role="th">Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="tg-1wig">Solar cells</td>
+<td class="tg-baqh">85%</td>
+<td class="tg-baqh">68,128</td>
+<td class="tg-baqh">660,666</td>
+<td class="tg-baqh">Logistic<br>
+Regression</td>
+<td class="tg-baqh">TF-IDF bi-gram,<br>
+word level</td>
+<td class="tg-baqh">No sampling</td>
+<td class="tg-baqh">0.9845</td>
+<td class="tg-baqh">0.9861</td>
+<td class="tg-baqh">0.9853</td>
+<td class="tg-baqh">0.9881</td>
+</tr>
+<tr class="even">
+<td class="tg-1wig">Solar heating</td>
+<td class="tg-baqh">85%</td>
+<td class="tg-baqh">62,502</td>
+<td class="tg-baqh">666,292</td>
+<td class="tg-baqh">Logistic<br>
+Regression</td>
+<td class="tg-baqh">TF-IDF bi-gram,<br>
+word level</td>
+<td class="tg-baqh">No sampling</td>
+<td class="tg-baqh">0.9564</td>
+<td class="tg-baqh">0.9797</td>
+<td class="tg-baqh">0.9679</td>
+<td class="tg-baqh">0.9936</td>
+</tr>
+<tr class="odd">
+<td class="tg-1wig">Heat pumps</td>
+<td class="tg-baqh">85%</td>
+<td class="tg-baqh">136,876</td>
+<td class="tg-baqh">591,918</td>
+<td class="tg-baqh">Logistic<br>
+Regression</td>
+<td class="tg-baqh">TF-IDF bi-gram,<br>
+word level</td>
+<td class="tg-baqh">No sampling</td>
+<td class="tg-baqh">0.9700</td>
+<td class="tg-baqh">0.9856</td>
+<td class="tg-baqh">0.9787</td>
+<td class="tg-baqh">0.9947</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+</figure>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bird_nltk_2023" class="csl-entry" role="listitem">
+Bird, Steven, and Edward Loper. 2023. <span>“<span>NLTK</span> (<span>Natural</span> <span>Language</span> <span>Toolkit</span>).”</span> <em>NLTK (Natural Language Toolkit)</em>. <a href="https://www.nltk.org/">https://www.nltk.org/</a>.
+</div>
+<div id="ref-boligejer_boligejer_nodate" class="csl-entry" role="listitem">
+Boligejer. n.d. <span>“Boligejer.”</span> Accessed July 28, 2023. <a href="https://boligejer.dk/">https://boligejer.dk/</a>.
+</div>
+<div id="ref-brian_duignan_occams_2024" class="csl-entry" role="listitem">
+Brian Duignan. 2024. <span>“Occam’s Razor <span></span> <span>Origin</span>, <span>Examples</span>, &amp; <span>Facts</span> <span></span> <span>Britannica</span>.”</span> <a href="https://www.britannica.com/topic/Occams-razor">https://www.britannica.com/topic/Occams-razor</a>.
+</div>
+<div id="ref-explosion_ai_spacys_developing_organization_spacy_2024" class="csl-entry" role="listitem">
+Explosion AI (spaCy’s developing organization). 2024. <span>“<span class="nocase">spaCy</span>.”</span> <em>spaCy · Industrial-Strength Natural Language Processing in Python</em>. <a href="https://spacy.io/">https://spacy.io/</a>.
+</div>
+<div id="ref-grave2018learning" class="csl-entry" role="listitem">
+Grave, Edouard, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, and Tomas Mikolov. 2018. <span>“Learning Word Vectors for 157 Languages.”</span> In <em>Proceedings of the International Conference on Language Resources and Evaluation (LREC 2018)</em>.
+</div>
+<div id="ref-hoffstaetter_pytesseract_2024" class="csl-entry" role="listitem">
+Hoffstaetter, Samuel. 2024. <span>“Pytesseract.”</span> <a href="https://github.com/h/pytesseract">https://github.com/h/pytesseract</a>.
+</div>
+<div id="ref-jurafsky_speech_2024" class="csl-entry" role="listitem">
+Jurafsky, Daniel, and James Martin. 2024. <em>Speech and <span>Language</span> <span>Processing</span>: <span>An</span> <span>Introduction</span> to <span>Natural</span> <span>Language</span> <span>Processing</span>, <span>Computational</span> <span>Linguistics</span>, and <span>Speech</span> <span>Recognition</span></em>. 3rd ed. <a href="https://web.stanford.edu/~jurafsky/slp3/">https://web.stanford.edu/~jurafsky/slp3/</a>.
+</div>
+<div id="ref-klima-_energi-_og_forsyningsministeriet_bekendtgorelse_2021" class="csl-entry" role="listitem">
+Klima-, Energi- og Forsyningsministeriet. 2021. <span>“Bekendtgørelse Om <span>Håndbog</span> for <span>Energikonsulenter</span> (<span>HB2021</span>).”</span> <a href="https://www.retsinformation.dk/eli/lta/2021/939">https://www.retsinformation.dk/eli/lta/2021/939</a>.
+</div>
+<div id="ref-scikit-learn" class="csl-entry" role="listitem">
+Pedregosa, F., G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, et al. 2011. <span>“Scikit-Learn: Machine Learning in <span>P</span>ython.”</span> <em>Journal of Machine Learning Research</em> 12: 2825–30.
+</div>
+<div id="ref-shah_comparative_2020" class="csl-entry" role="listitem">
+Shah, Kanish, Henil Patel, Devanshi Sanghvi, and Manan Shah. 2020. <span>“A <span>Comparative</span> <span>Analysis</span> of <span>Logistic</span> <span>Regression</span>, <span>Random</span> <span>Forest</span> and <span>KNN</span> <span>Models</span> for the <span>Text</span> <span>Classification</span>.”</span> <em>Augmented Human Research</em> 5 (1): 12. <a href="https://doi.org/10.1007/s41133-020-00032-0">https://doi.org/10.1007/s41133-020-00032-0</a>.
+</div>
+<div id="ref-sorensen_word2vec-model_nodate" class="csl-entry" role="listitem">
+Sørensen, Nicolai Hartvig. n.d. <span>“Word2vec-Model for <span>Danish</span>.”</span> <em>Society of Danish Language and Literature</em>. Accessed May 21, 2024. <a href="https://korpus.dsl.dk/resources/details/word2vec.html">https://korpus.dsl.dk/resources/details/word2vec.html</a>.
+</div>
+<div id="ref-sparenergi_sparenergi_2015" class="csl-entry" role="listitem">
+Sparenergi. 2015. <span>“Sparenergi.”</span> <em>Energistyrelsen</em>. <a href="https://old.sparenergi.dk/forbruger/vaerktoejer/find-dit-energimaerke">https://old.sparenergi.dk/forbruger/vaerktoejer/find-dit-energimaerke</a>.
+</div>
+<div id="ref-sun_strategies_2009" class="csl-entry" role="listitem">
+Sun, Aixin, Ee-Peng Lim, and Ying Liu. 2009. <span>“On Strategies for Imbalanced Text Classification Using <span>SVM</span>: <span>A</span> Comparative Study.”</span> <em>Decision Support Systems</em>, Information product markets, 48 (1): 191–201. <a href="https://doi.org/10.1016/j.dss.2009.07.011">https://doi.org/10.1016/j.dss.2009.07.011</a>.
+</div>
+<div id="ref-noauthor_tesseract_2024" class="csl-entry" role="listitem">
+<span>“Tesseract.”</span> 2024. tesseract-ocr. <a href="https://github.com/tesseract-ocr/tesseract">https://github.com/tesseract-ocr/tesseract</a>.
+</div>
+<div id="ref-wahlstrom_doing_2016" class="csl-entry" role="listitem">
+Wahlström, Marie H. 2016. <span>“Doing Good but Not That Well? <span>A</span> Dilemma for Energy Conserving Homeowners.”</span> <em>Energy Economics</em> 60 (November): 197–205. <a href="https://doi.org/10.1016/j.eneco.2016.09.025">https://doi.org/10.1016/j.eneco.2016.09.025</a>.
+</div>
+</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
