@@ -47,7 +47,7 @@ The majority of the information of interest is in text format for all EPC design
 
 ::: paratext
 
-To extract the EPC labels in Design 1 we train and run an optical character recognition (OCR) model to identify the registered EPC labels of buildings. To train and run an OCR algorithm, we used the library Pytesseract (see: @hoffstaetter_pytesseract_2024), which is a wrapper for Google’s Tesseract-OCR Engine (see: @noauthor_tesseract_2024). This is an open-source tool developed by Google that converts images containing text to machine-readable text data. The engine is pre-trained and employs advanced machine-learning algorithms that can work out of the box for up to 100 languages. We train the engine on 950 images to fine-tune it towards our data, and then we employ the Legacy Tesseract model on design 1 reports. In design 3, we used colour matching to identify the labels by finding the unique RGB (Red, Green, Blue) code of the pixels of each EPC label image; we could determine both the current EPC label and the potential EPC label of the building after implementing either profitable or all renovations. This approach was not used for Design 1 because the images in those reports were designed in a way that made it too difficult to accurately identify the labels. Additionally, design 1 includes three minor layout changes over the time period that affected the positioning and the colours of the images, further complicating accurate label identification using colour matching.
+To extract the EPC labels in Design 1 we train and run an optical character recognition (OCR) model to identify the registered EPC labels of buildings. To train and run an OCR algorithm, we used the library Pytesseract (see: @hoffstaetter_pytesseract_2024), which is a wrapper for Google’s Tesseract-OCR Engine (see: @noauthor_tesseract_2024). This is an open-source tool developed by Google that converts images containing text to machine-readable text data. The engine is pre-trained and employs advanced machine-learning algorithms that can work out of the box for up to 100 languages. We train the engine on 950 images to fine-tune it towards our data, and then we employ the Legacy Tesseract model on design 1 reports. In design 3, we used color matching to identify the labels by finding the unique RGB (Red, Green, Blue) code of the pixels of each EPC label image; we could determine both the current EPC label and the potential EPC label of the building after implementing either profitable or all renovations. This approach was not used for Design 1 because the images in those reports were designed in a way that made it too difficult to accurately identify the labels. Additionally, design 1 includes three minor layout changes over the time period that affected the positioning and the colours of the images, further complicating accurate label identification using colour matching.
 
 :::
 
@@ -759,12 +759,18 @@ The next step is choosing the classifier to predict the labels. There are many d
 
 ::: {#tbl-TextClassification_trainingData}
 ```{=html}
-<table>
+
+<div class="border_table_training">
+<table class = "training_data">
+<thead>
     <tr>
-        <td>Classification problem</td>
-        <td>True</td>
-        <td>False</td>
+        <th>Classification problem</th>
+        <th>True</th>
+        <th>False</th>
     </tr>
+</thead>
+
+<tbody>
     <tr>
         <td>Solar-cells</td>
         <td>7,915</td>
@@ -780,7 +786,10 @@ The next step is choosing the classifier to predict the labels. There are many d
         <td>9,389</td>
         <td>65,491</td>
     </tr>
+</tbody>
 </table>
+</div>
+
 ```
 
 Training data for each classification problem

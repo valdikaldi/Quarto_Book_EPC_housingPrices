@@ -41,6 +41,8 @@ Finally, we identified observations with potential data errors, where the EPC va
 
 ::: {#tbl-housing_summarystatistic}
 ```{=html}
+<div class="border_table">
+
 <table class="tg">
 <colgroup>
     <col style="width: 250px;">
@@ -732,7 +734,10 @@ Finally, we identified observations with potential data errors, where the EPC va
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
   </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+
 ```
 <!-- enter the title of the table - caption -->
 

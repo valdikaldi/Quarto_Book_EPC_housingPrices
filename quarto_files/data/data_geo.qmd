@@ -1,9 +1,306 @@
 ---
 # title: "About"
+
+tbl-cap-location: top
+fig-cap-location: top
+
+css: "../../additional_styles/styles_chapter4_3_data.css"
+
+sidebar:
+    logo: "../../assets/cover.jpg"
+    
+format:
+  html:
+    include-in-header:
+      - text: |
+         <link rel="icon" type="image/png" href="../../assets/cover.jpg">
 ---
 
 ## 4.3 Geographical data
 
-```{r}
-1 + 1
+
+\subsection{Geographical data}
+
+::: paratext
+To control for surrounding characteristics of properties, i.e. neighbourhood characteristics, we construct variables from geographical data. We begin by constructing dummy variables characterising the area surrounding the properties, such as highways, train tracks, forests and the ocean. These dummy variables are constructed by creating a 100 meter buffer, i.e., a circle with a radius of 100 meters is created around the coordinates of properties, and if a point of an object of interest falls within the buffer zone, then the dummy variable gets the value 1 else 0. Note that the coordinates of the properties were obtained when scraping the @boliga_boliga_nodate website. Defining the area of properties, i.e., neighbourhoods can be a bit tricky as there is no consensus on the definition of what constitutes a neighbourhood in terms of meters or kilometres. Throughout this paper, we will use a 100-meter buffer size, and we will also use different buffer sizes as robustness tests. To create these dummy variables, we use the Geofabrik OSM dataset for Denmark, which is compiled data from OpenStreetMap [@geofabrik_gmbh_denmark_nodate].
+Next, we calculate the road distance in minutes from the capital, i.e. Copenhagen, and the radius of the surface area from a 30-minute isochrone with a car of each property.
+
+An isochrone represents a surface area which is reachable from a given point within a specific time threshold. The intuition of taking the radius from the isochrone area is to construct a simple proxy variable to represent accessibility. We took inspiration from @biazzo_general_2019 when creating our accessibility variable. The accessibility variable used in this paper will therefore represent the radius of the surface area for each dwelling at a 30 minute time threshold with a car. In relation to this, @wahlstrom_doing_2016 used an accessibility index to account for potential spatial auto-correlations, however, they compute their accessibility as the travel time between municipalities with respect to the population of municipality of destination.
+
+To compute both our accessibility variable and the road travel time to Copenhagen in minutes for each dwelling, we utilised a docker image of the Valhalla Route Engine [@valhalla_developers_valhalla_nodate]. Valhalla, an open-source route engine, provides a range of tools for geographical data analysis, including the calculation of isochrones for points of interest and the travel time in minutes between two points [@valhalla_developers_valhalla_nodate]. In addition, we incorporate the average population density of Denmark at a 1km grid level. Eurostat provides access to population density at grid level for four census years: 2006, 2011, 2018 and 2021 [@eurostat_population_2023}. We aggregate the data from all census years, resulting in our population density variable representing the average population density at a 1 km grid level over the specified period.
+
+Table @tbl-geo_summarystatistic displays summary statistics of the geographical data utilised in our analysis. All the categorical variables i.e. the buffers, are based on a 100 meter radius. Among the insights the summary statistics conveys is the distance to the capital. The furthest distance from the capital that we calculate using Valhalla route engine is approximately 410 minutes or 6,83 hours.  This point is located in the Island called Bornholm. The reason it is so far is because it involves driving to the harbour in Rønne on Bornholm, taking a ferry with the car to a town called Køge, and then driving from Køge to Copenhagen.
+
+:::
+
+<!-- SUMMARY STATISTICS TABLE ADD HERE -->
+
+
+::: {#tbl-geo_summarystatistic}
+
+```{=html}
+
+<div class="border_table">
+
+<table class="tg">
+
+<thead>
+  <tr>
+      <th class="tg-c3ow table_header" colspan="10">
+        <span class="bordered-text">Continuous Variables</span>
+      </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr col_name">Variable</td>
+    <td class="tg-7btt col_name">N</td>
+    <td class="tg-7btt col_name">Mean</td>
+    <td class="tg-7btt1 col_name" colspan="2">Std. Dev.</td>
+    <td class="tg-7btt col_name">Min</td>
+    <td class="tg-6ic8 col_name">Pctl. 25</td>
+    <td class="tg-6ic8 col_name">Pctl. 75</td>
+    <td class="tg-7btt col_name">Max</td>
+    <td class="tg-7btt col_name">Unit</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Isochrone radius</td>
+    <td class="tg-dvpl">728,795</td>
+    <td class="tg-dvpl">23,502.81</td>
+    <td class="tg-dvpl" colspan="2">4,582.44</td>
+    <td class="tg-dvpl">471.5563</td>
+    <td class="tg-dvpl"> 20,640.85</td>
+    <td class="tg-dvpl">26,798</td>
+    <td class="tg-dvpl"> 35,168.41</td>
+    <td class="tg-c3ow">Meters</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Distance to capital</td>
+    <td class="tg-dvpl">728,795</td>
+    <td class="tg-dvpl">105.315</td>
+    <td class="tg-dvpl" colspan="2">79.91995</td>
+    <td class="tg-dvpl"> 0.8377333</td>
+    <td class="tg-dvpl">26.19262</td>
+    <td class="tg-dvpl"> 165.0298</td>
+    <td class="tg-dvpl"> 409.5823</td>
+    <td class="tg-c3ow">Minutes</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Avarage population density</td>
+    <td class="tg-dvpl"> 728,795</td>
+    <td class="tg-dvpl">2,768.03</td>
+    <td class="tg-dvpl" colspan="2">3,818.33</td>
+    <td class="tg-dvpl">0.25</td>
+    <td class="tg-dvpl"> 555.5</td>
+    <td class="tg-dvpl">3,128.25</td>
+    <td class="tg-dvpl"> 20,820.5</td>
+    <td class="tg-c3ow">Number of <br>people</td>
+  </tr>
+
+<thead>
+  <tr>
+    <th class="tg-c3ow table_header" colspan="10">
+      <span class="bordered-text">Categorical Variables  (Total = 728,795):</span>
+    </th>
+  </tr>
+</thead>
+
+  <tr>
+    <td class="tg-fymr col_name">Variable</td>
+    <td class="tg-fymr col_name">Category</td>
+    <td class="tg-7btt col_name">Frequency</td>
+    <td class="tg-7btt col_name">% of Total</td>
+    <td class="tg-0pky col_name"></td>
+    <td class="tg-fymr col_name" colspan="2">Variable</td>
+    <td class="tg-fymr col_name">Category</td>
+    <td class="tg-7btt col_name">Frequency</td>
+    <td class="tg-7btt col_name">% of Total</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Forest buffer</td>
+    <td class="tg-dvpl">No</td>
+    <td class="tg-dvpl">577,986</td>
+    <td class="tg-dvpl">79%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr" colspan="2">River, stream or canal buffer</td>
+    <td class="tg-dvpl">No</td>
+    <td class="tg-dvpl">716,546</td>
+    <td class="tg-c3ow">98%</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">150,809</td>
+    <td class="tg-dvpl">21%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">12,249</td>
+    <td class="tg-c3ow">2%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Park buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">606,904</td>
+    <td class="tg-dvpl dash_line">83%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr" colspan="2">Meadow, scrub or heath buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">652,828</td>
+    <td class="tg-c3ow dash_line">90%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">121,891</td>
+    <td class="tg-dvpl">17%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">75,967</td>
+    <td class="tg-c3ow">10%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Industrial buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">697,456</td>
+    <td class="tg-dvpl dash_line">96%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr" colspan="2">Motorway, trunk or primary road buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">709,086</td>
+    <td class="tg-c3ow dash_line">97%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">31,339</td>
+    <td class="tg-dvpl">4%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">19,709</td>
+    <td class="tg-c3ow">3%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Nature reserve buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">723,386</td>
+    <td class="tg-dvpl dash_line">99%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr" colspan="2">Rail- or light railway buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">692,909</td>
+    <td class="tg-c3ow dash_line">95%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">5,409</td>
+    <td class="tg-dvpl">1%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">35,886</td>
+    <td class="tg-c3ow">5%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Wetland buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">723,416</td>
+    <td class="tg-dvpl dash_line">99%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr" colspan="2">Water or resovoir buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">669,677</td>
+    <td class="tg-c3ow dash_line">92%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">5,379</td>
+    <td class="tg-dvpl">1%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">59,118</td>
+    <td class="tg-c3ow">8%</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Ocean or beach buffer</td>
+    <td class="tg-dvpl dash_line">No</td>
+    <td class="tg-dvpl dash_line">710,742</td>
+    <td class="tg-dvpl dash_line">98%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr"></td>
+    <td class="tg-dvpl">Yes</td>
+    <td class="tg-dvpl">18,053</td>
+    <td class="tg-dvpl">2%</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-c3ow"></td>
+  </tr>
+</tbody>
+</table>
+</div>
 ```
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -346,7 +346,7 @@ Figure&nbsp;4.1
 <section id="extracting-epc-labels" class="level2">
 <h2 class="anchored" data-anchor-id="extracting-epc-labels">Extracting EPC labels</h2>
 <div class="paratext">
-<p>To extract the EPC labels in Design 1 we train and run an optical character recognition (OCR) model to identify the registered EPC labels of buildings. To train and run an OCR algorithm, we used the library Pytesseract (see: <span class="citation" data-cites="hoffstaetter_pytesseract_2024">Hoffstaetter (<a href="../references.html#ref-hoffstaetter_pytesseract_2024" role="doc-biblioref">2024</a>)</span>), which is a wrapper for Google’s Tesseract-OCR Engine (see: <span class="citation" data-cites="noauthor_tesseract_2024"><span>“Tesseract”</span> (<a href="../references.html#ref-noauthor_tesseract_2024" role="doc-biblioref">2024</a>)</span>). This is an open-source tool developed by Google that converts images containing text to machine-readable text data. The engine is pre-trained and employs advanced machine-learning algorithms that can work out of the box for up to 100 languages. We train the engine on 950 images to fine-tune it towards our data, and then we employ the Legacy Tesseract model on design 1 reports. In design 3, we used colour matching to identify the labels by finding the unique RGB (Red, Green, Blue) code of the pixels of each EPC label image; we could determine both the current EPC label and the potential EPC label of the building after implementing either profitable or all renovations. This approach was not used for Design 1 because the images in those reports were designed in a way that made it too difficult to accurately identify the labels. Additionally, design 1 includes three minor layout changes over the time period that affected the positioning and the colours of the images, further complicating accurate label identification using colour matching.</p>
+<p>To extract the EPC labels in Design 1 we train and run an optical character recognition (OCR) model to identify the registered EPC labels of buildings. To train and run an OCR algorithm, we used the library Pytesseract (see: <span class="citation" data-cites="hoffstaetter_pytesseract_2024">Hoffstaetter (<a href="../references.html#ref-hoffstaetter_pytesseract_2024" role="doc-biblioref">2024</a>)</span>), which is a wrapper for Google’s Tesseract-OCR Engine (see: <span class="citation" data-cites="noauthor_tesseract_2024"><span>“Tesseract”</span> (<a href="../references.html#ref-noauthor_tesseract_2024" role="doc-biblioref">2024</a>)</span>). This is an open-source tool developed by Google that converts images containing text to machine-readable text data. The engine is pre-trained and employs advanced machine-learning algorithms that can work out of the box for up to 100 languages. We train the engine on 950 images to fine-tune it towards our data, and then we employ the Legacy Tesseract model on design 1 reports. In design 3, we used color matching to identify the labels by finding the unique RGB (Red, Green, Blue) code of the pixels of each EPC label image; we could determine both the current EPC label and the potential EPC label of the building after implementing either profitable or all renovations. This approach was not used for Design 1 because the images in those reports were designed in a way that made it too difficult to accurately identify the labels. Additionally, design 1 includes three minor layout changes over the time period that affected the positioning and the colours of the images, further complicating accurate label identification using colour matching.</p>
 </div>
 </section>
 <section id="standardizing-energy-variables" class="level2">
@@ -1058,30 +1058,38 @@ Figure&nbsp;4.4
 Table&nbsp;4.2: Training data for each classification problem
 </figcaption>
 <div aria-describedby="tbl-TextClassification_trainingData-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table" data-quarto-postprocess="true">
+
+<div class="border_table_training">
+
+<table class="training_data caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Classification problem</th>
+<th data-quarto-table-cell-role="th">True</th>
+<th data-quarto-table-cell-role="th">False</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>Classification problem</td>
-<td>True</td>
-<td>False</td>
-</tr>
-<tr class="even">
 <td>Solar-cells</td>
 <td>7,915</td>
 <td>26,943</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Solar-heating</td>
 <td>4,203</td>
 <td>37,672</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Heat pump</td>
 <td>9,389</td>
 <td>65,491</td>
 </tr>
 </tbody>
 </table>
+
+</div>
+
 </div>
 </figure>
 </div>

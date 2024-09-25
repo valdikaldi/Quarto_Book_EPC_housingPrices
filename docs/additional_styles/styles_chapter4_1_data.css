@@ -28,6 +28,12 @@
   text-align: center;
 } */
 
+.border_table {
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: auto;
+}
+
 .tg .table_header .bordered-text {
   display: inline-block; /* Ensures the border wraps tightly around the text */
   border: 0.5px solid black; /* Black border */
