@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5.1 Estimation Strategy – Are home buyers inattentive towards energy efficiency?</title>
+<title>5.2 Estimation Strategy – Are home buyers inattentive towards energy efficiency?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -103,9 +89,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <link rel="icon" type="image/png" href="assets/cover.jpg">
+<link rel="icon" type="image/png" href="../../assets/cover.jpg">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../main_styles.css">
+<link rel="stylesheet" href="../../additional_styles/styles_chapter4_3_data.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -136,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html">5. Empirical Strategy</a></li><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html"><span class="chapter-title">5.1 Estimation Strategy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html">5. Empirical Strategy</a></li><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html"><span class="chapter-title">5.2 Estimation Strategy</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -224,12 +241,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.2 Hedonic model</span></a>
+  <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">5.1 Hedonic model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">5.1 Estimation Strategy</span></a>
+  <a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">5.2 Estimation Strategy</span></a>
   </div>
 </li>
       </ul>
@@ -266,9 +283,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html">5. Empirical Strategy</a></li><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html"><span class="chapter-title">5.1 Estimation Strategy</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html">5. Empirical Strategy</a></li><li class="breadcrumb-item"><a href="../../quarto_files/empirical_strategy/empirical_strategy_EstimationStrategy.html"><span class="chapter-title">5.2 Estimation Strategy</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">5.1 Estimation Strategy</span></h1>
+<h1 class="title"><span class="chapter-title">5.2 Estimation Strategy</span></h1>
 </div>
 
 
@@ -285,17 +302,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
+<div class="paratext">
+<p>We will begin by estimating the impact of EPC labels on transaction prices to determine if consumers are willing to pay more for energy-efficient dwellings. To do this, an OLS regression with fixed effects is estimated. This model will lay the foundation as our baseline model and resemble the majority of regressions from the literature, particularly studies by <span class="citation" data-cites="naess-schmidt_homes_2015">Næss-Schmidt, Heebøll, and Fredslund (<a href="../references.html#ref-naess-schmidt_homes_2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="wahlstrom_doing_2016">Wahlström (<a href="../references.html#ref-wahlstrom_doing_2016" role="doc-biblioref">2016</a>)</span>. For the baseline model, we begin by estimating a parsimonious version of the baseline model, then gradually introduce various control variables, resulting in the final form of our baseline regression equation as follows:</p>
+<p><span id="eq-main_1"><span class="math display">\[
+Ln(P_{izt}) = \beta EE_{i} + \mathbf{\gamma X_{i}} + \mathbf{\delta Q_{i}} + \mathbf{\eta G_{i}} + \boldsymbol{\tau_{t}} + \boldsymbol{\mu_{z}} + \boldsymbol{\upsilon_{zt}} + \epsilon_{izt}
+\tag{7.1}\]</span></span></p>
+<p>The dependent variable ( Ln(P_{izt}) ) denotes the natural logarithm of the transaction price of dwelling ( i ) at four-digit postal code ( z ) at month ( t). The variable of interest is denoted as ( EE_{i} ) and represents the EPC label of dwelling ( i ). Vector ( ) contains structural characteristics of property, such as living space, number of rooms and floors. The vector ( ) contains factors quantifying the general condition of the property, such as construction year and year of significant renovation. The structure of the variables from the ( ) and ( ) aligns with the majority of the literature. For example, as pointed out in <a href="../../quarto_files/data/data_housing.html">Chapter 4.1</a>, we follow the approach of <span class="citation" data-cites="jensen_market_2016">Jensen, Hansen, and Kragh (<a href="../references.html#ref-jensen_market_2016" role="doc-biblioref">2016</a>)</span> by structuring the year of construction for properties into periodic bins. <span class="citation" data-cites="jensen_market_2016">Jensen, Hansen, and Kragh (<a href="../references.html#ref-jensen_market_2016" role="doc-biblioref">2016</a>)</span> grouped the years into periods reflecting both building tradition and energy performance. The only difference between our variable and theirs is an additional bin for the newer years, as our sample spans a longer period. By structuring the variable, as well as other continuous variables, in a categorical format, we are able to capture non-linear effects. Furthermore, ( ) represents the neighbourhood structure of properties. The vector comprises several geographical characteristics, including population density at the 1 km grid level. All continuous control variables have been logarithmised. The previous chapter, <a href="../../quarto_files/data/data_housing.html">Chapter 4</a>, presents details on all the variables used in our analysis, including their structural forms.</p>
+<p>% fixed effects : The sample of this analysis spans a long period of time, raising concerns about temporal variation in property prices over the time period. Factors such as seasonality, economic conditions and policy changes all have the potential to impact property prices. To account for this, we include month and year-fixed effects, denoted as <span class="math inline">\(\boldsymbol{\tau_{t}}\)</span>. Moreover, as pointed out earlier in this paper, location plays a vital role as a determinant of property prices. Even though we account for some neighbourhood characteristics, there is still a great risk of unobserved heterogeneity in local market conditions such as school districts, demographic characteristics or other neighbourhood amenities that we do not account for. Therefore, we include 4-digit postal code fixed effects, denoted as <span class="math inline">\(\boldsymbol{\mu_{z}}\)</span>, to control for spatially correlated factors that can influence property prices. With it, we reduce omitted variable bias and improve the robustness of the estimated effects. Furthermore, the housing market can vary significantly, not just by area but also over time within the same area. For example, certain areas might experience seasonal demand fluctuations, infrastructure developments or local economic changes that impact housing prices differently over time. By interacting with the time and postal code fixed effects, we account for localised temporal trends in housing prices. This further mitigates omitted variable bias, which arises from factors that vary both by location and over time. The interaction is denoted as <span class="math inline">\(\boldsymbol{\upsilon_{zt}}\)</span></p>
+<p>As pointed out in the introduction, the majority of papers do not incorporate additional information in their analysis from the EPC reports related to the renovation potential. In order to deepen our understanding of the impact of energy efficiency on property prices, the baseline model is extended by incorporating additional information derived from the EPC reports, specifically related to energy-efficient renovation potential. Thus, we add the vector <span class="math inline">\(\mathbf{\phi EER_{i}}\)</span> to <a href="#eq-main_1" class="quarto-xref">Equation&nbsp;<span>7.1</span></a> Equation <span class="math inline">\(\ref{eq: baseline model}\)</span>, resulting in the final regression equation taking the following form:</p>
+<p><span id="eq-main_2"><span class="math display">\[
+Ln(P_{izt}) = \beta EE_{i} + \mathbf{\phi EER_{i}} + \mathbf{\gamma X_{i}} + \mathbf{\delta Q_{i}} + \mathbf{\eta G_{i}} + \boldsymbol{\tau_{t}} + \boldsymbol{\mu_{z}} + \boldsymbol{\upsilon_{zt}} + \epsilon_{izt}
+\tag{7.2}\]</span></span></p>
+<p>Here, the vector <span class="math inline">\(\mathbf{\phi EER_{i}}\)</span> (Energy efficient Renovations) denotes a set of property-specific control variables related to their renovation potential as specified by the following equation:</p>
+<p><span id="eq-main_2_part"><span class="math display">\[
+\mathbf{\phi EER_{i}} = \phi_{1} LabelJump_{i} + \phi_{2} TECS{i} + \phi_{3} TICP_{i} + \mathbf{\phi_{4} RS_{i}}
+\tag{7.3}\]</span></span></p>
+<p>where <span class="math inline">\(LabelJump_{i}\)</span> is a categorical variable representing the number of EPC labels a property would advance from its current label upon implementing all renovation suggestions made in the EPC report. <span class="math inline">\(TECS_{i}\)</span> represents the total energy cost saved for the property from implementing all renovation suggestions, while <span class="math inline">\(TICP_{i}\)</span> represents the total investment cost needed to implement the profitable renovation suggestions. In order to interpret <span class="math inline">\(TECS_{i}\)</span> and <span class="math inline">\(TICP_{i}\)</span> as elasticity’s we take the natural logarithm of both variables. However, this leads to a log-0 problem as many observations have zero in both variables. Therefore, we add the constant equal to one before taking the logarithm to overcome this issue.</p>
+<p>Finally, the vector <span class="math inline">\(\mathbf{RS_{i}}\)</span> (Renovation suggestions) contains dummy variables indicating the types of renovations that are required, such as renovating the roof or attic renovation, renovating the building walls or conversion to district heating. <span class="math inline">\(\mathbf{\phi EER_{i}}\)</span> allows us to capture the static role of the EPC label while also considering the evolving potential for increased energy efficiency and further energy savings. This allows us to determine if home buyers are willing to pay a premium for homes that are already energy efficient as well as those that offer the potential for further enhancements in energy efficiency. As a result, we obtain a more thorough study of the economic gains associated with energy efficiency in the housing market. Additionally, these factors assist in accounting for potential endogeneity and omitted variable bias caused by unobserved renovation characteristics.</p>
+<p>Furthermore, As discussed in chapter <span class="math inline">\(\ref{chap: literature Review}\)</span>, all related empirical studies on the Danish housing market have focused exclusively on detached houses. On the other hand, as shown in <span class="math inline">\(\ref{subchap:housing_data}\)</span>, our unique dataset encompasses a diverse range of property types. These property types differ both in structural characteristics and market dynamics. As a result, it is critical to recognise that the impact might vary significantly between property types. The model specified in <a href="#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a> Equation <span class="math inline">\(\ref{eq:finalRegression}\)</span> was estimated across different property type segments to assess this hypothesis.</p>
+<p>Finally, we attempt to quantify the effect from a tighter building regulations that took place on 1. January 2018. The regulation increased the energy performance standards for new buildings and set stricter regulations for renovations on existing properties such that the renovations made meet a minimum energy efficiency standard. Thereby, enforcing that when renovations on existing buildings take place, they truly improve energy efficiency towards buildings. To quantify the policy effect, we split our sample by the date of the policy such that one sub-sample represents the market before the policy took place and the other after the policy took place. Then we run model equivalent to Equation <span class="math inline">\(\ref{eq:finalRegression}\)</span> on both sub-samples.</p>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-jensen_market_2016" class="csl-entry" role="listitem">
+Jensen, Ole Michael, Anders Rhiger Hansen, and Jesper Kragh. 2016. <span>“Market Response to the Public Display of Energy Performance Rating at Property Sales.”</span> <em>Energy Policy</em> 93 (June): 229–35. <a href="https://doi.org/10.1016/j.enpol.2016.02.029">https://doi.org/10.1016/j.enpol.2016.02.029</a>.
+</div>
+<div id="ref-naess-schmidt_homes_2015" class="csl-entry" role="listitem">
+Næss-Schmidt, Sigurd, Christian Heebøll, and Niels C. Fredslund. 2015. <span>“Do Homes with Better Energy Efficiency Ratings Have Higher House Prices? <span>Econometric</span> Approach.”</span> Copenhagen Economics. <a href="https://ens.dk/sites/ens.dk/files/Energibesparelser/bilag_-_do_homes_with_better_energy_efficiency_ratings_have_higher_house_prices_oekonometrisk_tilgang.pdf">https://ens.dk/sites/ens.dk/files/Energibesparelser/bilag_-_do_homes_with_better_energy_efficiency_ratings_have_higher_house_prices_oekonometrisk_tilgang.pdf</a>.
+</div>
+<div id="ref-wahlstrom_doing_2016" class="csl-entry" role="listitem">
+Wahlström, Marie H. 2016. <span>“Doing Good but Not That Well? <span>A</span> Dilemma for Energy Conserving Homeowners.”</span> <em>Energy Economics</em> 60 (November): 197–205. <a href="https://doi.org/10.1016/j.eneco.2016.09.025">https://doi.org/10.1016/j.eneco.2016.09.025</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -864,8 +903,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="pagination-link" aria-label="5.2 Hedonic model">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">5.2 Hedonic model</span></span>
+      <a href="../../quarto_files/empirical_strategy/empirical_strategy_HedonicModel.html" class="pagination-link" aria-label="5.1 Hedonic model">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">5.1 Hedonic model</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

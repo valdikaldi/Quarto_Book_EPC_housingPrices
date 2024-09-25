@@ -106,6 +106,51 @@
   border-top-width: 1px;
 }
 
+/* ------------------------------ table training_data */
+.border_table_training {
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: auto;
+  width: 50%; /* Set the desired width for the border container */
+  margin: 0 auto; /* Center the border container within its parent */
+}
+
+.training_data {
+  border-collapse: collapse; /* Merge borders for a cleaner look */
+  width: 85%; /*Fixed width for the table */
+  max-width: 45rem; /* Prevent the table from exceeding the container width */
+  border-top: 0px solid #ebedee; /* remove the defult setting of border top  */
+}
+
+.training_data th {
+  border-bottom: 1px solid black;
+}
+
+.training_data th,
+.training_data td {
+  border: 0px solid #ddd; /* Add border to cells */
+  padding: 8px; /* Add padding for spacing */
+  text-align: center; /* Center text in cells */
+}
+
+/* Adjust column widths */
+.training_data th:nth-child(1),
+.training_data td:nth-child(1) {
+  width: 65%; /* Set width for the first column */
+}
+
+.training_data th:nth-child(2),
+.training_data td:nth-child(2) {
+  width: 10%; /* Set width for the second column */
+}
+
+.training_data th:nth-child(3),
+.training_data td:nth-child(3) {
+  width: 10%; /* Set width for the third column */
+}
+
 /* ----------------------------- Table Text classification main models results */
 
 .border_table {
