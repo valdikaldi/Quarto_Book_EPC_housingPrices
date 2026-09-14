@@ -2,19 +2,19 @@
 tbl-cap-location: top
 fig-cap-location: top
 
-css: "../additional_styles/styles_chapter2_EPC.css"
+css: "../styles/pages/styles_chapter2_EPC.css"
 
 sidebar:
-    logo: "../assets/cover.jpg"
+    logo: "../assets/website/branding/cover.jpg"
     
 format:
   html:
     include-in-header:
       - text: |
-         <link rel="icon" type="image/png" href="../assets/cover.jpg">
+         <link rel="icon" type="image/png" href="../assets/website/branding/cover.jpg">
 ---
 
-# 2. EPBD and the Danish EPC scheme
+# 2. EPBD and the Danish EPC scheme {#sec-epbd-danish-epc-scheme}
 
 :::: paratext
 With the establishment of the Energy Performance of Buildings Directive (EPBD) in 2001, the EU constructed its main legislative tool to improve the energy performance of buildings. With this Directive, EU members were given a framework to develop regulations for the energy efficiency of buildings. The framework provided a rounded structure on matters such as defining energy performance and methodology to quantify and measure the energy efficiency of buildings [@ec_eu_2002]. Thus, the EU Commission highlighted the importance of energy conservation in buildings and formulated the EPC system. From 2006 onwards, the EPC system was gradually implemented across member states, with all states mandated to have an operational system in place by the final deadline of 4 January 2009 [@arcipowska_energy_2014]. Since 2002, the EU Commission has updated the Directive through the years. In 2010, the EU recast the EPBD (European Directive 2010/31/EU) by updating the previous Directive as well as improving the quality of the Energy Performance Certification scheme by implementing additional requirements regarding independent qualified and/or accredited experts authorised to perform assessments of a building's energy performance [@eu_eu_2010]. Moreover, The EU Commission later expanded the scope of the recast in January 2012 by introducing a comparative methodology framework to determine the most cost-effective levels of minimum energy performance standards for both buildings and building elements. The recast of the EPBD played a vital role in enhancing transparency in the methodology of the energy performance of buildings and minimising potential information asymmetries between the property buyer and seller. Before the recast, sellers were not obligated to publicly display the energy performance of the property. Sellers could simply showcase the certificate at the time of signing the purchase agreement or rental contract. However, this changed with the recast, which required that when buildings

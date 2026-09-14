@@ -2,10 +2,10 @@
 tbl-cap-location: top
 fig-cap-location: top
 
-css: "../../additional_styles/styles_chapter4_2_data.css"
+css: "../../styles/pages/styles_chapter4_2_data.css"
 
 sidebar:
-    logo: "../../assets/website/branding/research/04_data/04_2_epc_reports/cover.jpg"
+    logo: "../../assets/website/branding/cover.jpg"
     
 format:
   html:

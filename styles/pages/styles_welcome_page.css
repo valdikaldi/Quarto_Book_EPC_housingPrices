@@ -1,0 +1,514 @@
+/* ==========================================================================
+   styles_welcome_page.css
+   Front page of the thesis site — layout, cards, hero, and dark-mode fixes.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. TITLE BLOCK
+   ========================================================================== */
+
+.quarto-title-meta {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.quarto-title-meta > *:first-child {
+  margin-right: 5rem;
+}
+.quarto-title-meta > *:last-child {
+  margin-left: 5rem;
+}
+
+.quarto-title {
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   2. PROGRAMMING LANGUAGES TABLE ("Python | R")
+   ========================================================================== */
+#title-block-header {
+  display: none;
+}
+
+.table-container {
+  padding: 5em;
+}
+
+.table-container table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headers {
+  border-bottom: 2px solid grey;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgba(142, 177, 199, 0.468);
+}
+
+.headers td:first-child {
+  border-top-left-radius: 25px;
+}
+.headers td:last-child {
+  border-top-right-radius: 25px;
+}
+
+.narrow {
+  width: 5%;
+}
+.wide {
+  width: 40%;
+}
+
+.table-container tr {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+/* Icons inside the programming-languages table */
+.table-container .icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.table-container .mini_icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.wide.item.main {
+  border-right: 2px solid grey;
+}
+
+.table-container .wide:hover {
+  background-color: rgba(245, 245, 245, 0.85);
+  cursor: default;
+}
+
+/* Remove the link style inside the programming-languages table */
+.table-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ==========================================================================
+   3. TOOLS SECTION — CARDS (professional, muted palette)
+   ========================================================================== */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+  max-width: 100%;
+  width: 100%;
+  padding: 1.25rem 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  background-color: rgba(128, 128, 128, 0.035);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+/* Accent stripe on the left edge of each card */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10px; /* width of the color banner on the card */
+  background-color: var(--card-accent, rgba(128, 128, 128, 0.5));
+}
+
+.card:hover {
+  border-color: rgba(68, 106, 190, 0.45);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Per-card accent colours — muted, academic */
+.card-container .card:nth-child(1) { --card-accent: #5b7a99; } /* slate blue   — web scraping */
+.card-container .card:nth-child(2) { --card-accent: #7a6a4f; } /* warm taupe   — PDF parsing */
+.card-container .card:nth-child(3) { --card-accent: #4f7a63; } /* forest green — NLP */
+.card-container .card:nth-child(4) { --card-accent: #6b5f88; } /* muted plum   — OCR */
+.card-container .card:nth-child(5) { --card-accent: #4f7a80; } /* teal grey    — geo */
+.card-container .card:nth-child(6) { --card-accent: #8a5a4a; } /* brick        — regression */
+
+.card-title {
+  color: inherit;
+  padding: 0.85rem 1rem 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+.card-title span {
+  margin-top: 0;
+}
+
+.card-title .icon {
+  margin-right: 0.65rem;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.card-content {
+  padding: 0.9rem 1rem 0.9rem 1.25rem;
+  margin-top: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.card-content p {
+  margin: 0 0 0.5rem;
+}
+
+.card-content .card_string {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Override the oversized icon rule that would otherwise apply inside cards */
+.card-container .icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Section labels inside each card: "Data used", "Tools / Libraries" */
+.card .category {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  max-width: 100%;
+  margin: 0.25rem 0 0.65rem 0;
+  padding-bottom: 0.25rem;
+}
+
+
+/* ==========================================================================
+   4. LINK STYLING (content area, cards, and body)
+   ========================================================================== */
+
+.content a {
+  color: rgb(68, 106, 190);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.content a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 1px;
+  background: rgb(32, 68, 144);
+  transition: all 0.45s;
+}
+
+.content a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.content a:hover {
+  color: rgb(106, 137, 203);
+}
+
+
+/* ==========================================================================
+   5. STACK (tool list inside cards)
+   ========================================================================== */
+
+.stack {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ==========================================================================
+   6. FRONT PAGE — HERO
+   ========================================================================== */
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 0.85rem;
+}
+
+.hero-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.22;
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 44rem;
+  margin: 0 auto 2rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.25rem;
+  font-size: 0.9rem;
+}
+
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 8rem;
+}
+
+.hero-meta-item strong {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
+}
+
+
+/* ==========================================================================
+   7. FRONT PAGE — FEATURE CARDS (Contributions)
+   ========================================================================== */
+
+.feature-card {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  padding: 1.35rem 1.35rem 0.9rem;
+  height: 100%;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.feature-card:hover {
+  border-color: rgba(68, 106, 190, 0.55);
+  transform: translateY(-2px);
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   8. FRONT PAGE — STAT GRID ("Project at a glance")
+   ========================================================================== */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.35rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  background-color: rgba(142, 177, 199, 0.08);
+}
+
+.stat-number {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  opacity: 0.75;
+  margin-top: 0.4rem;
+}
+
+
+/* ==========================================================================
+   9. FRONT PAGE — ROADMAP
+   ========================================================================== */
+
+.roadmap {
+  border-left: 2px solid rgba(128, 128, 128, 0.35);
+  padding-left: 1.35rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.roadmap-item {
+  position: relative;
+  padding: 0.4rem 0 0.9rem 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.roadmap-item::before {
+  content: "";
+  position: absolute;
+  left: -1.7rem;
+  top: 0.9rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background-color: rgba(68, 106, 190, 0.85);
+}
+
+.roadmap-item strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+
+/* ==========================================================================
+   10. FRONT PAGE — SITE NOTE
+   ========================================================================== */
+
+.site-note {
+  margin-top: 2.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   11. DARK MODE OVERRIDES
+   ========================================================================== */
+
+/* --- Hero --- */
+body.quarto-dark .hero {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+/* --- Feature cards (Contributions) --- */
+body.quarto-dark .feature-card {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+body.quarto-dark .feature-card:hover {
+  border-color: rgba(142, 175, 232, 0.65);
+}
+
+/* --- Stat grid --- */
+body.quarto-dark .stat-card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(142, 177, 199, 0.10);
+}
+
+/* --- Roadmap --- */
+body.quarto-dark .roadmap {
+  border-left-color: rgba(255, 255, 255, 0.18);
+}
+body.quarto-dark .roadmap-item::before {
+  background-color: rgba(142, 175, 232, 0.9);
+}
+
+/* --- Site note --- */
+body.quarto-dark .site-note {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+/* --- Tools cards --- */
+body.quarto-dark .card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.025);
+}
+body.quarto-dark .card:hover {
+  border-color: rgba(142, 175, 232, 0.55);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+body.quarto-dark .card-title {
+  border-bottom-color: rgba(255, 255, 255, 0.10);
+  background-color: rgba(255, 255, 255, 0.035);
+  color: #e6e8ea;
+}
+body.quarto-dark .card .category {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+  opacity: 0.65;
+}
+body.quarto-dark .card-content {
+  color: #d5d9dd;
+}
+
+/* --- Programming-languages table --- */
+body.quarto-dark .table-container .wide:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+body.quarto-dark .headers {
+  background-color: rgba(142, 177, 199, 0.22);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+body.quarto-dark .wide.item.main {
+  border-right-color: rgba(255, 255, 255, 0.20);
+}

@@ -6,9 +6,9 @@ project:
 
 book:
   title: Are home buyers inattentive towards energy efficiency?
-  subtitle: An econometric analysis based on a new data set created with NLP and OCR techniques
-  author: "Valdimar Einarsson"
-  date: "2024-7-22"
+  # subtitle: An econometric analysis based on a new data set created with NLP and OCR techniques
+  # author: "Valdimar Einarsson"
+  # date: "2024-7-22"
   chapters:
     - index.qmd
     - quarto_files/introduction.qmd
@@ -46,7 +46,7 @@ book:
 
   # ---> Sidebar setup : the paper
   sidebar:
-    logo: "assets/branding/cover.jpg"
+    logo: "assets/website/branding/cover.jpg"
     pinned: true # Have it fixed (pinned) on page
     style: docked
     alignment: center
@@ -83,7 +83,7 @@ format:
       dark: darkly
     
     css: 
-      - main_styles.css
+      - styles/main_styles.css
     
     grid:
       body-width: 1100px
@@ -93,7 +93,7 @@ format:
     # add icon to the browser tab
     include-in-header:
       - text: |
-         <link rel="icon" type="image/png" href="assets/cover.jpg">
+         <link rel="icon" type="image/png" href="assets/website/branding/cover.jpg">
 
 editor: visual
 

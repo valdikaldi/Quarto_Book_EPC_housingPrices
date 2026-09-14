@@ -4,16 +4,16 @@
 tbl-cap-location: top
 fig-cap-location: top
 
-css: "../../additional_styles/styles_chapter4_3_data.css"
+css: "../../styles/pages/styles_chapter4_3_data.css"
 
 sidebar:
-    logo: "../../assets/cover.jpg"
-    
+    logo: "../../assets/website/branding/cover.jpg"
+
 format:
   html:
     include-in-header:
       - text: |
-         <link rel="icon" type="image/png" href="../../assets/cover.jpg">
+         <link rel="icon" type="image/png" href="../../assets/website/branding/cover.jpg">
 ---
 
 ## 4.3 Geographical data

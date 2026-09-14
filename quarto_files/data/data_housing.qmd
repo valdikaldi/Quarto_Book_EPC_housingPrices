@@ -2,7 +2,7 @@
 tbl-cap-location: top
 fig-cap-location: top
 
-css: "../../additional_styles/styles_chapter4_1_data.css"
+css: "../../styles/pages/styles_chapter4_1_data.css"
 
 sidebar:
     logo: "../../assets/website/branding/cover.jpg"
