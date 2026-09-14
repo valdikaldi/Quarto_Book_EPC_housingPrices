@@ -44,11 +44,9 @@ Model 7 shows that properties labelled A2020, A2015, and A2010 are sold, on aver
 
 Additionally, these results are consistent with insights provided by real estate agents, as discussed in @sec-epbd-danish-epc-scheme.
 
-
-
 <!-- Regression table 10  -->
-::: {#tbl-regression-robust-testing}
 
+::: {#tbl-regression-robust-testing}
 ```{r}
 #| echo: false
 #| warning: false
@@ -89,7 +87,7 @@ create_robustness_table <- function() {
   
   heating_demand <- data.frame(
     # section = rep("Log(Total heating demand in kWh)", 2),
-    section = rep("", 2),
+    section = rep("Heating Demand in kWh", 2),
     variable = c(
       "Log(Total heating demand in kWh)", ""
     ),
@@ -394,7 +392,6 @@ table_data <- create_robustness_table()
 
 ```
 
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -561,10 +558,7 @@ table_data_formatted %>%
     source_note = md("Heteroscedasticity-robust standard errors in parentheses. Indicators of significance level: * p < 0.1, ** p < 0.05, *** p < 0.01. Dependent variable: Natural logarithm of transaction price. TICP - Total investments cost for profitable renovations. TECS - Total energy cost saved from all renovations. Models 1 to 5 are in line with Equation ref{eq:finalRegression}. In Model 6 we switch EPC labels for the natural logarithm of total heating demand in kWh and in Model 7 we set the dependent variable to the number of days the property was advertised.")
   )
 ```
-
 :::
-
-
 
 ## Robustness of Text Classification
 
@@ -582,12 +576,9 @@ Moreover, the coefficients of the other key variables and control variables do n
 
 Nevertheless, regardless of the probability threshold applied, all three components have a positive estimated effect on property prices. However, the relatively small and less stable coefficient for heat pumps suggests that home buyers may place less value on heat pumps compared with solar cells and solar heating.
 
-
 <!-- Regression table 11  -->
 
-
 ::: {#tbl-robust-test-text-classification}
-
 ```{r}
 #| echo: false
 #| warning: false

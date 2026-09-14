@@ -238,8 +238,6 @@ table_data <- create_policy_table()
 
 ```
 
-
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -275,7 +273,6 @@ table_data_formatted <- table_data %>%
                   sapply(col2, create_badge), col2)
   )
 ```
-
 
 ```{r}
 #| echo: false

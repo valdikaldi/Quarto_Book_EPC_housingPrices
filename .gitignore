@@ -24,3 +24,5 @@ _book/
 # Generated LaTeX / PDF
 *.tex
 *.pdf
+/.quarto/
+**/*.quarto_ipynb

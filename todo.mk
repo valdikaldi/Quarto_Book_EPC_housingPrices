@@ -1,4 +1,5 @@
 
+
 # To do list 
 
 - [ ] Finish setting up chapters 
@@ -24,3 +25,8 @@
     - [ ] E. Additional figures
 - [ ] Organize the repo
     - [ ] Seperate the Report/site and the research assets (figs, tables, code etc.)
+
+# other
+[ ] - fix regression table in Robustness chapters
+[ ] - change plots from static to interactive 
+
