@@ -5,13 +5,13 @@ fig-cap-location: top
 css: "../../additional_styles/styles_chapter4_2_data.css"
 
 sidebar:
-    logo: "../../assets/cover.jpg"
+    logo: "../../assets/website/branding/research/04_data/04_2_epc_reports/cover.jpg"
     
 format:
   html:
     include-in-header:
       - text: |
-         <link rel="icon" type="image/png" href="../../assets/cover.jpg">
+         <link rel="icon" type="image/png" href="../../assets/website/branding/cover.jpg">
 ---
 
 # 4.2 EPC Reports data
@@ -32,14 +32,10 @@ During the information extraction process, we identify three major design differ
 \% extracting text The majority of the information of interest is in text format for all EPC designs. We extract the text using Python and various libraries such as pyMuPDF and pdfplumber. Once the text data is extracted, we use regular expressions and pattern-matching techniques to retrieve the relevant information from the text. In design 2 we only use regular expressions as all necessary data in that design is represented in text format. However, In design 3, all energy labels, i.e. the registered EPC label and the potential EPC label after implementing profitable and non-profitable renovations, are in image format. Moreover, in Design 1 the registered EPC label is in image format but the potential energy label of the building for implementing all renovation suggestions is in text format.
 :::
 
-```{=html}
-<!-- ::: {#fig-EPC_data_workflow}
-![Workflow diagram for extracting and processing EPC data](../../assets/EPC_workflow_1000dpi.png){fig-align="center"}
-::: -->
-```
+
 
 ::: {#fig-EPC_data_workflow}
-![Workflow diagram for extracting and processing EPC data](../../assets/EPC_workflow_1000dpi.png){fig-align="center" width="80%"}
+![Workflow diagram for extracting and processing EPC data](../../assets/research/04_data/04_2_epc_reports/EPC_workflow_1000dpi.png){fig-align="center" width="80%"}
 :::
 
 ## Extracting EPC labels
@@ -670,7 +666,7 @@ Furthermore, close to 62% of our sample use either only district heating or dist
 ::::
 
 :::: {#fig-EPC_frequency_4x4km_gridcell}
-![Most frequent EPC label across Denmark at 4x4 km grid level.](../../assets/EPC_labels_4x4km_grid.png){fig-align="center"}
+![Most frequent EPC label across Denmark at 4x4 km grid level.](../../assets/research/04_data/04_2_epc_reports/04_2_epc_reports/EPC_labels_4x4km_grid.png){fig-align="center"}
 
 ::: text_footnote_fig_tables
 Note: "No obs." category refers to places where we don not have any observations on.
@@ -682,7 +678,7 @@ Finally, the EPC data in combination with our housing data shows some interestin
 :::
 
 :::: {#fig-EPC_and_buildingConstruction}
-![EPC labels across construction periods.](../../assets/EPC_and_age_plot_withNumbers.png){fig-align="center"}
+![EPC labels across construction periods.](../../assets/research/04_data/04_2_epc_reports/EPC_and_age_plot_withNumbers.png){fig-align="center"}
 
 ::: text_footnote_fig_tables
 Note: Bars without the percentage written on them are below 10%.
@@ -702,7 +698,7 @@ These three sentences all indicate in different ways that the properties do not 
 :::
 
 ::: {#fig-TextClassification_workflow}
-![Workflow diagram for the process of building text classification models.](../../assets/TextClassification_workflow_Main_Image.png){fig-align="center"}
+![Workflow diagram for the process of building text classification models.](../../assets/research/04_data/04_2_epc_reports/TextClassification_workflow_Main_Image.png){fig-align="center"}
 :::
 
 :::: paratext

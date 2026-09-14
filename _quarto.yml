@@ -46,7 +46,7 @@ book:
 
   # ---> Sidebar setup : the paper
   sidebar:
-    logo: "assets/cover.jpg"
+    logo: "assets/branding/cover.jpg"
     pinned: true # Have it fixed (pinned) on page
     style: docked
     alignment: center

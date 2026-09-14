@@ -1,0 +1,32 @@
+reference,country,location,variable_of_interest,price_type,data_period,sample_size
+naess-schmidt_homes_2015 ,Denmark,Whole country,EPC labes A to G with G and D as reference,Transaction price,2006-2014,"355,000 (S)"
+jensen_market_2016 ,Denmark,Whole country,"EPC labels A,B,C compared to others and estimates of EPC LABELS A+B, C,D,E,F,G",Transaction price,2007-2012,"117,483 (S)"
+stenvall_does_2022 ,Sweden,Malmö; Göteborg; Linköping; Stockholm; Luleå; Umeå,"ECP labels (AB,ABC,EFG) 
+& High vs Low energy Efficiency (kWh per year)",Transaction price,2019,"21,696 (S)"
+wahlstrom_doing_2016 ,Sweden,Whole Country,ln (kWh per year),Transaction price,2009-2010,"69,698 (S)"
+cerin_energy_2014 ,Sweden,Gothenburg; Malmö;  Stockholm;  Lund;  Umeå;  Gävle;  Östersund; Uppsala,Ln(kWh per year/sqm),Transaction price,2009-2010,"67,559 (S)"
+wilhelmsson_energy_2019 ,Sweden,Whole Country,"A-C Treatment group and
+D-G is the control group",Transaction price,2013-2018,"100,000 (S)"
+hogberg_impact_2013 ,Sweden,Stockholm,Ln(kWh per year/sqm),Transaction price,2009,"1,073 (S)"
+wilhelmsson_how_2023 ,Sweden,Stockholm, Both energy performance i.e. kWh per year per square meter  and Energy Label from A-G,Transaction price,2012-2018,"5,200 (S)"
+khazal_energy_2023 ,Norway,Whole Country,EPC labels A to G with non-labeled property as reference,Listed price,"2011-2019 (R); 2010-2017 (S)","750,000 (S); 670,000 (R)"
+olaussen_energy_2019 ,Norway,Oslo,EPC labels A to G ,Transaction price,2000-2014,"4,397 (S)"
+olaussen_energy_2017 ,Norway,Oslo,EPC labels A to G with F as reference,Transaction price,2000-2014,"3,912 (S)"
+fuerst_energy_2016 ,Finland,"Helsinki, Espoo;  Vantaa","EPC labels A-G with A, B and C grouped together  where D is a reference",Transaction price,2009-2012,"6,194 (S)"
+brounen_economics_2011 ,Netherlands,Whole country,"EPC labels A to G and grouped labels A,B and C against the others with D as a reference. ",Transaction price,2008- August 2009,"31,993 (S) (labeled dwellings); 145,325  (S) (non-labeled dwellings)"
+fuerst_energy_2016 ,Wales,Whole country,EPC labels A to G with D as a reference,Transaction price,2003- February 2014,"191,544 (S)"
+de_ayala_price_2016 ,Spain,Whole country,"A,B and C labes and A,B,C,D labels versus other less efficient labels",Stated Price by resident,2013,"1,507 (S)"
+hyland_value_2013 ,Ireland,Whole country,"A,B,C,E,F/G with D label as reference",Listed Price and rents,2008-2012,"397,258 (S); 888,211 (R)"
+fregonara_energy_2017 ,Italy,Turin,labels A to G with D as reference,Transactions price; Listed price;  Difference between Transaction Price and Listed Price ,2011-2014,879 (S)
+marmolejo-duarte_uneven_2019 ,Spain,Barcelona ,labels A to G with G as reference,Listed Price and rents,2015,"3,479 (S)"
+taruttis_estimating_2022 ,Germany,Whole country,Energy consumption (in 100 kWh/m²a),Listed price,2014-2018,"422,242 (S)"
+fuerst_does_2015 ,England,Whole country,labels A to G with D as reference,Transaction price,1995-2012,"333,095 (S)"
+bio_intelligence_service_energy_2013 ,Austria,Vienna; lower Austria,labels A to G,Listed price,July – December 2012,"1,189 (S); 1,026 (R)"
+bio_intelligence_service_energy_2013 ,Belgium,Brussels-capital; Flanders; Wallonia,EPC CPEB score,Listed price,July – December 2012,"18,200 (S); 8076 (R)"
+bio_intelligence_service_energy_2013 ,France,Lille; Marseille,labels A to G,Transaction price,January 2011 - October 2012,3178 (S)
+bio_intelligence_service_energy_2013 ,Ireland,Whole country,EPC BER Label A1-G,Listed price,2008-2012,"20,000 (S); 28,000 (R) "
+bio_intelligence_service_energy_2013 ,United Kingdom,Oxford,EPC labels A - G and Energy efficiency score,Transaction price,February - September 2012,236 (S)
+copiello_price_2023 ,Italy ,Padua,EPC labels & energy performance index (kWh/m^2 per year) ,Listed price,March - July 2022,321 (S)
+mccord_spatial_2020 ,Ireland,Belfast,EPC labels ,Transaction price,April 2013 - July 2014,"1,478 (S)"
+barreca_epc_2021 ,Italy ,Turin,EPC labels ,Listed price,2015-2018,"2,092 (S)"
+dellanna_epc_2019 ,Italy & Spain,Turin; Barcelona,EPC labels ,Listed price,2014-2018,"3,224 (S)"

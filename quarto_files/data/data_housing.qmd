@@ -5,19 +5,18 @@ fig-cap-location: top
 css: "../../additional_styles/styles_chapter4_1_data.css"
 
 sidebar:
-    logo: "../../assets/cover.jpg"
+    logo: "../../assets/website/branding/cover.jpg"
     
 format:
   html:
     include-in-header:
       - text: |
-         <link rel="icon" type="image/png" href="../../assets/cover.jpg">
+         <link rel="icon" type="image/png" href="../../assets/website/branding/cover.jpg">
 ---
 
 ## 4.1 Housing data
 
-::: paratext
-
+::::: paratext
 The Ministry of Taxation of Denmark hosts the website "ois.dk" (https://www.ois.dk), which offers open access to the country's property records \citep{ois_ois_nodate}. Users can obtain both dwelling characteristics and transaction prices for the dwelling. However, the only restriction is that to browse through the data, one must have an address or an identification code for the dwelling. In light of this, we instead collect our housing data by web scraping the website "boliga.dk" (https://www.boliga.dk) using Python programming language and various libraries \citep{boliga_boliga_nodate}. The site provides users with unrestricted access to extensive property descriptions, historical transaction prices, and, for certain dwellings, listing prices, as well as advertisement metrics like the number of advertisements and duration on the market. We web scrape the whole site under the condition that dwellings have been at least sold once during period 1. July 2010 to 2023. Moreover, we exclude vacation homes from our web scraping process. Once the data is collected, we obtain a sample of 2.295.344 transactions, which belong to 981.469 dwellings. However, once we merge the housing data with the EPC data, our sample goes down to 994.769 transactions, of which belong to 711.591 dwellings. We merge the two data sets using two property authentication codes. The next chapter explains in detail the merging process of two datasets.
 
 After merging the housing data with the EPC data, we remove observations that are likely to introduce potential bias. Initially, as this analysis is entirely focused on residential dwellings, we remove all dwellings that do not reflect a residential dwelling based on categories from the Building and Housing Register of Denmark or BBR (Bygnings- og Boligregistret) which we obtained from scraping \cite{boliga_boliga_nodate}. These categories include buildings used for movie theatres, swimming pools, kindergarten buildings, hospitals, holiday homes, etc. Moreover, we also exclude dwellings registered as farmhouses (in Danish: Landejendom or stuehus). This type of dwelling is excluded not only because they do not reflect a typical residential dwelling but also because they often include a significant portion of land and additional buildings. Incorporating these observations poses a problem due to the nature of the EPC reports, which only belong to a single building structure.
@@ -33,8 +32,7 @@ Finally, we identified observations with potential data errors, where the EPC va
 <!-- % Visualization ------------ property prices per square meter per year AT municiaplity -->
 
 ::: {#fig-price_municipality}
-
-![Average price per square meter at municipality level](/assets/Housing_Data_PropertyPricesSqrMeter_Newest_greyCities.png){fig-align="center"}
+![Average price per square meter at municipality level](/assets/research/04_data/04_1_hosuing_data/Housing_Data_PropertyPricesSqrMeter_Newest_greyCities.png){fig-align="center"}
 :::
 
 @tbl-housing_summarystatistic presents summary statistics of property transaction and main property characteristics variables included in the regression analysis. Our dataset reveals several noteworthy aspects. Close to 60% of the sample is made up of detached houses, with apartments accounting for close to 30%. 71% of the sample was built more than 50 years ago. Most properties in our sample have fiber-cement as roof material, which is in line with the population of buildings, according to \cite{jensen_market_2016}. Surprisingly, approximately one-third of our sample features fibre-cement roofs containing asbestos. Moreover, according to Danish building regulations, significant renovations or extensions must be declared if they represent at least 15% of the building's estimated pre-renovation value \citep{bygnings-_og_boligregistret_322_nodate}. That being said, close to 70% of the sample has not experienced significant renovations. Given that a large portion of our sample contains fairly old properties and that many of these properties have not been significantly renovated, this might explain why a large portion of our sample still has asbestos material on their roofs.
@@ -737,10 +735,10 @@ Finally, we identified observations with potential data errors, where the EPC va
 </tbody>
 </table>
 </div>
-
 ```
+
 <!-- enter the title of the table - caption -->
 
 Housing data - summary statistics
 :::
-:::
+:::::

@@ -14,7 +14,7 @@ format:
          <link rel="icon" type="image/png" href="../assets/cover.jpg">
 ---
 
-# 3. Literature review  {#sec-literature-review}
+# 3. Literature review {#sec-literature-review}
 
 <!-- % ------------------------------------------------------- Begin text -->
 

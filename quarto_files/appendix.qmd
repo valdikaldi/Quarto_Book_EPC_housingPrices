@@ -2,18 +2,190 @@
 title: "Appendix"
 ---
 
-<!-- # Appendix -->
+# A. Literature Overview
 
 ```{r}
-1 + 1
+#| echo: false
+#| warning: false
+#| message: false
+
+library(readr)
+library(dplyr)
+
+
+data_literature <- read_csv(
+  "../data/tables/appendix/A_literature_overview.csv"
+)
+
+# data_literature <- read_csv(
+#   "data/tables/appendix/literature_overview.csv"
+# )
+
+# glimpse(literature)
+
+semicolon_to_bullets <- function(x) {
+  ifelse(
+    grepl(";", x, fixed = TRUE),
+    paste0(
+      "• ",
+      gsub(";", "<br>• ", x, fixed = TRUE)
+    ),
+    x
+  )
+}
+
+bold_price_type <- function(x) {
+  x <- gsub("\\(S\\)", "**(S)**", x)
+  x <- gsub("\\(R\\)", "**(R)**", x)
+  x
+}
+
+literature_table <- data_literature |>
+  mutate(
+    reference = paste0("[@", reference, "]"),
+    location = semicolon_to_bullets(location),
+    variable_of_interest = semicolon_to_bullets(variable_of_interest),
+    price_type = semicolon_to_bullets(price_type),
+    data_period = semicolon_to_bullets(data_period),
+    sample_size = bold_price_type(semicolon_to_bullets(sample_size))
+  ) |>
+  gt::gt() |>
+  gt::cols_label(
+    reference = "Reference",
+    country = "Country",
+    location = "Location",
+    variable_of_interest = "Variable of interest",
+    price_type = "Type of price",
+    data_period = "Data period",
+    sample_size = "Sample Size"
+    # sample_size = gt::html(
+    #   "Sample size<br>(S) - Sales Price<br>(R) - Rental Price"
+    # )
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+        weight = "bold",
+        size = gt::px(16)
+    ),
+    locations = gt::cells_column_labels(
+        columns = gt::everything()
+    )
+  ) |>
+  gt::tab_footnote(
+    footnote = gt::md("**(S)** = Sales price; **(R)** = Rental price"),
+    locations = gt::cells_column_labels(
+        columns = sample_size
+    )
+  ) |>
+  gt::fmt_markdown(
+    columns = c(
+      reference,
+      location,
+      variable_of_interest,
+      price_type,
+      data_period,
+      sample_size
+    )
+  ) |>
+  gt::tab_header(
+    title = "Literature Review - Overview"
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = gt::everything()
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(14),
+    data_row.padding = gt::px(5)
+  )
+
+literature_table
+
 ```
 
-# A. Literature Overview
+
+
+
+
+
 
 # B. Calorific Values
 
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+calorific_values <- read_csv(
+  "../data/tables/appendix/B_calorific_values.csv"
+)
+# calorific_values <- read_csv(
+#   "data/tables/appendix/B_calorific_values.csv"
+# )
+
+calorific_values_table <- calorific_values |>
+    mutate(
+        unit = if_else(unit == "m3", "m³", unit)
+    ) |>
+    gt::gt() |>
+    gt::cols_label(
+        Energy_source = "Energy source",
+        unit = "Unit",
+        weight_in_kg = "Weight (kg)",
+        kwh_per_unit = "Energy content (kWh/unit)",
+        co2kg_per_unit = gt::html(
+            "CO<sub>2</sub> emissions<br>(kg CO<sub>2</sub>/unit)"
+        ),
+        co2kg_per_kwh = gt::html(
+            "CO<sub>2</sub> emissions<br>(kg CO<sub>2</sub>/kWh)"
+    )
+    ) |>
+    gt::sub_missing(
+        columns = gt::everything(),
+        missing_text = "—"
+    ) |>
+    gt::tab_style(
+        style = gt::cell_text(
+            weight = "bold",
+            size = gt::px(16)
+        ),
+        locations = gt::cells_column_labels(
+            columns = gt::everything()
+    )
+    ) |>
+    gt::tab_header(
+        title = "Calorific values and CO₂ emission factors"
+    ) |>
+    gt::cols_align(
+        align = "left",
+        columns = gt::everything()
+    ) |>
+    gt::tab_options(
+        table.width = gt::pct(100),
+        table.font.size = gt::px(15),
+        data_row.padding = gt::px(5)
+    )
+
+calorific_values_table
+
+```
+
+
+
+
+
+
 # C. Text Classification models: All training results
 
+
+
+
+
+
+
 # D. Results - additional Information
+
+
 
 # E. Additional figures
