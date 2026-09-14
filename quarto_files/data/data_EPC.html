@@ -97,7 +97,7 @@ div.csl-indent {
   }
 }</script>
 <link rel="icon" type="image/png" href="assets/cover.jpg">
-<link rel="icon" type="image/png" href="../../assets/cover.jpg">
+<link rel="icon" type="image/png" href="../../assets/website/branding/cover.jpg">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -338,8 +338,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../assets/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../assets/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="../../index.html" title="Home" class="quarto-navigation-tool px-1" aria-label="Home"><i class="bi bi-house-fill"></i></a>
@@ -525,9 +525,6 @@ window.Quarto = {
 <p>% design differences There are several key distinctions between the three designs regarding the information provided. Design 1 does not include a potential energy label from implementing all profitable renovations. Neither Design 1 nor 2 provide standardised energy consumption in kWh, whereas Design 3 includes this information. Furthermore, Design 3 does not include energy consumption saved from profitable renovations. Additionally, none of the designs provides an estimated investment cost for implementing non-profitable renovation suggestions.</p>
 <p>% extracting text The majority of the information of interest is in text format for all EPC designs. We extract the text using Python and various libraries such as pyMuPDF and pdfplumber. Once the text data is extracted, we use regular expressions and pattern-matching techniques to retrieve the relevant information from the text. In design 2 we only use regular expressions as all necessary data in that design is represented in text format. However, In design 3, all energy labels, i.e.&nbsp;the registered EPC label and the potential EPC label after implementing profitable and non-profitable renovations, are in image format. Moreover, in Design 1 the registered EPC label is in image format but the potential energy label of the building for implementing all renovation suggestions is in text format.</p>
 </div>
-<!-- ::: {#fig-EPC_data_workflow}
-![Workflow diagram for extracting and processing EPC data](../../assets/EPC_workflow_1000dpi.png){fig-align="center"}
-::: -->
 <div id="fig-EPC_data_workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_data_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -537,7 +534,7 @@ Figure&nbsp;4.1
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Workflow diagram for extracting and processing EPC data</figcaption>
-<p><img src="../../assets/EPC_workflow_1000dpi.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="../../assets/research/04_data/04_2_epc_reports/EPC_workflow_1000dpi.png" class="img-fluid figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -1176,7 +1173,7 @@ Figure&nbsp;4.2
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Most frequent EPC label across Denmark at 4x4 km grid level.</figcaption>
-<p><img src="../../assets/EPC_labels_4x4km_grid.png" class="img-fluid figure-img"></p>
+<p><img src="../../assets/research/04_data/04_2_epc_reports/04_2_epc_reports/EPC_labels_4x4km_grid.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <div class="text_footnote_fig_tables">
@@ -1197,7 +1194,7 @@ Figure&nbsp;4.3
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>EPC labels across construction periods.</figcaption>
-<p><img src="../../assets/EPC_and_age_plot_withNumbers.png" class="img-fluid figure-img"></p>
+<p><img src="../../assets/research/04_data/04_2_epc_reports/EPC_and_age_plot_withNumbers.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <div class="text_footnote_fig_tables">
@@ -1227,7 +1224,7 @@ Figure&nbsp;4.4
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Workflow diagram for the process of building text classification models.</figcaption>
-<p><img src="../../assets/TextClassification_workflow_Main_Image.png" class="img-fluid figure-img"></p>
+<p><img src="../../assets/research/04_data/04_2_epc_reports/TextClassification_workflow_Main_Image.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>

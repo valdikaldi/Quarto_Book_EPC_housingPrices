@@ -336,8 +336,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../assets/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../assets/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="../../index.html" title="Home" class="quarto-navigation-tool px-1" aria-label="Home"><i class="bi bi-house-fill"></i></a>
@@ -477,13 +477,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-result-robustness-tests" id="toc-sec-result-robustness-tests" class="nav-link active" data-scroll-target="#sec-result-robustness-tests">6.4 Robustness Tests</a>
-  <ul class="collapse">
-  <li><a href="#outliers-and-potential-data-errors" id="toc-outliers-and-potential-data-errors" class="nav-link" data-scroll-target="#outliers-and-potential-data-errors">Outliers and Potential Data Errors</a></li>
+  <li><a href="#outliers-and-potential-data-errors" id="toc-outliers-and-potential-data-errors" class="nav-link active" data-scroll-target="#outliers-and-potential-data-errors">Outliers and Potential Data Errors</a></li>
   <li><a href="#energy-consumption" id="toc-energy-consumption" class="nav-link" data-scroll-target="#energy-consumption">Energy Consumption</a></li>
   <li><a href="#time-on-the-market" id="toc-time-on-the-market" class="nav-link" data-scroll-target="#time-on-the-market">Time on the Market</a></li>
   <li><a href="#robustness-of-text-classification" id="toc-robustness-of-text-classification" class="nav-link" data-scroll-target="#robustness-of-text-classification">Robustness of Text Classification</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -493,7 +490,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../quarto_files/results/main_result.html">6. Results</a></li><li class="breadcrumb-item"><a href="../../quarto_files/results/robustness_tests.html"><span class="chapter-title">6.4 Robustness Tests</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">6.4 Robustness Tests</span></h1>
+<h1 class="title"><span id="sec-result-robustness-tests" class="quarto-section-identifier"><span class="chapter-title">6.4 Robustness Tests</span></span></h1>
 </div>
 
 
@@ -510,9 +507,7 @@ window.Quarto = {
 </header>
 
 
-<section id="sec-result-robustness-tests" class="level1">
-<h1>6.4 Robustness Tests</h1>
-<p>In this chapter, we assess the robustness of the main results and address potential limitations of the analysis. To do so, we conduct several alterations to the model specification and its variables. These modifications aim to evaluate the stability and reliability of our final specification, as detailed in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>. The results are presented in <a href="#tbl-regression-robust-testing" class="quarto-xref">Table&nbsp;<span>12.1</span></a> with Model 1 representing the main specification of <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>, corresponding to Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>.</p>
+<p>In this chapter, we assess the robustness of the main results and address potential limitations of the analysis. To do so, we conduct several alterations to the model specification and its variables. These modifications aim to evaluate the stability and reliability of our final specification, as detailed in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>. The results are presented in <a href="#tbl-regression-robust-testing" class="quarto-xref">Table&nbsp;<span>11.1</span></a> with Model 1 representing the main specification of <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>, corresponding to Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>.</p>
 <section id="outliers-and-potential-data-errors" class="level2">
 <h2 class="anchored" data-anchor-id="outliers-and-potential-data-errors">Outliers and Potential Data Errors</h2>
 <p>In Models 2 to 4, we alter the control and dependent variables by removing potential outliers and data errors to assess the robustness of our main results. In Model 2, we remove observations with sales prices greater than DKK 10 million (EUR 1.3 million). In Model 3, we exclude observations where the price per square metre is less than DKK [XX] (EUR 39) or greater than DKK 95,000 (EUR 12,350).</p>
@@ -540,28 +535,28 @@ window.Quarto = {
 <div id="tbl-regression-robust-testing" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-regression-robust-testing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;12.1
+Table&nbsp;11.1
 </figcaption>
 <div aria-describedby="tbl-regression-robust-testing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div id="yyayumhdtm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yyayumhdtm table {
+<div id="aenlxrjqvc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#aenlxrjqvc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yyayumhdtm thead, #yyayumhdtm tbody, #yyayumhdtm tfoot, #yyayumhdtm tr, #yyayumhdtm td, #yyayumhdtm th {
+#aenlxrjqvc thead, #aenlxrjqvc tbody, #aenlxrjqvc tfoot, #aenlxrjqvc tr, #aenlxrjqvc td, #aenlxrjqvc th {
   border-style: none;
 }
 
-#yyayumhdtm p {
+#aenlxrjqvc p {
   margin: 0;
   padding: 0;
 }
 
-#yyayumhdtm .gt_table {
+#aenlxrjqvc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -587,12 +582,12 @@ Table&nbsp;12.1
   border-left-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_caption {
+#aenlxrjqvc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yyayumhdtm .gt_title {
+#aenlxrjqvc .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -604,7 +599,7 @@ Table&nbsp;12.1
   border-bottom-width: 0;
 }
 
-#yyayumhdtm .gt_subtitle {
+#aenlxrjqvc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -616,7 +611,7 @@ Table&nbsp;12.1
   border-top-width: 0;
 }
 
-#yyayumhdtm .gt_heading {
+#aenlxrjqvc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -628,13 +623,13 @@ Table&nbsp;12.1
   border-right-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_bottom_border {
+#aenlxrjqvc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_col_headings {
+#aenlxrjqvc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -649,7 +644,7 @@ Table&nbsp;12.1
   border-right-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_col_heading {
+#aenlxrjqvc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -669,7 +664,7 @@ Table&nbsp;12.1
   overflow-x: hidden;
 }
 
-#yyayumhdtm .gt_column_spanner_outer {
+#aenlxrjqvc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -681,15 +676,15 @@ Table&nbsp;12.1
   padding-right: 4px;
 }
 
-#yyayumhdtm .gt_column_spanner_outer:first-child {
+#aenlxrjqvc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yyayumhdtm .gt_column_spanner_outer:last-child {
+#aenlxrjqvc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yyayumhdtm .gt_column_spanner {
+#aenlxrjqvc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -701,11 +696,11 @@ Table&nbsp;12.1
   width: 100%;
 }
 
-#yyayumhdtm .gt_spanner_row {
+#aenlxrjqvc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yyayumhdtm .gt_group_heading {
+#aenlxrjqvc .gt_group_heading {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -731,7 +726,7 @@ Table&nbsp;12.1
   text-align: left;
 }
 
-#yyayumhdtm .gt_empty_group_heading {
+#aenlxrjqvc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -746,15 +741,15 @@ Table&nbsp;12.1
   vertical-align: middle;
 }
 
-#yyayumhdtm .gt_from_md > :first-child {
+#aenlxrjqvc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yyayumhdtm .gt_from_md > :last-child {
+#aenlxrjqvc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yyayumhdtm .gt_row {
+#aenlxrjqvc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -773,7 +768,7 @@ Table&nbsp;12.1
   overflow-x: hidden;
 }
 
-#yyayumhdtm .gt_stub {
+#aenlxrjqvc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -786,7 +781,7 @@ Table&nbsp;12.1
   padding-right: 5px;
 }
 
-#yyayumhdtm .gt_stub_row_group {
+#aenlxrjqvc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -800,15 +795,15 @@ Table&nbsp;12.1
   vertical-align: top;
 }
 
-#yyayumhdtm .gt_row_group_first td {
+#aenlxrjqvc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yyayumhdtm .gt_row_group_first th {
+#aenlxrjqvc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yyayumhdtm .gt_summary_row {
+#aenlxrjqvc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -818,16 +813,16 @@ Table&nbsp;12.1
   padding-right: 5px;
 }
 
-#yyayumhdtm .gt_first_summary_row {
+#aenlxrjqvc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_first_summary_row.thick {
+#aenlxrjqvc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yyayumhdtm .gt_last_summary_row {
+#aenlxrjqvc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -837,7 +832,7 @@ Table&nbsp;12.1
   border-bottom-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_grand_summary_row {
+#aenlxrjqvc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -847,7 +842,7 @@ Table&nbsp;12.1
   padding-right: 5px;
 }
 
-#yyayumhdtm .gt_first_grand_summary_row {
+#aenlxrjqvc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -857,7 +852,7 @@ Table&nbsp;12.1
   border-top-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_last_grand_summary_row_top {
+#aenlxrjqvc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -867,11 +862,11 @@ Table&nbsp;12.1
   border-bottom-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_striped {
+#aenlxrjqvc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yyayumhdtm .gt_table_body {
+#aenlxrjqvc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -880,7 +875,7 @@ Table&nbsp;12.1
   border-bottom-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_footnotes {
+#aenlxrjqvc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -894,7 +889,7 @@ Table&nbsp;12.1
   border-right-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_footnote {
+#aenlxrjqvc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -903,7 +898,7 @@ Table&nbsp;12.1
   padding-right: 5px;
 }
 
-#yyayumhdtm .gt_sourcenotes {
+#aenlxrjqvc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -917,7 +912,7 @@ Table&nbsp;12.1
   border-right-color: #D3D3D3;
 }
 
-#yyayumhdtm .gt_sourcenote {
+#aenlxrjqvc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -925,72 +920,72 @@ Table&nbsp;12.1
   padding-right: 5px;
 }
 
-#yyayumhdtm .gt_left {
+#aenlxrjqvc .gt_left {
   text-align: left;
 }
 
-#yyayumhdtm .gt_center {
+#aenlxrjqvc .gt_center {
   text-align: center;
 }
 
-#yyayumhdtm .gt_right {
+#aenlxrjqvc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yyayumhdtm .gt_font_normal {
+#aenlxrjqvc .gt_font_normal {
   font-weight: normal;
 }
 
-#yyayumhdtm .gt_font_bold {
+#aenlxrjqvc .gt_font_bold {
   font-weight: bold;
 }
 
-#yyayumhdtm .gt_font_italic {
+#aenlxrjqvc .gt_font_italic {
   font-style: italic;
 }
 
-#yyayumhdtm .gt_super {
+#aenlxrjqvc .gt_super {
   font-size: 65%;
 }
 
-#yyayumhdtm .gt_footnote_marks {
+#aenlxrjqvc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yyayumhdtm .gt_asterisk {
+#aenlxrjqvc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yyayumhdtm .gt_indent_1 {
+#aenlxrjqvc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yyayumhdtm .gt_indent_2 {
+#aenlxrjqvc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yyayumhdtm .gt_indent_3 {
+#aenlxrjqvc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yyayumhdtm .gt_indent_4 {
+#aenlxrjqvc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yyayumhdtm .gt_indent_5 {
+#aenlxrjqvc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yyayumhdtm .katex-display {
+#aenlxrjqvc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yyayumhdtm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#aenlxrjqvc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2119,7 +2114,7 @@ Table&nbsp;12.1
 <section id="robustness-of-text-classification" class="level2">
 <h2 class="anchored" data-anchor-id="robustness-of-text-classification">Robustness of Text Classification</h2>
 <p>Finally, we assess the robustness of the observed price premiums associated with solar heating, solar cells, and heat pumps, as reported in the main results (Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>). We do this by estimating multiple models based on <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a> while continuously increasing the probability threshold used to classify the three variables.</p>
-<p>The findings are presented in <a href="#tbl-robust-test-text-classification" class="quarto-xref">Table&nbsp;<span>12.2</span></a>. As before, Model 1 represents the main specification, using an 85% probability threshold for all three variables. For Models 2 through 7, the probability thresholds are increased to 90%, 95%, 96%, 97%, 98%, and 99%, respectively.</p>
+<p>The findings are presented in <a href="#tbl-robust-test-text-classification" class="quarto-xref">Table&nbsp;<span>11.2</span></a>. As before, Model 1 represents the main specification, using an 85% probability threshold for all three variables. For Models 2 through 7, the probability thresholds are increased to 90%, 95%, 96%, 97%, 98%, and 99%, respectively.</p>
 <p>For solar heating and solar cells, the coefficients are relatively stable, with only minor changes, and remain statistically significant at the 1% level across all specifications.</p>
 <p>Interestingly, as the probability threshold for solar cells increases, the estimated price premium also increases, ranging from 3.35% to 4.48%. In contrast, the price premium associated with solar heating decreases as the probability threshold increases, ranging from 1.0% to 1.9%.</p>
 <p>For heat pumps, the statistical significance changes from the 1% level in Model 1 to the 5% level for probability thresholds between 95% and 97%, before returning to the 1% level at the 98% and 99% thresholds. However, the estimated coefficient for heat pumps changes only marginally, ranging from 0.40% to 0.72%.</p>
@@ -2129,28 +2124,28 @@ Table&nbsp;12.1
 <div id="tbl-robust-test-text-classification" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-robust-test-text-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;12.2
+Table&nbsp;11.2
 </figcaption>
 <div aria-describedby="tbl-robust-test-text-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div id="nnrjdgktzl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#nnrjdgktzl table {
+<div id="mccmwybwrb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mccmwybwrb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nnrjdgktzl thead, #nnrjdgktzl tbody, #nnrjdgktzl tfoot, #nnrjdgktzl tr, #nnrjdgktzl td, #nnrjdgktzl th {
+#mccmwybwrb thead, #mccmwybwrb tbody, #mccmwybwrb tfoot, #mccmwybwrb tr, #mccmwybwrb td, #mccmwybwrb th {
   border-style: none;
 }
 
-#nnrjdgktzl p {
+#mccmwybwrb p {
   margin: 0;
   padding: 0;
 }
 
-#nnrjdgktzl .gt_table {
+#mccmwybwrb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2176,12 +2171,12 @@ Table&nbsp;12.2
   border-left-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_caption {
+#mccmwybwrb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#nnrjdgktzl .gt_title {
+#mccmwybwrb .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -2193,7 +2188,7 @@ Table&nbsp;12.2
   border-bottom-width: 0;
 }
 
-#nnrjdgktzl .gt_subtitle {
+#mccmwybwrb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2205,7 +2200,7 @@ Table&nbsp;12.2
   border-top-width: 0;
 }
 
-#nnrjdgktzl .gt_heading {
+#mccmwybwrb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2217,13 +2212,13 @@ Table&nbsp;12.2
   border-right-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_bottom_border {
+#mccmwybwrb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_col_headings {
+#mccmwybwrb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2238,7 +2233,7 @@ Table&nbsp;12.2
   border-right-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_col_heading {
+#mccmwybwrb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2258,7 +2253,7 @@ Table&nbsp;12.2
   overflow-x: hidden;
 }
 
-#nnrjdgktzl .gt_column_spanner_outer {
+#mccmwybwrb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2270,15 +2265,15 @@ Table&nbsp;12.2
   padding-right: 4px;
 }
 
-#nnrjdgktzl .gt_column_spanner_outer:first-child {
+#mccmwybwrb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nnrjdgktzl .gt_column_spanner_outer:last-child {
+#mccmwybwrb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nnrjdgktzl .gt_column_spanner {
+#mccmwybwrb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2290,11 +2285,11 @@ Table&nbsp;12.2
   width: 100%;
 }
 
-#nnrjdgktzl .gt_spanner_row {
+#mccmwybwrb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#nnrjdgktzl .gt_group_heading {
+#mccmwybwrb .gt_group_heading {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -2320,7 +2315,7 @@ Table&nbsp;12.2
   text-align: left;
 }
 
-#nnrjdgktzl .gt_empty_group_heading {
+#mccmwybwrb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2335,15 +2330,15 @@ Table&nbsp;12.2
   vertical-align: middle;
 }
 
-#nnrjdgktzl .gt_from_md > :first-child {
+#mccmwybwrb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nnrjdgktzl .gt_from_md > :last-child {
+#mccmwybwrb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nnrjdgktzl .gt_row {
+#mccmwybwrb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2362,7 +2357,7 @@ Table&nbsp;12.2
   overflow-x: hidden;
 }
 
-#nnrjdgktzl .gt_stub {
+#mccmwybwrb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2375,7 +2370,7 @@ Table&nbsp;12.2
   padding-right: 5px;
 }
 
-#nnrjdgktzl .gt_stub_row_group {
+#mccmwybwrb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2389,15 +2384,15 @@ Table&nbsp;12.2
   vertical-align: top;
 }
 
-#nnrjdgktzl .gt_row_group_first td {
+#mccmwybwrb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#nnrjdgktzl .gt_row_group_first th {
+#mccmwybwrb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#nnrjdgktzl .gt_summary_row {
+#mccmwybwrb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2407,16 +2402,16 @@ Table&nbsp;12.2
   padding-right: 5px;
 }
 
-#nnrjdgktzl .gt_first_summary_row {
+#mccmwybwrb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_first_summary_row.thick {
+#mccmwybwrb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#nnrjdgktzl .gt_last_summary_row {
+#mccmwybwrb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2426,7 +2421,7 @@ Table&nbsp;12.2
   border-bottom-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_grand_summary_row {
+#mccmwybwrb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2436,7 +2431,7 @@ Table&nbsp;12.2
   padding-right: 5px;
 }
 
-#nnrjdgktzl .gt_first_grand_summary_row {
+#mccmwybwrb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2446,7 +2441,7 @@ Table&nbsp;12.2
   border-top-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_last_grand_summary_row_top {
+#mccmwybwrb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2456,11 +2451,11 @@ Table&nbsp;12.2
   border-bottom-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_striped {
+#mccmwybwrb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nnrjdgktzl .gt_table_body {
+#mccmwybwrb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2469,7 +2464,7 @@ Table&nbsp;12.2
   border-bottom-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_footnotes {
+#mccmwybwrb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2483,7 +2478,7 @@ Table&nbsp;12.2
   border-right-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_footnote {
+#mccmwybwrb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2492,7 +2487,7 @@ Table&nbsp;12.2
   padding-right: 5px;
 }
 
-#nnrjdgktzl .gt_sourcenotes {
+#mccmwybwrb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2506,7 +2501,7 @@ Table&nbsp;12.2
   border-right-color: #D3D3D3;
 }
 
-#nnrjdgktzl .gt_sourcenote {
+#mccmwybwrb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2514,72 +2509,72 @@ Table&nbsp;12.2
   padding-right: 5px;
 }
 
-#nnrjdgktzl .gt_left {
+#mccmwybwrb .gt_left {
   text-align: left;
 }
 
-#nnrjdgktzl .gt_center {
+#mccmwybwrb .gt_center {
   text-align: center;
 }
 
-#nnrjdgktzl .gt_right {
+#mccmwybwrb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nnrjdgktzl .gt_font_normal {
+#mccmwybwrb .gt_font_normal {
   font-weight: normal;
 }
 
-#nnrjdgktzl .gt_font_bold {
+#mccmwybwrb .gt_font_bold {
   font-weight: bold;
 }
 
-#nnrjdgktzl .gt_font_italic {
+#mccmwybwrb .gt_font_italic {
   font-style: italic;
 }
 
-#nnrjdgktzl .gt_super {
+#mccmwybwrb .gt_super {
   font-size: 65%;
 }
 
-#nnrjdgktzl .gt_footnote_marks {
+#mccmwybwrb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#nnrjdgktzl .gt_asterisk {
+#mccmwybwrb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#nnrjdgktzl .gt_indent_1 {
+#mccmwybwrb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#nnrjdgktzl .gt_indent_2 {
+#mccmwybwrb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#nnrjdgktzl .gt_indent_3 {
+#mccmwybwrb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#nnrjdgktzl .gt_indent_4 {
+#mccmwybwrb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#nnrjdgktzl .gt_indent_5 {
+#mccmwybwrb .gt_indent_5 {
   text-indent: 25px;
 }
 
-#nnrjdgktzl .katex-display {
+#mccmwybwrb .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#nnrjdgktzl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mccmwybwrb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2819,7 +2814,6 @@ Table&nbsp;12.2
 Wahlström, Marie H. 2016. <span>“Doing Good but Not That Well? <span>A</span> Dilemma for Energy Conserving Homeowners.”</span> <em>Energy Economics</em> 60 (November): 197–205. <a href="https://doi.org/10.1016/j.eneco.2016.09.025">https://doi.org/10.1016/j.eneco.2016.09.025</a>.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
