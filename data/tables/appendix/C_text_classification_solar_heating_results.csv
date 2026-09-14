@@ -1,0 +1,51 @@
+"Classification_model","Feature_Engineering_method","Sampling_method","Classification_problem","recall","precision","f1_score","accuracy"
+"SVM","TF-IDF bi-Gram","NoSampling","Solar heating",0.9699,0.98,0.9749,0.995
+"SVM","TF-IDF bi-Gram","Oversample","Solar heating",0.9715,0.9753,0.9734,0.9947
+"Logistic Regression","TF-IDF bi-Gram","NoSampling","Solar heating",0.9564,0.9797,0.9679,0.9936
+"Logistic Regression","TF-IDF bi-Gram","Oversample","Solar heating",0.9786,0.9558,0.9671,0.9933
+"Logistic Regression","TF-IDF bi-Gram","SMOTE","Solar heating",0.9746,0.9594,0.967,0.9933
+"SVM","Bag of words","NoSampling","Solar heating",0.9572,0.9679,0.9625,0.9925
+"Logistic Regression","Bag of words","NoSampling","Solar heating",0.9532,0.9647,0.9589,0.9918
+"SVM","TF-IDF uni-Gram","NoSampling","Solar heating",0.9405,0.9674,0.9538,0.9908
+"Logistic Regression","TF-IDF uni-Gram","NoSampling","Solar heating",0.9342,0.9656,0.9496,0.9901
+"SVM","word2vec","NoSampling","Solar heating",0.9199,0.9756,0.9469,0.9897
+"SVM","TF-IDF uni-Gram","SMOTE","Solar heating",0.9619,0.9189,0.9399,0.9877
+"Logistic Regression","TF-IDF uni-Gram","SMOTE","Solar heating",0.9651,0.913,0.9383,0.9873
+"SVM","Bag of words","Oversample","Solar heating",0.9635,0.9135,0.9379,0.9872
+"SVM","TF-IDF uni-Gram","Oversample","Solar heating",0.9627,0.9107,0.936,0.9868
+"Logistic Regression","Bag of words","Oversample","Solar heating",0.9588,0.9138,0.9358,0.9868
+"Logistic Regression","word2vec","NoSampling","Solar heating",0.9025,0.971,0.9355,0.9875
+"Logistic Regression","Bag of words","SMOTE","Solar heating",0.9643,0.9054,0.9339,0.9863
+"Logistic Regression","TF-IDF uni-Gram","Oversample","Solar heating",0.9667,0.895,0.9295,0.9853
+"SVM","fasttext","NoSampling","Solar heating",0.8803,0.9594,0.9181,0.9842
+"SVM","TF-IDF bi-Gram","Undersample","Solar heating",0.9778,0.8515,0.9103,0.9807
+"Logistic Regression","TF-IDF bi-Gram","Undersample","Solar heating",0.9794,0.8362,0.9021,0.9787
+"SVM","word2vec","SMOTE","Solar heating",0.958,0.8383,0.8942,0.9772
+"SVM","word2vec","Oversample","Solar heating",0.954,0.8377,0.8921,0.9768
+"Logistic Regression","word2vec","Oversample","Solar heating",0.9572,0.8341,0.8914,0.9766
+"Naive Bayes","TF-IDF bi-Gram","SMOTE","Solar heating",0.9429,0.8445,0.891,0.9768
+"Logistic Regression","fasttext","NoSampling","Solar heating",0.8335,0.9546,0.8899,0.9793
+"Naive Bayes","TF-IDF bi-Gram","Oversample","Solar heating",0.9437,0.8416,0.8897,0.9765
+"Logistic Regression","word2vec","SMOTE","Solar heating",0.9603,0.8261,0.8882,0.9757
+"Naive Bayes","TF-IDF bi-Gram","NoSampling","Solar heating",0.9104,0.8593,0.8841,0.976
+"SVM","fasttext","SMOTE","Solar heating",0.9445,0.8294,0.8832,0.9749
+"SVM","word2vec","Undersample","Solar heating",0.954,0.8036,0.8724,0.972
+"Naive Bayes","TF-IDF bi-Gram","Undersample","Solar heating",0.9445,0.8086,0.8713,0.972
+"SVM","fasttext","Oversample","Solar heating",0.9405,0.8085,0.8695,0.9717
+"SVM","Bag of words","Undersample","Solar heating",0.9794,0.7812,0.8691,0.9704
+"Logistic Regression","word2vec","Undersample","Solar heating",0.9524,0.7886,0.8628,0.9696
+"Logistic Regression","Bag of words","Undersample","Solar heating",0.9794,0.7704,0.8624,0.9686
+"SVM","TF-IDF uni-Gram","Undersample","Solar heating",0.9651,0.7732,0.8586,0.9681
+"Naive Bayes","Bag of words","SMOTE","Solar heating",0.8953,0.8175,0.8547,0.9694
+"Logistic Regression","TF-IDF uni-Gram","Undersample","Solar heating",0.9667,0.7614,0.8519,0.9663
+"Naive Bayes","Bag of words","NoSampling","Solar heating",0.8787,0.8262,0.8517,0.9693
+"Naive Bayes","TF-IDF uni-Gram","NoSampling","Solar heating",0.8168,0.8744,0.8446,0.9698
+"Naive Bayes","Bag of words","Oversample","Solar heating",0.9144,0.7844,0.8444,0.9662
+"Logistic Regression","fasttext","SMOTE","Solar heating",0.9247,0.7722,0.8416,0.9651
+"Logistic Regression","fasttext","Oversample","Solar heating",0.927,0.7651,0.8383,0.9641
+"SVM","fasttext","Undersample","Solar heating",0.9294,0.7615,0.8371,0.9637
+"Naive Bayes","TF-IDF uni-Gram","SMOTE","Solar heating",0.9167,0.7686,0.8362,0.9639
+"Naive Bayes","TF-IDF uni-Gram","Oversample","Solar heating",0.9112,0.7635,0.8308,0.9627
+"Naive Bayes","Bag of words","Undersample","Solar heating",0.9223,0.7446,0.8239,0.9604
+"Naive Bayes","TF-IDF uni-Gram","Undersample","Solar heating",0.9191,0.741,0.8205,0.9596
+"Logistic Regression","fasttext","Undersample","Solar heating",0.9128,0.6518,0.7605,0.9423

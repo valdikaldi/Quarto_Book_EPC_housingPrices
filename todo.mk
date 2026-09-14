@@ -18,15 +18,13 @@
     - [x] 7 Discussion 
         - [x] Text 
 - [ ] APPENDIX 
-    - [ ] A. Literature Overview
-    - [ ] B. Calorific Values
-    - [ ] C. Text Classification models: All training results
-    - [ ] D. Results - Additional information
-    - [ ] E. Additional figures
-- [ ] Organize the repo
-    - [ ] Seperate the Report/site and the research assets (figs, tables, code etc.)
+    - [x] A. Literature Overview
+    - [x] B. Calorific Values
+    - [x] C. Text Classification models: All training results
+    - [x] D. Results - Additional information
+    - [x] E. Additional figures
 
 # other
-[ ] - fix regression table in Robustness chapters
+[x] - fix regression table in Robustness chapters
 [ ] - change plots from static to interactive 
 

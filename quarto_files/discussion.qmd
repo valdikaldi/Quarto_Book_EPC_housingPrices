@@ -118,7 +118,7 @@ Second, the differences between detached houses and apartments deserve further i
 
 Third, the robustness results indicate that the heat-pump coefficient is less stable than those of solar cells and solar heating. Further analysis distinguishing between different types of heat pumps could therefore provide a more detailed understanding of how these systems are valued.
 
-Finally, the distribution of EPC labels in the sample raises an additional data-related concern. As shown in Figure @fig-epc-population-vs-sample in @sec-appendix-additional-figures, the sample contains relatively few observations for label A2015. The sample therefore does not appear to fully align with the population distribution of the three A labels. This discrepancy may affect the interpretation of comparisons between the A-label categories and warrants further investigation.
+Finally, the distribution of EPC labels in the sample raises an additional data-related concern. As shown in Figure  @fig-total-epc-reports-denmark in @sec-appendix-additional-figures, the sample contains relatively few observations for label A2015. The sample therefore does not appear to fully align with the population distribution of the three A labels. This discrepancy may affect the interpretation of comparisons between the A-label categories and warrants further investigation.
 
 ## Conclusion
 

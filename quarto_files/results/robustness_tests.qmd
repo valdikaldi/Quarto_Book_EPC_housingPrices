@@ -2,8 +2,6 @@
 # title: "About"
 ---
 
-# 6.4 Robustness Tests
-
 # 6.4 Robustness Tests {#sec-result-robustness-tests}
 
 In this chapter, we assess the robustness of the main results and address potential limitations of the analysis. To do so, we conduct several alterations to the model specification and its variables. These modifications aim to evaluate the stability and reliability of our final specification, as detailed in @eq-main_2. The results are presented in @tbl-regression-robust-testing with Model 1 representing the main specification of @eq-main_2, corresponding to Model 6 in @tbl-main-results.

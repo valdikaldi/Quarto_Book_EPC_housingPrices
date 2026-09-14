@@ -32,8 +32,6 @@ During the information extraction process, we identify three major design differ
 \% extracting text The majority of the information of interest is in text format for all EPC designs. We extract the text using Python and various libraries such as pyMuPDF and pdfplumber. Once the text data is extracted, we use regular expressions and pattern-matching techniques to retrieve the relevant information from the text. In design 2 we only use regular expressions as all necessary data in that design is represented in text format. However, In design 3, all energy labels, i.e. the registered EPC label and the potential EPC label after implementing profitable and non-profitable renovations, are in image format. Moreover, in Design 1 the registered EPC label is in image format but the potential energy label of the building for implementing all renovation suggestions is in text format.
 :::
 
-
-
 ::: {#fig-EPC_data_workflow}
 ![Workflow diagram for extracting and processing EPC data](../../assets/research/04_data/04_2_epc_reports/EPC_workflow_1000dpi.png){fig-align="center" width="80%"}
 :::

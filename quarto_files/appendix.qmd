@@ -177,15 +177,484 @@ calorific_values_table
 
 
 # C. Text Classification models: All training results
+<br>
+
+<!-- ############# text classification : Solar cells  -->
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+classification_results <- readr::read_csv(
+  "../data/tables/appendix/C_text_classification_solar_cells_results.csv"
+#   "data/tables/appendix/C_text_classification_solar_cells_results.csv"
+)
+
+classification_results_table <- classification_results |>
+  dplyr::mutate(
+    recall = recall * 100,
+    precision = precision * 100,
+    f1_score = f1_score * 100,
+    accuracy = accuracy * 100
+  ) |>
+  gt::gt() |>
+  gt::cols_label(
+    Classification_model = "Classification model",
+    Feature_Engineering_method = "Feature engineering",
+    Sampling_method = "Sampling method",
+    Classification_problem = "Classification problem",
+    recall = "Recall (%)",
+    precision = "Precision (%)",
+    f1_score = "F1-score (%)",
+    accuracy = "Accuracy (%)"
+  ) |>
+  gt::fmt_number(
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    ),
+    decimals = 2
+  ) |>
+  gt::sub_missing(
+    columns = gt::everything(),
+    missing_text = "—"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+      weight = "bold",
+      size = gt::px(13)
+    ),
+    locations = gt::cells_column_labels(
+      columns = gt::everything()
+    )
+  ) |>
+  gt::tab_header(
+    title = gt::md(
+        "Text classification results for **Solar Cells** Identification"
+    )
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = c(
+      Classification_model,
+      Feature_Engineering_method,
+      Sampling_method,
+      Classification_problem
+    )
+  ) |>
+  gt::cols_align(
+    align = "right",
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    )
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(12),
+    data_row.padding = gt::px(5)
+  )
+
+classification_results_table
+
+```
+
+
+<!-- ############# text classification : Solar heating  -->
+
+
+<br><br><br>
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+classification_results <- readr::read_csv(
+  "../data/tables/appendix/C_text_classification_solar_cells_results.csv"
+#   "data/tables/appendix/C_text_classification_solar_cells_results.csv"
+)
+
+classification_results_table <- classification_results |>
+  dplyr::mutate(
+    recall = recall * 100,
+    precision = precision * 100,
+    f1_score = f1_score * 100,
+    accuracy = accuracy * 100
+  ) |>
+  gt::gt() |>
+  gt::cols_label(
+    Classification_model = "Classification model",
+    Feature_Engineering_method = "Feature engineering",
+    Sampling_method = "Sampling method",
+    Classification_problem = "Classification problem",
+    recall = "Recall (%)",
+    precision = "Precision (%)",
+    f1_score = "F1-score (%)",
+    accuracy = "Accuracy (%)"
+  ) |>
+  gt::fmt_number(
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    ),
+    decimals = 2
+  ) |>
+  gt::sub_missing(
+    columns = gt::everything(),
+    missing_text = "—"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+      weight = "bold",
+      size = gt::px(13)
+    ),
+    locations = gt::cells_column_labels(
+      columns = gt::everything()
+    )
+  ) |>
+  gt::tab_header(
+    title = gt::md(
+        "Text classification results for **Solar Heating** Identification"
+    )
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = c(
+      Classification_model,
+      Feature_Engineering_method,
+      Sampling_method,
+      Classification_problem
+    )
+  ) |>
+  gt::cols_align(
+    align = "right",
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    )
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(12),
+    data_row.padding = gt::px(5)
+  )
+
+classification_results_table
+
+```
+
+<br><br><br>
+
+<!-- ############# text classification : Heat-pumps  -->
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+
+classification_results <- readr::read_csv(
+  "../data/tables/appendix/C_text_classification_heat_pump_results.csv"
+)
+
+
+classification_results_table <- classification_results |>
+  dplyr::mutate(
+    recall = recall * 100,
+    precision = precision * 100,
+    f1_score = f1_score * 100,
+    accuracy = accuracy * 100
+  ) |>
+  gt::gt() |>
+  gt::cols_label(
+    Classification_model = "Classification model",
+    Feature_Engineering_method = "Feature engineering",
+    Sampling_method = "Sampling method",
+    Classification_problem = "Classification problem",
+    recall = "Recall (%)",
+    precision = "Precision (%)",
+    f1_score = "F1-score (%)",
+    accuracy = "Accuracy (%)"
+  ) |>
+  gt::fmt_number(
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    ),
+    decimals = 2
+  ) |>
+  gt::sub_missing(
+    columns = gt::everything(),
+    missing_text = "—"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+      weight = "bold",
+      size = gt::px(13)
+    ),
+    locations = gt::cells_column_labels(
+      columns = gt::everything()
+    )
+  ) |>
+  gt::tab_header(
+    title = gt::md(
+        "Text classification results for **Heat Pump** Identification"
+    )
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = c(
+      Classification_model,
+      Feature_Engineering_method,
+      Sampling_method,
+      Classification_problem
+    )
+  ) |>
+  gt::cols_align(
+    align = "right",
+    columns = c(
+      recall,
+      precision,
+      f1_score,
+      accuracy
+    )
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(12),
+    data_row.padding = gt::px(5)
+  )
 
 
 
 
+classification_results_table
+```
 
 
 
 # D. Results - additional Information
 
 
+In this appendix we give a clearer overview on what controls variables were included in each model. All variables and their functional form used in this analysis are stated in the summary statistic tables shown in Chapter @sec-data-chapter. All regressions that follow Equation @eq-main_2 share the same control variables. This includes Model 4 to 6 in Table  @tbl-main-results, all models in Table @tbl-market-segment-property-type, all models in Table @tbl-policy-effect, all models in Table @tbl-regression-robust-testing and all models in Table @tbl-robust-test-text-classification. These variables are listed here below in table @tbl-appendix-control-var-1:
 
-# E. Additional figures
+
+<!-- ######################### TABLE 1 control variables ####################### -->
+::: {#tbl-appendix-control-var-1}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+control_variables <- readr::read_csv(
+  "../data/tables/appendix/D_control_variables_table_1.csv"
+#   "data/tables/appendix/D_control_variables_table_1.csv"
+)
+
+control_variables_table <- control_variables |>
+  gt::gt() |>
+  gt::cols_label(
+    Category_type = "Category",
+    Control_variable = "Control variable",
+    Cross_reference = "Cross-reference"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+      weight = "bold",
+      size = gt::px(13)
+    ),
+    locations = gt::cells_column_labels(
+      columns = gt::everything()
+    )
+  ) |>
+  gt::tab_footnote(
+    footnote = gt::md(
+      "**Note:** The only exception to these control variables applies to all models in Table 8, which focus on the property type segment. These models do not include a variable indicating property type."
+    ),
+    locations = gt::cells_column_labels(
+      columns = Cross_reference
+    )
+  ) |>
+  gt::tab_header(
+    title = "Control variables used in majority of the models"
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = gt::everything()
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(12),
+    data_row.padding = gt::px(5)
+  )
+
+
+
+
+
+control_variables_table
+
+```
+
+:::
+
+
+The only exception from the control variables used in this analysis are Models 1 to 3 in Table @tbl-main-results. The control variables included in each of these models are stated in Table @tbl-appendix-control-var-2 here below: 
+
+
+
+
+<!-- ######################### TABLE 2 control variables ####################### -->
+
+::: {#tbl-appendix-control-var-2}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+control_variables_2 <- readr::read_csv(
+  "../data/tables/appendix/D_control_variables_table_2.csv"
+#   "data/tables/appendix/D_control_variables_table_2.csv"
+)
+
+control_variables_table_2 <- control_variables_2 |>
+  gt::gt() |>
+  gt::cols_label(
+    Category_type = "Category",
+    Control_variable = "Control variable",
+    Model_1 = "Model 1",
+    Model_2 = "Model 2",
+    Model_3 = "Model 3"
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(
+      weight = "bold",
+      size = gt::px(13)
+    ),
+    locations = gt::cells_column_labels(
+      columns = gt::everything()
+    )
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_body(
+      columns = Model_1,
+      rows = Model_1 == "YES"
+    )
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_body(
+      columns = Model_2,
+      rows = Model_2 == "YES"
+    )
+  ) |>
+  gt::tab_style(
+    style = gt::cell_text(weight = "bold"),
+    locations = gt::cells_body(
+      columns = Model_3,
+      rows = Model_3 == "YES"
+    )
+  ) |>
+  gt::tab_header(
+    title = "Control variables included in each model"
+  ) |>
+  gt::cols_align(
+    align = "left",
+    columns = c(
+      Category_type,
+      Control_variable
+    )
+  ) |>
+  gt::cols_align(
+    align = "center",
+    columns = c(
+      Model_1,
+      Model_2,
+      Model_3
+    )
+  ) |>
+  gt::tab_options(
+    table.width = gt::pct(100),
+    table.font.size = gt::px(12),
+    data_row.padding = gt::px(5)
+  )
+
+
+control_variables_table_2
+
+```
+:::
+
+
+
+# E. Additional figures {#sec-appendix-additional-figures}
+
+<!-- =======================   PLOT:    EPC REPORTS POPULATION VS SAMPLE     ========================== -->
+
+::: {#fig-total-epc-reports-denmark}
+![Total EPC reports made in Denmark between years 2010-2023](/assets/research/08_appendix/EPC_population_vs_sample.png){fig-align="center"}
+:::
+
+
+---
+
+
+<!-- =======================   PLOT:  AVERAGE TIME ON MARKET PER EPC      ========================== -->
+
+::: {#fig-mean-time-on-market-per-epc}
+![Average time on the market per EPC label by year](/assets/research/08_appendix/EPC_timeOnMarket.png){fig-align="center"}
+:::
+
+
+---
+
+<!-- =======================   PLOT:   AVERAGE TRANSACION PRICE PER EPC       ========================== -->
+
+::: {#fig-mean-transaction-prices-per-epc}
+![Average Transaction Price per Square Meter by EPC Label](/assets/research/08_appendix/Average_price_per_SquareMeter_by_EPC_label.png){fig-align="center"}
+:::
+
+---
+
+
+<!-- =======================   PLOT:   AVERAGE TRANSACION PRICE PER EPC OVER THE YEARS       ========================== -->
+
+::: {#fig-mean-transaction-prices-per-epc}
+![Average Transaction Price per Square Meter by EPC Label Over Time](/assets/research/08_appendix/EPC_average_price_across_years.png){fig-align="center"}
+:::
+
+
+---
+
+
+
+<!-- =======================   PLOT:  3x3 PLOTS HISTOGRAMS       ========================== -->
+
+::: {#fig-histogram-key-variables}
+![Histograms of Price, Living size and time on the market](/assets/research/08_appendix/Histogram_continous_variables_left.png){fig-align="center"}
+:::
+
+::: {#fig-histogram-key-variables}
+![Histograms of Price, Living size and time on the market](/assets/research/08_appendix/Histogram_continous_variables_right.png){fig-align="center"}
+:::
+
