@@ -96,7 +96,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<link rel="icon" type="image/png" href="assets/cover.jpg">
+<link rel="icon" type="image/png" href="assets/website/branding/cover.jpg">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -128,7 +128,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../main_styles.css">
+<link rel="stylesheet" href="../../styles/main_styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -336,8 +336,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../assets/website/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../assets/website/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="../../index.html" title="Home" class="quarto-navigation-tool px-1" aria-label="Home"><i class="bi bi-house-fill"></i></a>
@@ -353,8 +353,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -507,17 +506,17 @@ window.Quarto = {
 </header>
 
 
-<p>In this chapter, we assess the robustness of the main results and address potential limitations of the analysis. To do so, we conduct several alterations to the model specification and its variables. These modifications aim to evaluate the stability and reliability of our final specification, as detailed in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>. The results are presented in <a href="#tbl-regression-robust-testing" class="quarto-xref">Table&nbsp;<span>11.1</span></a> with Model 1 representing the main specification of <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>, corresponding to Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>.</p>
+<p>In this chapter, we assess the robustness of the main results and address potential limitations of the analysis. To do so, we conduct several alterations to the model specification and its variables. These modifications aim to evaluate the stability and reliability of our final specification, as detailed in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>8.2</span></a>. The results are presented in <a href="#tbl-regression-robust-testing" class="quarto-xref">Table&nbsp;<span>12.1</span></a> with Model 1 representing the main specification of <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>8.2</span></a>, corresponding to Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>9.1</span></a>.</p>
 <section id="outliers-and-potential-data-errors" class="level2">
 <h2 class="anchored" data-anchor-id="outliers-and-potential-data-errors">Outliers and Potential Data Errors</h2>
 <p>In Models 2 to 4, we alter the control and dependent variables by removing potential outliers and data errors to assess the robustness of our main results. In Model 2, we remove observations with sales prices greater than DKK 10 million (EUR 1.3 million). In Model 3, we exclude observations where the price per square metre is less than DKK [XX] (EUR 39) or greater than DKK 95,000 (EUR 12,350).</p>
 <p>In Model 4, we remove observations based on selected control variables. Specifically, we exclude properties where the energy source is unknown, properties with more than four bathrooms or no bathroom, properties with more than four toilets, and properties with more than seven rooms or no rooms. In Model 5, we combine all the criteria from Models 2 to 4.</p>
 <p>Across Models 2 to 5, the key variables do not appear to change substantially in terms of their signs or statistical significance. However, similar to the results found for the property-type segment, Model 5 shows that, on average, the most energy-efficient EPC label, A2020, does not appear to outperform label A2015 in terms of its price premium. This result provides further evidence of a potential non-linear relationship between energy efficiency and property prices. While energy-efficient properties are generally valued more highly than less energy-efficient properties, there appears to be a threshold beyond which additional improvements in energy efficiency do not translate into additional property value.</p>
-<p>Regarding model fit, Model 5 produces a within <span class="math inline">\(R^2\)</span> of up to 0.527, compared with 0.442 in our main specification (Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>). This indicates that Model 5 explains 52.7% of the variation in property prices within the fixed-effects clusters.</p>
+<p>Regarding model fit, Model 5 produces a within <span class="math inline">\(R^2\)</span> of up to 0.527, compared with 0.442 in our main specification (Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>9.1</span></a>). This indicates that Model 5 explains 52.7% of the variation in property prices within the fixed-effects clusters.</p>
 </section>
 <section id="energy-consumption" class="level2">
 <h2 class="anchored" data-anchor-id="energy-consumption">Energy Consumption</h2>
-<p>Furthermore, we utilise the energy consumption of dwellings as an alternative measure of energy efficiency. In this specification, <span class="math inline">\(EE_i\)</span> in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a> represents the natural logarithm of the estimated annual energy consumption of dwelling <span class="math inline">\(i\)</span>, measured in kWh.</p>
+<p>Furthermore, we utilise the energy consumption of dwellings as an alternative measure of energy efficiency. In this specification, <span class="math inline">\(EE_i\)</span> in <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>8.2</span></a> represents the natural logarithm of the estimated annual energy consumption of dwelling <span class="math inline">\(i\)</span>, measured in kWh.</p>
 <p>The purpose of using energy consumption is to assess whether the findings are consistent with those obtained using EPC labels. If a price premium is found for energy-efficient labels, where estimated energy consumption is an important determinant of these labels, one would expect energy consumption to produce similar results. Specifically, higher energy consumption should be associated with larger price discounts.</p>
 <p>However, if this is not the case, one possible explanation is that the signalling effect of EPC labels is more important to consumers than the underlying estimated energy consumption. Consumers may not necessarily expect their actual energy consumption to correspond to the amount reported in the EPC report. This argument is consistent with the findings of <span class="citation" data-cites="wahlstrom_doing_2016">Wahlström (<a href="../references.html#ref-wahlstrom_doing_2016" role="doc-biblioref">2016</a>)</span>.</p>
 <p>For this interpretation to hold, however, we must assume that the EPC labels are genuinely capturing a signalling effect rather than incorporating other potential effects, such as omitted variables or measurement errors. Alternatively, differences between the effects of EPC labels and energy consumption could indicate potential bias or measurement error in our regression.</p>
@@ -530,33 +529,33 @@ window.Quarto = {
 <p>By analysing how quickly energy-efficient properties sell in addition to their transaction prices, we can assess whether the observed effects of energy efficiency are also reflected in market liquidity and are therefore not solely driven by price mechanisms.</p>
 <p>The results are presented in Model 7 and further complement the main findings, as well as the previous evidence regarding a potential non-linear relationship between energy efficiency and property prices. Using time on the market as an alternative outcome measure, we find that A2010 properties sell the fastest, followed by A2020 and A2015 properties. This pattern reinforces the observed non-linear relationship between energy efficiency and property prices.</p>
 <p>Model 7 shows that properties labelled A2020, A2015, and A2010 are sold, on average, 31, 24, and 34 days faster than D-labelled properties, respectively. Properties labelled B and C are sold, on average, 18 and 16 days faster than D-labelled properties. Conversely, properties labelled E, F, and G, which are less energy-efficient, take, on average, 13, 22, and 26 days longer to sell than D-labelled properties.</p>
-<p>Additionally, these results are consistent with insights provided by real estate agents, as discussed in <span class="quarto-unresolved-ref">?sec-epbd-danish-epc-scheme</span>.</p>
+<p>Additionally, these results are consistent with insights provided by real estate agents, as discussed in <a href="../epbd_and_danish_EPC_scheme.html" class="quarto-xref"><span>2. EPBD and the Danish EPC scheme</span></a>.</p>
 <!-- Regression table 10  -->
 <div id="tbl-regression-robust-testing" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-regression-robust-testing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;11.1
+Table&nbsp;12.1
 </figcaption>
 <div aria-describedby="tbl-regression-robust-testing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div id="aenlxrjqvc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#aenlxrjqvc table {
+<div id="fonlpkngpu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fonlpkngpu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#aenlxrjqvc thead, #aenlxrjqvc tbody, #aenlxrjqvc tfoot, #aenlxrjqvc tr, #aenlxrjqvc td, #aenlxrjqvc th {
+#fonlpkngpu thead, #fonlpkngpu tbody, #fonlpkngpu tfoot, #fonlpkngpu tr, #fonlpkngpu td, #fonlpkngpu th {
   border-style: none;
 }
 
-#aenlxrjqvc p {
+#fonlpkngpu p {
   margin: 0;
   padding: 0;
 }
 
-#aenlxrjqvc .gt_table {
+#fonlpkngpu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -582,12 +581,12 @@ Table&nbsp;11.1
   border-left-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_caption {
+#fonlpkngpu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#aenlxrjqvc .gt_title {
+#fonlpkngpu .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -599,7 +598,7 @@ Table&nbsp;11.1
   border-bottom-width: 0;
 }
 
-#aenlxrjqvc .gt_subtitle {
+#fonlpkngpu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -611,7 +610,7 @@ Table&nbsp;11.1
   border-top-width: 0;
 }
 
-#aenlxrjqvc .gt_heading {
+#fonlpkngpu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -623,13 +622,13 @@ Table&nbsp;11.1
   border-right-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_bottom_border {
+#fonlpkngpu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_col_headings {
+#fonlpkngpu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -644,7 +643,7 @@ Table&nbsp;11.1
   border-right-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_col_heading {
+#fonlpkngpu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -664,7 +663,7 @@ Table&nbsp;11.1
   overflow-x: hidden;
 }
 
-#aenlxrjqvc .gt_column_spanner_outer {
+#fonlpkngpu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -676,15 +675,15 @@ Table&nbsp;11.1
   padding-right: 4px;
 }
 
-#aenlxrjqvc .gt_column_spanner_outer:first-child {
+#fonlpkngpu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#aenlxrjqvc .gt_column_spanner_outer:last-child {
+#fonlpkngpu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#aenlxrjqvc .gt_column_spanner {
+#fonlpkngpu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -696,11 +695,11 @@ Table&nbsp;11.1
   width: 100%;
 }
 
-#aenlxrjqvc .gt_spanner_row {
+#fonlpkngpu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#aenlxrjqvc .gt_group_heading {
+#fonlpkngpu .gt_group_heading {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -726,7 +725,7 @@ Table&nbsp;11.1
   text-align: left;
 }
 
-#aenlxrjqvc .gt_empty_group_heading {
+#fonlpkngpu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -741,15 +740,15 @@ Table&nbsp;11.1
   vertical-align: middle;
 }
 
-#aenlxrjqvc .gt_from_md > :first-child {
+#fonlpkngpu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#aenlxrjqvc .gt_from_md > :last-child {
+#fonlpkngpu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#aenlxrjqvc .gt_row {
+#fonlpkngpu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -768,7 +767,7 @@ Table&nbsp;11.1
   overflow-x: hidden;
 }
 
-#aenlxrjqvc .gt_stub {
+#fonlpkngpu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -781,7 +780,7 @@ Table&nbsp;11.1
   padding-right: 5px;
 }
 
-#aenlxrjqvc .gt_stub_row_group {
+#fonlpkngpu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -795,15 +794,15 @@ Table&nbsp;11.1
   vertical-align: top;
 }
 
-#aenlxrjqvc .gt_row_group_first td {
+#fonlpkngpu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#aenlxrjqvc .gt_row_group_first th {
+#fonlpkngpu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#aenlxrjqvc .gt_summary_row {
+#fonlpkngpu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -813,16 +812,16 @@ Table&nbsp;11.1
   padding-right: 5px;
 }
 
-#aenlxrjqvc .gt_first_summary_row {
+#fonlpkngpu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_first_summary_row.thick {
+#fonlpkngpu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#aenlxrjqvc .gt_last_summary_row {
+#fonlpkngpu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -832,7 +831,7 @@ Table&nbsp;11.1
   border-bottom-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_grand_summary_row {
+#fonlpkngpu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -842,7 +841,7 @@ Table&nbsp;11.1
   padding-right: 5px;
 }
 
-#aenlxrjqvc .gt_first_grand_summary_row {
+#fonlpkngpu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -852,7 +851,7 @@ Table&nbsp;11.1
   border-top-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_last_grand_summary_row_top {
+#fonlpkngpu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -862,11 +861,11 @@ Table&nbsp;11.1
   border-bottom-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_striped {
+#fonlpkngpu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#aenlxrjqvc .gt_table_body {
+#fonlpkngpu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -875,7 +874,7 @@ Table&nbsp;11.1
   border-bottom-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_footnotes {
+#fonlpkngpu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -889,7 +888,7 @@ Table&nbsp;11.1
   border-right-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_footnote {
+#fonlpkngpu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -898,7 +897,7 @@ Table&nbsp;11.1
   padding-right: 5px;
 }
 
-#aenlxrjqvc .gt_sourcenotes {
+#fonlpkngpu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -912,7 +911,7 @@ Table&nbsp;11.1
   border-right-color: #D3D3D3;
 }
 
-#aenlxrjqvc .gt_sourcenote {
+#fonlpkngpu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -920,72 +919,72 @@ Table&nbsp;11.1
   padding-right: 5px;
 }
 
-#aenlxrjqvc .gt_left {
+#fonlpkngpu .gt_left {
   text-align: left;
 }
 
-#aenlxrjqvc .gt_center {
+#fonlpkngpu .gt_center {
   text-align: center;
 }
 
-#aenlxrjqvc .gt_right {
+#fonlpkngpu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#aenlxrjqvc .gt_font_normal {
+#fonlpkngpu .gt_font_normal {
   font-weight: normal;
 }
 
-#aenlxrjqvc .gt_font_bold {
+#fonlpkngpu .gt_font_bold {
   font-weight: bold;
 }
 
-#aenlxrjqvc .gt_font_italic {
+#fonlpkngpu .gt_font_italic {
   font-style: italic;
 }
 
-#aenlxrjqvc .gt_super {
+#fonlpkngpu .gt_super {
   font-size: 65%;
 }
 
-#aenlxrjqvc .gt_footnote_marks {
+#fonlpkngpu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#aenlxrjqvc .gt_asterisk {
+#fonlpkngpu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#aenlxrjqvc .gt_indent_1 {
+#fonlpkngpu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#aenlxrjqvc .gt_indent_2 {
+#fonlpkngpu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#aenlxrjqvc .gt_indent_3 {
+#fonlpkngpu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#aenlxrjqvc .gt_indent_4 {
+#fonlpkngpu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#aenlxrjqvc .gt_indent_5 {
+#fonlpkngpu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#aenlxrjqvc .katex-display {
+#fonlpkngpu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#aenlxrjqvc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fonlpkngpu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2113,8 +2112,8 @@ Table&nbsp;11.1
 </section>
 <section id="robustness-of-text-classification" class="level2">
 <h2 class="anchored" data-anchor-id="robustness-of-text-classification">Robustness of Text Classification</h2>
-<p>Finally, we assess the robustness of the observed price premiums associated with solar heating, solar cells, and heat pumps, as reported in the main results (Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>8.1</span></a>). We do this by estimating multiple models based on <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>7.2</span></a> while continuously increasing the probability threshold used to classify the three variables.</p>
-<p>The findings are presented in <a href="#tbl-robust-test-text-classification" class="quarto-xref">Table&nbsp;<span>11.2</span></a>. As before, Model 1 represents the main specification, using an 85% probability threshold for all three variables. For Models 2 through 7, the probability thresholds are increased to 90%, 95%, 96%, 97%, 98%, and 99%, respectively.</p>
+<p>Finally, we assess the robustness of the observed price premiums associated with solar heating, solar cells, and heat pumps, as reported in the main results (Model 6 in <a href="main_result.html#tbl-main-results" class="quarto-xref">Table&nbsp;<span>9.1</span></a>). We do this by estimating multiple models based on <a href="../empirical_strategy/empirical_strategy_EstimationStrategy.html#eq-main_2" class="quarto-xref">Equation&nbsp;<span>8.2</span></a> while continuously increasing the probability threshold used to classify the three variables.</p>
+<p>The findings are presented in <a href="#tbl-robust-test-text-classification" class="quarto-xref">Table&nbsp;<span>12.2</span></a>. As before, Model 1 represents the main specification, using an 85% probability threshold for all three variables. For Models 2 through 7, the probability thresholds are increased to 90%, 95%, 96%, 97%, 98%, and 99%, respectively.</p>
 <p>For solar heating and solar cells, the coefficients are relatively stable, with only minor changes, and remain statistically significant at the 1% level across all specifications.</p>
 <p>Interestingly, as the probability threshold for solar cells increases, the estimated price premium also increases, ranging from 3.35% to 4.48%. In contrast, the price premium associated with solar heating decreases as the probability threshold increases, ranging from 1.0% to 1.9%.</p>
 <p>For heat pumps, the statistical significance changes from the 1% level in Model 1 to the 5% level for probability thresholds between 95% and 97%, before returning to the 1% level at the 98% and 99% thresholds. However, the estimated coefficient for heat pumps changes only marginally, ranging from 0.40% to 0.72%.</p>
@@ -2124,28 +2123,28 @@ Table&nbsp;11.1
 <div id="tbl-robust-test-text-classification" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-robust-test-text-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;11.2
+Table&nbsp;12.2
 </figcaption>
 <div aria-describedby="tbl-robust-test-text-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
-<div id="mccmwybwrb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mccmwybwrb table {
+<div id="iulsnyhbnh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iulsnyhbnh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mccmwybwrb thead, #mccmwybwrb tbody, #mccmwybwrb tfoot, #mccmwybwrb tr, #mccmwybwrb td, #mccmwybwrb th {
+#iulsnyhbnh thead, #iulsnyhbnh tbody, #iulsnyhbnh tfoot, #iulsnyhbnh tr, #iulsnyhbnh td, #iulsnyhbnh th {
   border-style: none;
 }
 
-#mccmwybwrb p {
+#iulsnyhbnh p {
   margin: 0;
   padding: 0;
 }
 
-#mccmwybwrb .gt_table {
+#iulsnyhbnh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2171,12 +2170,12 @@ Table&nbsp;11.2
   border-left-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_caption {
+#iulsnyhbnh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mccmwybwrb .gt_title {
+#iulsnyhbnh .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -2188,7 +2187,7 @@ Table&nbsp;11.2
   border-bottom-width: 0;
 }
 
-#mccmwybwrb .gt_subtitle {
+#iulsnyhbnh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2200,7 +2199,7 @@ Table&nbsp;11.2
   border-top-width: 0;
 }
 
-#mccmwybwrb .gt_heading {
+#iulsnyhbnh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2212,13 +2211,13 @@ Table&nbsp;11.2
   border-right-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_bottom_border {
+#iulsnyhbnh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_col_headings {
+#iulsnyhbnh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2233,7 +2232,7 @@ Table&nbsp;11.2
   border-right-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_col_heading {
+#iulsnyhbnh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2253,7 +2252,7 @@ Table&nbsp;11.2
   overflow-x: hidden;
 }
 
-#mccmwybwrb .gt_column_spanner_outer {
+#iulsnyhbnh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2265,15 +2264,15 @@ Table&nbsp;11.2
   padding-right: 4px;
 }
 
-#mccmwybwrb .gt_column_spanner_outer:first-child {
+#iulsnyhbnh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mccmwybwrb .gt_column_spanner_outer:last-child {
+#iulsnyhbnh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mccmwybwrb .gt_column_spanner {
+#iulsnyhbnh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2285,11 +2284,11 @@ Table&nbsp;11.2
   width: 100%;
 }
 
-#mccmwybwrb .gt_spanner_row {
+#iulsnyhbnh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mccmwybwrb .gt_group_heading {
+#iulsnyhbnh .gt_group_heading {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -2315,7 +2314,7 @@ Table&nbsp;11.2
   text-align: left;
 }
 
-#mccmwybwrb .gt_empty_group_heading {
+#iulsnyhbnh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2330,15 +2329,15 @@ Table&nbsp;11.2
   vertical-align: middle;
 }
 
-#mccmwybwrb .gt_from_md > :first-child {
+#iulsnyhbnh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mccmwybwrb .gt_from_md > :last-child {
+#iulsnyhbnh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mccmwybwrb .gt_row {
+#iulsnyhbnh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2357,7 +2356,7 @@ Table&nbsp;11.2
   overflow-x: hidden;
 }
 
-#mccmwybwrb .gt_stub {
+#iulsnyhbnh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2370,7 +2369,7 @@ Table&nbsp;11.2
   padding-right: 5px;
 }
 
-#mccmwybwrb .gt_stub_row_group {
+#iulsnyhbnh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2384,15 +2383,15 @@ Table&nbsp;11.2
   vertical-align: top;
 }
 
-#mccmwybwrb .gt_row_group_first td {
+#iulsnyhbnh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mccmwybwrb .gt_row_group_first th {
+#iulsnyhbnh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mccmwybwrb .gt_summary_row {
+#iulsnyhbnh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2402,16 +2401,16 @@ Table&nbsp;11.2
   padding-right: 5px;
 }
 
-#mccmwybwrb .gt_first_summary_row {
+#iulsnyhbnh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_first_summary_row.thick {
+#iulsnyhbnh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mccmwybwrb .gt_last_summary_row {
+#iulsnyhbnh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2421,7 +2420,7 @@ Table&nbsp;11.2
   border-bottom-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_grand_summary_row {
+#iulsnyhbnh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2431,7 +2430,7 @@ Table&nbsp;11.2
   padding-right: 5px;
 }
 
-#mccmwybwrb .gt_first_grand_summary_row {
+#iulsnyhbnh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2441,7 +2440,7 @@ Table&nbsp;11.2
   border-top-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_last_grand_summary_row_top {
+#iulsnyhbnh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2451,11 +2450,11 @@ Table&nbsp;11.2
   border-bottom-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_striped {
+#iulsnyhbnh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mccmwybwrb .gt_table_body {
+#iulsnyhbnh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2464,7 +2463,7 @@ Table&nbsp;11.2
   border-bottom-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_footnotes {
+#iulsnyhbnh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2478,7 +2477,7 @@ Table&nbsp;11.2
   border-right-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_footnote {
+#iulsnyhbnh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2487,7 +2486,7 @@ Table&nbsp;11.2
   padding-right: 5px;
 }
 
-#mccmwybwrb .gt_sourcenotes {
+#iulsnyhbnh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2501,7 +2500,7 @@ Table&nbsp;11.2
   border-right-color: #D3D3D3;
 }
 
-#mccmwybwrb .gt_sourcenote {
+#iulsnyhbnh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2509,72 +2508,72 @@ Table&nbsp;11.2
   padding-right: 5px;
 }
 
-#mccmwybwrb .gt_left {
+#iulsnyhbnh .gt_left {
   text-align: left;
 }
 
-#mccmwybwrb .gt_center {
+#iulsnyhbnh .gt_center {
   text-align: center;
 }
 
-#mccmwybwrb .gt_right {
+#iulsnyhbnh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mccmwybwrb .gt_font_normal {
+#iulsnyhbnh .gt_font_normal {
   font-weight: normal;
 }
 
-#mccmwybwrb .gt_font_bold {
+#iulsnyhbnh .gt_font_bold {
   font-weight: bold;
 }
 
-#mccmwybwrb .gt_font_italic {
+#iulsnyhbnh .gt_font_italic {
   font-style: italic;
 }
 
-#mccmwybwrb .gt_super {
+#iulsnyhbnh .gt_super {
   font-size: 65%;
 }
 
-#mccmwybwrb .gt_footnote_marks {
+#iulsnyhbnh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mccmwybwrb .gt_asterisk {
+#iulsnyhbnh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mccmwybwrb .gt_indent_1 {
+#iulsnyhbnh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mccmwybwrb .gt_indent_2 {
+#iulsnyhbnh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mccmwybwrb .gt_indent_3 {
+#iulsnyhbnh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mccmwybwrb .gt_indent_4 {
+#iulsnyhbnh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mccmwybwrb .gt_indent_5 {
+#iulsnyhbnh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mccmwybwrb .katex-display {
+#iulsnyhbnh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mccmwybwrb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iulsnyhbnh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

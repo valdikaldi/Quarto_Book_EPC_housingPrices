@@ -96,7 +96,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<link rel="icon" type="image/png" href="assets/cover.jpg">
+<link rel="icon" type="image/png" href="assets/website/branding/cover.jpg">
 <link rel="icon" type="image/png" href="../../assets/website/branding/cover.jpg">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -129,8 +129,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../main_styles.css">
-<link rel="stylesheet" href="../../additional_styles/styles_chapter4_2_data.css">
+<link rel="stylesheet" href="../../styles/main_styles.css">
+<link rel="stylesheet" href="../../styles/pages/styles_chapter4_2_data.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -338,8 +338,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../assets/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../assets/website/branding/cover.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../assets/website/branding/cover.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="../../index.html" title="Home" class="quarto-navigation-tool px-1" aria-label="Home"><i class="bi bi-house-fill"></i></a>
@@ -355,8 +355,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -520,7 +519,7 @@ window.Quarto = {
 <section id="information-extraction-from-epc-reports" class="level2">
 <h2 class="anchored" data-anchor-id="information-extraction-from-epc-reports">Information extraction from EPC reports</h2>
 <div class="paratext">
-<p><a href="#fig-EPC_data_workflow" class="quarto-xref">Figure&nbsp;<span>4.1</span></a> shows the workflow of the data extraction process made to collect the EPC PDF files and extract information from them. Once the housing data is collected, we utilize the ESR and municipality identification codes to search and download the pdf files from the website “boligejer.dk”. During the data-gathering process, it was observed that certain properties, particularly apartment buildings, had their EPC reports linked to the SFE (Samlet Fast Ejendom) code rather than the ESR code. The SFE code is an identification code for the entire building, whereas the ESR code is specific to individual units. Similar to the ESR code, the SFE code is only unique in combination with the municipality code. Consequently, to address this issue, we obtain the SFE codes for properties lacking EPC reports under their ESR codes by intercepting a specific HTTP GET request on the <span class="citation" data-cites="boligejer_boligejer_nodate">Boligejer (<a href="../references.html#ref-boligejer_boligejer_nodate" role="doc-biblioref">n.d.</a>)</span> website, where the SFE code of the dwelling unit is stored in a JSON file. Once obtained, we proceed in the same manner that we do with ESR codes. Once we have collected all possible PDF files, we end up with 776.108 reports.</p>
+<p><a href="#fig-EPC_data_workflow" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> shows the workflow of the data extraction process made to collect the EPC PDF files and extract information from them. Once the housing data is collected, we utilize the ESR and municipality identification codes to search and download the pdf files from the website “boligejer.dk”. During the data-gathering process, it was observed that certain properties, particularly apartment buildings, had their EPC reports linked to the SFE (Samlet Fast Ejendom) code rather than the ESR code. The SFE code is an identification code for the entire building, whereas the ESR code is specific to individual units. Similar to the ESR code, the SFE code is only unique in combination with the municipality code. Consequently, to address this issue, we obtain the SFE codes for properties lacking EPC reports under their ESR codes by intercepting a specific HTTP GET request on the <span class="citation" data-cites="boligejer_boligejer_nodate">Boligejer (<a href="../references.html#ref-boligejer_boligejer_nodate" role="doc-biblioref">n.d.</a>)</span> website, where the SFE code of the dwelling unit is stored in a JSON file. Once obtained, we proceed in the same manner that we do with ESR codes. Once we have collected all possible PDF files, we end up with 776.108 reports.</p>
 <p>During the information extraction process, we identify three major design differences in the reports over the period. According to the data, the initial design in our sample, referred to as Design 1, was used until around 2012, after which Design 2 was introduced. The most recent design, design 3, was adopted around the winter of 2021. These designs not only differ in the design and layout but also in the type of information provided to the reader.</p>
 <p>% design differences There are several key distinctions between the three designs regarding the information provided. Design 1 does not include a potential energy label from implementing all profitable renovations. Neither Design 1 nor 2 provide standardised energy consumption in kWh, whereas Design 3 includes this information. Furthermore, Design 3 does not include energy consumption saved from profitable renovations. Additionally, none of the designs provides an estimated investment cost for implementing non-profitable renovation suggestions.</p>
 <p>% extracting text The majority of the information of interest is in text format for all EPC designs. We extract the text using Python and various libraries such as pyMuPDF and pdfplumber. Once the text data is extracted, we use regular expressions and pattern-matching techniques to retrieve the relevant information from the text. In design 2 we only use regular expressions as all necessary data in that design is represented in text format. However, In design 3, all energy labels, i.e.&nbsp;the registered EPC label and the potential EPC label after implementing profitable and non-profitable renovations, are in image format. Moreover, in Design 1 the registered EPC label is in image format but the potential energy label of the building for implementing all renovation suggestions is in text format.</p>
@@ -528,7 +527,7 @@ window.Quarto = {
 <div id="fig-EPC_data_workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_data_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.1
+Figure&nbsp;5.1
 </figcaption>
 <div aria-describedby="fig-EPC_data_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
@@ -555,7 +554,7 @@ Figure&nbsp;4.1
 <div id="tbl-housing_summarystatistic" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-housing_summarystatistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1: EPC Reports Data - summary statistics
+Table&nbsp;5.1: EPC Reports Data - summary statistics
 </figcaption>
 <div aria-describedby="tbl-housing_summarystatistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="border_table">
@@ -1160,14 +1159,14 @@ Table&nbsp;4.1: EPC Reports Data - summary statistics
 </div>
 </figure>
 </div>
-<p>Moreover, <a href="#fig-EPC_frequency_4x4km_gridcell" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> shows the distribution of the most frequent label across the whole country at a 4x4 km grid level. The figure shows that labels D and C are most dominant across the entire country. We see some cluster formations of lower energy efficiency labels on the main land, towards the North sea. Particularly around the towns Brande and Billund. Moreover, there are very little signs of dominant areas with low energy efficiency labels in the bigger cities such as Aarhus and Copenhagen. However, the clearest cluster formation is on the Islands called Langeland, Lolland, Falster and Møn where the most dominant labels are either G or F.</p>
+<p>Moreover, <a href="#fig-EPC_frequency_4x4km_gridcell" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> shows the distribution of the most frequent label across the whole country at a 4x4 km grid level. The figure shows that labels D and C are most dominant across the entire country. We see some cluster formations of lower energy efficiency labels on the main land, towards the North sea. Particularly around the towns Brande and Billund. Moreover, there are very little signs of dominant areas with low energy efficiency labels in the bigger cities such as Aarhus and Copenhagen. However, the clearest cluster formation is on the Islands called Langeland, Lolland, Falster and Møn where the most dominant labels are either G or F.</p>
 <p>In addition, the most frequent label given by the EPC experts as the energy label potential of a property, after implementing all renovation recommendation, is the label C, which represents more than 30% of our sample. Interestingly, about 20,5% of our sample, or 149,706 observations, receive the same label as they currently have. Meaning, that although some are given renovation recommendations that can improve their efficiency, that doesn’t mean that the improvements will lead to higher EPC label.</p>
 <p>Furthermore, close to 62% of our sample use either only district heating or district heating in combination with other sources. The second most common energy sources in our sample is Natural gas where close to 20% of our sample uses only natural gas or natural gas in combination with other sources.</p>
 </div>
 <div id="fig-EPC_frequency_4x4km_gridcell" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_frequency_4x4km_gridcell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2
+Figure&nbsp;5.2
 </figcaption>
 <div aria-describedby="fig-EPC_frequency_4x4km_gridcell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
@@ -1183,12 +1182,12 @@ Figure&nbsp;4.2
 </figure>
 </div>
 <div class="paratext">
-<p>Finally, the EPC data in combination with our housing data shows some interesting patterns. There is a clear relationship between EPC labels and the year properties are built, as shown in <a href="#fig-EPC_and_buildingConstruction" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>. From the period 1979-1998 there is a significant increase in higher energy efficient properties until the period 2014-2023 where the lowest energy efficiency obtained from newly constructed buildings is the label B. It’s worth pointing out that the construction periods used in this paper resembles the one used by \citet{jensen_market_2016 paper, with the minor difference that we add the new period 2014-2023 and the period older than 1890. According to \citet{jensen_market_2016, their construction periods reflect both building tradition and energy performance.</p>
+<p>Finally, the EPC data in combination with our housing data shows some interesting patterns. There is a clear relationship between EPC labels and the year properties are built, as shown in <a href="#fig-EPC_and_buildingConstruction" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>. From the period 1979-1998 there is a significant increase in higher energy efficient properties until the period 2014-2023 where the lowest energy efficiency obtained from newly constructed buildings is the label B. It’s worth pointing out that the construction periods used in this paper resembles the one used by \citet{jensen_market_2016 paper, with the minor difference that we add the new period 2014-2023 and the period older than 1890. According to \citet{jensen_market_2016, their construction periods reflect both building tradition and energy performance.</p>
 </div>
 <div id="fig-EPC_and_buildingConstruction" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-EPC_and_buildingConstruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3
+Figure&nbsp;5.3
 </figcaption>
 <div aria-describedby="fig-EPC_and_buildingConstruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
@@ -1213,12 +1212,12 @@ Figure&nbsp;4.3
 <li>“Installing heat pumps is not considered to add any additional benefits given the current system of property.”</li>
 <li>“Owners should think about installing heat pumps.”</li>
 </ul>
-<p>These three sentences all indicate in different ways that the properties do not have heat pumps installed. This makes it difficult to accurately assess the entire sample to identify properties with installed heat pumps, solar cells, or solar heating using only pattern matching with regular expressions. Instead, we address this challenge by performing a Natural Language Processing (NLP) task called text classification. <a href="#fig-TextClassification_workflow" class="quarto-xref">Figure&nbsp;<span>4.4</span></a> illustrates the workflow of training and building the text classification models. We define three independent binary classification problems, each for different green energy systems, i.e.&nbsp;one for predicting if the building has solar cells, another for solar heating, and the third for heat pumps. In this sup-chapter, the term “model” will refer to a combination of the classifier, feature engineering method, and sampling technique used. Over the course of the whole process, for each classification problem, we will compare three different classifiers in combination with 4 different sampling methods, three of which account for sample imbalance and 5 different feature engineering methods. However, there are a few exceptions to these combinations. Naive Bayes doesn’t run on negative values, and both embeddings have negative and positive input features. Therefore, we will not use embeddings when using Naive Bayes as a classifier. Additionally, we only run the SMOTE sampling method on a selected combination of classifiers and feature engineering methods because some combinations are too heavy to compute. All in all, we ended up making 150 different models, 50 models for each classification problem.</p>
+<p>These three sentences all indicate in different ways that the properties do not have heat pumps installed. This makes it difficult to accurately assess the entire sample to identify properties with installed heat pumps, solar cells, or solar heating using only pattern matching with regular expressions. Instead, we address this challenge by performing a Natural Language Processing (NLP) task called text classification. <a href="#fig-TextClassification_workflow" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> illustrates the workflow of training and building the text classification models. We define three independent binary classification problems, each for different green energy systems, i.e.&nbsp;one for predicting if the building has solar cells, another for solar heating, and the third for heat pumps. In this sup-chapter, the term “model” will refer to a combination of the classifier, feature engineering method, and sampling technique used. Over the course of the whole process, for each classification problem, we will compare three different classifiers in combination with 4 different sampling methods, three of which account for sample imbalance and 5 different feature engineering methods. However, there are a few exceptions to these combinations. Naive Bayes doesn’t run on negative values, and both embeddings have negative and positive input features. Therefore, we will not use embeddings when using Naive Bayes as a classifier. Additionally, we only run the SMOTE sampling method on a selected combination of classifiers and feature engineering methods because some combinations are too heavy to compute. All in all, we ended up making 150 different models, 50 models for each classification problem.</p>
 </div>
 <div id="fig-TextClassification_workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-TextClassification_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4
+Figure&nbsp;5.4
 </figcaption>
 <div aria-describedby="fig-TextClassification_workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
@@ -1252,7 +1251,7 @@ Figure&nbsp;4.4
 <div id="tbl-TextClassification_trainingData" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-TextClassification_trainingData-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Training data for each classification problem
+Table&nbsp;5.2: Training data for each classification problem
 </figcaption>
 <div aria-describedby="tbl-TextClassification_trainingData-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="border_table_training">
@@ -1289,7 +1288,7 @@ Table&nbsp;4.2: Training data for each classification problem
 </figure>
 </div>
 <div class="paratext">
-<p><a href="#tbl-TextClassification_trainingData" class="quarto-xref">Table&nbsp;<span>4.2</span></a> illustrates the number of observations for each category (i.e.&nbsp;True or False) in the training data. From the table we can see that our training data is relatively imbalanced. In a binary classification setting, a dataset is considered imbalanced if there are significantly fewer observations in one category compared to the other category <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun et al. 2009</a>)</span>. Many industries, including financial management, frequently deal with imbalanced data sets, e.g.&nbsp;for fraud detection. Therefore, imbalanced data is not unusual. However, many of the machine learning algorithms used for classification problems are based on the assumption that both labels have similar misclassification costs <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun et al. 2009</a>)</span>. Therefore, predicted labels are assumed to be based on a balanced distribution of labels. This can lead to the classifier used becoming biased towards the majority class and giving poor predictions for the minority class. <span class="citation" data-cites="jurafsky_speech_2024">Jurafsky and Martin (<a href="../references.html#ref-jurafsky_speech_2024" role="doc-biblioref">2024</a>)</span> To account for this, we will utilise three common ways, which are an over-sampling method, an under-sampling method, and Synthetic Minority Over-sampling Technique (SMOTE). The over-sampling method involves randomly picking observations from the minority class and duplicating them until the observations between the two classes are balanced. Similar to over-sampling, under-sampling randomly removes observations in the majority class until both classes have the same amount of observations.</p>
+<p><a href="#tbl-TextClassification_trainingData" class="quarto-xref">Table&nbsp;<span>5.2</span></a> illustrates the number of observations for each category (i.e.&nbsp;True or False) in the training data. From the table we can see that our training data is relatively imbalanced. In a binary classification setting, a dataset is considered imbalanced if there are significantly fewer observations in one category compared to the other category <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun et al. 2009</a>)</span>. Many industries, including financial management, frequently deal with imbalanced data sets, e.g.&nbsp;for fraud detection. Therefore, imbalanced data is not unusual. However, many of the machine learning algorithms used for classification problems are based on the assumption that both labels have similar misclassification costs <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun et al. 2009</a>)</span>. Therefore, predicted labels are assumed to be based on a balanced distribution of labels. This can lead to the classifier used becoming biased towards the majority class and giving poor predictions for the minority class. <span class="citation" data-cites="jurafsky_speech_2024">Jurafsky and Martin (<a href="../references.html#ref-jurafsky_speech_2024" role="doc-biblioref">2024</a>)</span> To account for this, we will utilise three common ways, which are an over-sampling method, an under-sampling method, and Synthetic Minority Over-sampling Technique (SMOTE). The over-sampling method involves randomly picking observations from the minority class and duplicating them until the observations between the two classes are balanced. Similar to over-sampling, under-sampling randomly removes observations in the majority class until both classes have the same amount of observations.</p>
 <p>Finally, The SMOTE method is a version of the over-sampling technique where we create synthetic observations using the features from observations in the minority class. This is done by selecting random observations in the minority class and identifying k-nearest neighbouring observations. The neighbours are other observations from the minority class that is closest to the observation selected in terms of feature values. We select a random number between 0 and 1 as well as a random neighbour. Then, we calculate the difference between the neighbour and the observations selected and multiply that by a random number. Finally, we add the result to the selected observation, making the synthetic observation a blend of the neighbouring observation and the selected observation. In this study, when using SMOTE, we will be using five neighbours for each selected observation. All sampling methods are applied within the cross-validation process on the folds that are treated as the training data <span class="citation" data-cites="sun_strategies_2009">(<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">Sun et al. 2009</a>)</span>.</p>
 <p>% Model training and valuation : cross-validation and grid search During the training process, we use the 5-fold cross-validation and GridSearchCV function from the scikit-learn library in Python (see: <span class="citation" data-cites="scikit-learn">Pedregosa et al. (<a href="../references.html#ref-scikit-learn" role="doc-biblioref">2011</a>)</span> for more details on scikit-learn library) to optimise and fine-tune the models. Hyperparameters are configurations that are used to adjust the optimization of a classification algorithm. In the Naive Bayes classifier, we tune different levels of the hyperparameter called alpha, which is a laplace smoothing parameter to handle zero probabilities. In logistic regression, we tune different levels of the hyperparameter C which is the inverse of the regularisation strength. Hyperparameter C is a regularization method that prevents the model from overfitting by adding a penalty to the model’s complexity. Similarly, we tune the hyperparameter C in the SVM classifier. During the training process, GridSearchCV conducts a search over specified hyperparameter values. Each hyperparameter configuration is validated via 5-fold cross-validation, where the labelled data is randomly split into five groups. Then, one group is held as a hold-out group, and the model is trained on the remaining groups, which we then use to predict the labels on the hold-out group. This process is repeated five times, ensuring each group serves as a validation set once. Finally, the best hyperparameter combination is identified based on the highest average precision value across the five folds. After training all 150 models and determining their best hyperparameters, we evaluate their performance based on accuracy, recall, precision, and F1 score. Subsequently, we select the models for each classification problem by considering both the highest accuracy and achieving the best balance between recall and precision.</p>
 </div>
@@ -1320,12 +1319,12 @@ Table&nbsp;4.2: Training data for each classification problem
 </div>
 <p>suggests that when dealing with competing hypotheses, the one with fewer assumptions should be preferred. In simpler terms, it implies that the simplest explanation is usually the correct one. We chose logistic regression for its efficiency, interpretability, and computational efficiency. Furthermore, logistic regression provides probabilities of the outcome, allowing us to conduct robustness tests by varying threshold levels from the main model. The main model systematically uses the threshold of 0.5 to classify observations into one of the two classes. However, we will use 85% as our main threshold. If the predicted probability is greater than or equal to 85%, the observation is assigned to the positive class; otherwise, it is classified to the negative class. Moreover, we use the bi-gram TF-IDF word-level method as it outperforms all other methods.</p>
 <p>Finally, we chose not to use any sampling methods. As stated earlier, sampling methods account for class imbalances and help detect minority classes. However, our results indicate no significant improvement from using sampling methods. Moreover, neither the over-sampling nor the SMOTE methods used in this study add any valuable information. Furthermore, when using SMOTE there is a risk that the synthetic observations do not resemble the minority class. Additionally, the under-sampling method comes at the great cost of losing valuable information. In relation to that, <span class="citation" data-cites="sun_strategies_2009">Sun et al. (<a href="../references.html#ref-sun_strategies_2009" role="doc-biblioref">2009</a>)</span> compared various sampling methods to address imbalanced data. They found that sampling methods did not improve the performance of their classifier, and they argued that one should focus on setting an appropriate threshold rather than using sampling methods.</p>
-<p>Details on the final text classification models used, as well as the number of observations per category for each classification problem, are shown in <a href="#tbl-TextClassification_mainModels" class="quarto-xref">Table&nbsp;<span>4.3</span></a>. All three trained models achieved over 90% accuracy and a strong balance between recall and precision. <a href="../../quarto_files/appendix.html#c.-text-classification-models-all-training-results">Appendix C</a> shows the training results of all 150 text classification models.</p>
+<p>Details on the final text classification models used, as well as the number of observations per category for each classification problem, are shown in <a href="#tbl-TextClassification_mainModels" class="quarto-xref">Table&nbsp;<span>5.3</span></a>. All three trained models achieved over 90% accuracy and a strong balance between recall and precision. <a href="../../quarto_files/appendix.html#c.-text-classification-models-all-training-results">Appendix C</a> shows the training results of all 150 text classification models.</p>
 </div>
 <div id="tbl-TextClassification_mainModels" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-TextClassification_mainModels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.3: Main text classification models
+Table&nbsp;5.3: Main text classification models
 </figcaption>
 <div aria-describedby="tbl-TextClassification_mainModels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="border_table">
