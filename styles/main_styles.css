@@ -967,3 +967,116 @@ body.quarto-dark table.table.table-striped > tbody > tr:nth-of-type(even) > * {
   background-color: #202224 !important;
   color: #e0e3e6 !important;
 }
+
+
+
+
+
+
+/* =========================================================
+   FRONT PAGE — STAT CARDS WITH ACCENT COLOURS
+   ========================================================= */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-card {
+  --accent: #5b7a99;
+  --accent-soft: rgba(91, 122, 153, 0.10);
+
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 0.75rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.20);
+  background-color: var(--accent-soft);
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+/* Top accent bar */
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background-color: var(--accent);
+}
+
+/* Bottom accent bar */
+.stat-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background-color: var(--accent);
+}
+
+.stat-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.stat-number {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin-top: 0.4rem;
+}
+
+/* Accent colour variants */
+.stat-card.accent-1 {
+  --accent: #5b7a99;                    /* slate blue */
+  --accent-soft: rgba(91, 122, 153, 0.10);
+}
+
+.stat-card.accent-2 {
+  --accent: #4f7a63;                    /* forest green */
+  --accent-soft: rgba(79, 122, 99, 0.10);
+}
+
+.stat-card.accent-3 {
+  --accent: #8a5a4a;                    /* brick */
+  --accent-soft: rgba(138, 90, 74, 0.10);
+}
+
+.stat-card.accent-4 {
+  --accent: #6b5f88;                    /* muted plum */
+  --accent-soft: rgba(107, 95, 136, 0.10);
+}
+
+/* =========================================================
+   DARK MODE OVERRIDES
+   ========================================================= */
+
+body.quarto-dark .stat-card {
+  border-color: rgba(255, 255, 255, 0.10);
+  background-color: var(--accent-soft);
+}
+
+body.quarto-dark .stat-card.accent-1 { --accent-soft: rgba(91, 122, 153, 0.20); }
+body.quarto-dark .stat-card.accent-2 { --accent-soft: rgba(79, 122, 99, 0.20); }
+body.quarto-dark .stat-card.accent-3 { --accent-soft: rgba(138, 90, 74, 0.20); }
+body.quarto-dark .stat-card.accent-4 { --accent-soft: rgba(107, 95, 136, 0.20); }
