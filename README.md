@@ -112,8 +112,7 @@ quarto preview
 
 ### Publish
 
-The site is published via GitHub Pages from the `gh-pages` branch. Push to `main` and the site rebuilds automatically.
-
+The site is published via GitHub Pages from the `gh-pages` branch. 
 ---
 
 ## Author
