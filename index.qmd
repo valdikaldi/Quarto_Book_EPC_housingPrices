@@ -348,5 +348,5 @@ R
 ```
 
 ::: site-note
-This website was built with [Quarto](https://quarto.org/). The full analysis, data pipeline, and thesis chapters are available in the sidebar. Source code is available on [GitHub](https://github.com/valdikaldi/Empirical_Project-are_home_buyers_inattentive_towards_energy_efficiency).
+This website was built with [Quarto](https://quarto.org/). The full analysis, data pipeline, and thesis chapters are available in the sidebar. Source code is available on [GitHub](https://github.com/valdikaldi/Website_Modelling_HousingPrice_EnergyEfficiency).
 :::
